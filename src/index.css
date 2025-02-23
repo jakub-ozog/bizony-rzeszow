@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('./assets/fonts/Urbanist-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Urbanist';
+    src: url('./assets/fonts/Urbanist-SemiBold.ttf') format('truetype'); 
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Urbanist';
+    src: url('./assets/fonts/Urbanist-Bold.ttf') format('truetype'); 
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Urbanist';
+    src: url('./assets/fonts/Urbanist-ThinItalic.ttf') format('ttruetypef'); 
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Lobster';
+    src: url('./assets/fonts/Lobster-Regular.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+  }
