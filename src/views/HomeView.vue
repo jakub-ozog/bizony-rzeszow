@@ -3,6 +3,7 @@ import UpcomingMatches from '@/components/UpcomingMatches.vue'
 import UpcomingMatchCounter from '@/components/UpcomingMatchCounter.vue'
 import MainNews from '@/components/MainNews.vue'
 import MainGallery from '@/components/MainGallery.vue'
+import PlayerFeatured from '@/components/PlayerFeatured.vue'
 </script>
 
 <template>
@@ -42,5 +43,9 @@ import MainGallery from '@/components/MainGallery.vue'
 
   <section class="container mx-auto text-center my-12 font-urbanist font-bold">
     <MainGallery />
+  </section>
+
+  <section class="container mx-auto my-12 font-urbanist font-bold">
+    <PlayerFeatured />
   </section>
 </template>
