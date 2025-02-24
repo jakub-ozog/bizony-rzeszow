@@ -12,7 +12,7 @@ const props = defineProps({
 
 <template>
   <div
-    class="bg-white text-gray-900 rounded-lg shadow-lg overflow-hidden min-h-40 border border-lightGrey border-solid"
+    class="bg-white text-gray-900 rounded-lg shadow-lg overflow-hidden min-h-40 border-0 border-lightGrey border-solid"
   >
     <img :src="galleryCard.thumb" alt="gallery card" class="w-full h-64 object-cover" />
     <div class="p-6 text-left">

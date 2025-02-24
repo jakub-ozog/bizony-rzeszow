@@ -4,6 +4,7 @@ import UpcomingMatchCounter from '@/components/UpcomingMatchCounter.vue'
 import MainNews from '@/components/MainNews.vue'
 import MainGallery from '@/components/MainGallery.vue'
 import PlayerFeatured from '@/components/PlayerFeatured.vue'
+import SupportUs from '@/components/SupportUs.vue'
 </script>
 
 <template>
@@ -47,5 +48,9 @@ import PlayerFeatured from '@/components/PlayerFeatured.vue'
 
   <section class="container mx-auto my-12 font-urbanist font-bold">
     <PlayerFeatured />
+  </section>
+
+  <section class="container mx-auto mt-[9rem] mb-12 font-urbanist">
+    <SupportUs />
   </section>
 </template>
