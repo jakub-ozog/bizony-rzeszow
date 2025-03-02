@@ -16,6 +16,7 @@ export default {
         accentBlue: "#28357B",
         grey: "#565656",
         lightGrey: "#767676",
+        superLightGrey: "#EFEFEF",
         midGray: "#2D2D2D",
         bodyBackground: "#F6F6F6",
         black: "#000000",

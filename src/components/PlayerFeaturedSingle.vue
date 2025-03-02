@@ -8,7 +8,7 @@ import playerFeaturedImg from '@/assets/images/player_featured_img.png'
       <h5 class="font-bold text-accentBlue text-3xl">Krzysztof Jurczyński</h5>
       <p class="text-lightGrey font-thin">zawodnik, trener, organizator</p>
 
-      <div class="md:w-3/4">
+      <div class="lg:w-3/4">
         <p class="font-semibold text-base mt-8 mb-4">
           Chyba nie zaskoczę Cię moim pierwszym pytaniem. Dlaczego wybrałeś baseball?
         </p>
@@ -44,7 +44,7 @@ import playerFeaturedImg from '@/assets/images/player_featured_img.png'
       </button>
     </div>
 
-    <div class="relative w-full">
+    <div class="hidden lg:block relative w-full">
       <img :src="playerFeaturedImg" class="absolute top-0 right-0 max-w-[1000px]" alt="" />
     </div>
   </div>
