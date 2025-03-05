@@ -21,8 +21,8 @@ export default defineConfig({
         import.meta.url))
     },
   },
-  base: import.meta.env.MODE === 'production' ?
-    '/bizony-rzeszow/' // Dodaj nazwę swojego repozytorium
-    :
-    '/',
+  // base: import.meta.env.MODE === 'production' ?
+  //   '/bizony-rzeszow/' // Dodaj nazwę swojego repozytorium
+  //   :
+  //   '/',
 })
