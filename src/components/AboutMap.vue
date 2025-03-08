@@ -10,6 +10,7 @@
       allowfullscreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
+      class="w-full"
     ></iframe>
   </div>
 </template>
