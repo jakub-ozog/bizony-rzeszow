@@ -1,4 +1,7 @@
 <script setup>
+import AboutMap from '@/components/AboutMap.vue'
+import AboutJoinUs from '@/components/AboutJoinUs.vue'
+
 import sectionColorBar from '@/assets/images/about-section-color-bar.svg'
 import clubHeaderPhoto from '@/assets/images/about-club-header-photo.webp'
 import teamStadiumPhoto from '@/assets/images/team-stadium-img.webp'
@@ -61,16 +64,20 @@ import teamStadiumPhoto from '@/assets/images/team-stadium-img.webp'
       ut aliquip ex ea commodo consequunt mollit anim id est laborum."....
     </p>
 
-    <h2 class="font-bold text-black text-2xl mb-4">Jak zaczynaliśmy</h2>
+    <h2 class="font-bold text-black text-2xl mb-8">Jak zaczynaliśmy</h2>
 
-    <h2 class="font-bold text-black text-2xl mb-4">Gdzie trenujemy</h2>
+    <h2 class="font-bold text-black text-2xl mb-8">Gdzie trenujemy</h2>
 
-    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-      <p class="font-xl mb-4">
-        SALOS Rzeszów <br />
-        Witolda Świadka 5a, <br />
-        35-310 Rzeszów
-      </p>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+      <div>
+
+        <p class="font-xl mb-4">
+          SALOS Rzeszów <br />
+          Witolda Świadka 5a, <br />
+          35-310 Rzeszów
+        </p>
+        <AboutMap />
+      </div>
 
       <img :src="teamStadiumPhoto" class="w-[650px] h-full rounded-lg" alt="" />
     </div>
@@ -85,5 +92,7 @@ import teamStadiumPhoto from '@/assets/images/team-stadium-img.webp'
       dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
       ut aliquip ex ea commodo consequunt mollit anim id est laborum."....
     </p>
+
+    <AboutJoinUs />
   </section>
 </template>
