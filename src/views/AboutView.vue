@@ -1,6 +1,7 @@
 <script setup>
 import AboutMap from '@/components/AboutMap.vue'
 import AboutJoinUs from '@/components/AboutJoinUs.vue'
+import AboutTimeline from '@/components/AboutTimeline.vue'
 
 import sectionColorBar from '@/assets/images/about-section-color-bar.svg'
 import clubHeaderPhoto from '@/assets/images/about-club-header-photo.webp'
@@ -35,7 +36,7 @@ import teamStadiumPhoto from '@/assets/images/team-stadium-img.webp'
   <section class="container font-urbanist mx-auto">
     <h2 class="font-bold text-black text-2xl mb-4">Kim są Bizony</h2>
 
-    <p class="font-xl mb-4">
+    <p class=" mb-4">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
       laboris nisi ut aliquip ex ea commodo consequunt mollit anim id est laborum.""Lorem ipsum
@@ -44,7 +45,7 @@ import teamStadiumPhoto from '@/assets/images/team-stadium-img.webp'
       ut aliquip ex ea commodo consequunt mollit anim id est laborum."....
     </p>
 
-    <p class="font-xl mb-4">
+    <p class=" mb-4">
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
       laboris nisi ut aliquip ex ea commodo consequunt mollit anim id est laborum.""Lorem ipsum
@@ -65,21 +66,21 @@ import teamStadiumPhoto from '@/assets/images/team-stadium-img.webp'
     </p>
 
     <h2 class="font-bold text-black text-2xl mb-8">Jak zaczynaliśmy</h2>
+    <AboutTimeline />
 
     <h2 class="font-bold text-black text-2xl mb-8">Gdzie trenujemy</h2>
 
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-      <div>
-
-        <p class="font-xl mb-4">
-          SALOS Rzeszów <br />
+      <div class="flex flex-col justify-between">
+        <p class="text-xl mb-4 text-primaryRed">
+          <span class="font-bold">SALOS Rzeszów</span> <br />
           Witolda Świadka 5a, <br />
           35-310 Rzeszów
         </p>
         <AboutMap />
       </div>
 
-      <img :src="teamStadiumPhoto" class="w-[650px] h-full rounded-lg" alt="" />
+      <img :src="teamStadiumPhoto" class="w-full lg:w-[650px] h-full rounded-lg" alt="" />
     </div>
 
     <h2 class="font-bold text-black text-2xl mb-4">Społeczność i nasze działania</h2>
