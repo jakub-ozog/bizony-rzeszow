@@ -23,12 +23,12 @@ import SupportUs from '@/components/SupportUs.vue'
       </h2>
       <!-- <img src="@/assets/images/bat-ball-icon.svg" alt="baseball ikona" class="w-14 lg:w-24 mt-3" /> -->
       <hr class="border border-superLightGrey w-full mt-3" />
-      <div class="flex flex-col items-center py-11">
+      <!-- <div class="flex flex-col items-center py-11">
         <h3 class="text-xl md:text-2xl text-lightGrey tracking-wide font-light my-4">
           NASI SPONSORZY
         </h3>
         <img src="@/assets/images/sponsor-logo.svg" class="mt-2 w-32 md:w-[200px]" alt="" />
-      </div>
+      </div> -->
     </div>
   </section>
 
