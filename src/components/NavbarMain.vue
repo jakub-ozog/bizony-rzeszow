@@ -39,10 +39,10 @@ watch(
         </li>
         <!-- <li>
           <router-link class="text-secondaryRed" to="/zawodnicy">Statystyki</router-link>
-        </li>
+        </li> -->
         <li>
           <router-link to="/blog">Blog</router-link>
-        </li> -->
+        </li>
       </ul>
       <ul
         :class="isOpen ? 'translate-x-0' : 'translate-x-full'"
@@ -70,11 +70,11 @@ watch(
             >Galeria</router-link
           >
         </li>
-        <!-- <li class="py-2">
+        <li class="py-2">
           <router-link to="/blog" class="block text-gray-800 hover:opacity-50 p-3"
             >Blog</router-link
           >
-        </li> -->
+        </li>
         <button @click="isOpen = !isOpen" class="lg:hidden text-xl z-50 absolute top-6 right-6">
           <i class="pi pi-times"></i>
         </button>

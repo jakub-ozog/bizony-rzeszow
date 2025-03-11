@@ -1,7 +1,9 @@
 <script setup>
-
+import PostList from '@/components/PostList.vue'
 </script>
 
 <template>
-  <h1>This is Blog View</h1>
+  <section class="container mx-auto text-left my-12 font-urbanist">
+    <PostList />
+  </section>
 </template>

@@ -31,11 +31,11 @@ defineProps({
       </div>
     </div>
 
-    <button
+    <!-- <button
       class="flex justify-center items-center text-center mx-auto bg-secondaryRed text-white rounded-2xl py-2 px-4 my-4"
     >
       <span class="text-[0.75rem] md:text-normal font-normal mr-2"> Zobacz szczegóły </span>
       <img class="w-3 h-3" src="@/assets/icons/baseball_ball_icon.svg" />
-    </button>
+    </button> -->
   </div>
 </template>
