@@ -43,7 +43,9 @@ const router = createRouter({
     },
     {
       path: '/post/:slug',
-      component: PostSingle,
+      name: 'postDetail',
+      component: PostSingle, // Komponent wyświetlający szczegóły posta
+      props: true,
     },
   ],
 })
