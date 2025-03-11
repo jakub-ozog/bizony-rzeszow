@@ -42,7 +42,7 @@ const router = createRouter({
       component: BlogView,
     },
     {
-      path: '/post/:slug',
+      path: '/blog/:slug',
       name: 'postDetail',
       component: PostSingle, // Komponent wyświetlający szczegóły posta
       props: true,
