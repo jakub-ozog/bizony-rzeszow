@@ -14,20 +14,22 @@ const news = ref(newsData)
         alt="news image"
       />
       <div
-        class="static md:absolute bottom-12 flex md:w-3/4 left-4 flex-col text-left justify-center p-2 md:p-0"
+        class="static md:absolute bottom-0 flex md:w-3/4 left-4 flex-col text-left justify-center p-2 md:p-0"
       >
-        <h3 class="text-black md:text-white font-semibold text-[2rem] mt-4 md:mb-4">
+        <h3 class="text-black md:text-white font-semibold text-3xl mt-4 md:mb-4">
           {{ news[0].title }}
         </h3>
         <p class="text-black md:text-white font-semibold text-[0.8125rem] mb-8 mt-4 md:mb-0">
           {{ news[0].description }}
         </p>
-        <button
-          class="flex justify-center items-center text-center bg-secondaryRed text-white rounded-2xl py-2 px-4 my-4 w-36"
-        >
-          <span class="text-[0.75rem] font-normal mr-2"> Czytaj więcej </span
-          ><img class="w-3 h-3" src="/src/assets/icons/baseball_ball_icon.svg" />
-        </button>
+        <router-link :to="news[0].link">
+          <button
+            class="flex justify-center items-center text-center bg-secondaryRed text-white rounded-2xl py-2 px-4 my-4 w-36"
+          >
+            <span class="text-[0.75rem] font-normal mr-2"> Czytaj więcej </span
+            ><img class="w-3 h-3" src="/src/assets/icons/baseball_ball_icon.svg" />
+          </button>
+        </router-link>
       </div>
     </div>
     <div>
@@ -48,12 +50,16 @@ const news = ref(newsData)
             <h3 class="text-primaryRed text-2xl mb-4">{{ item.title }}</h3>
             <p class="pr-0 xl:pr-2 text-[11px]">{{ item.description }}</p>
           </div>
-          <button
-            class="flex justify-center items-center text-center bg-secondaryRed text-white rounded-2xl py-2 px-4 my-4"
-          >
-            <span class="text-[0.75rem] font-normal mr-2"> Czytaj więcej </span
-            ><img class="w-3 h-3" src="/src/assets/icons/baseball_ball_icon.svg" />
-          </button>
+
+          <router-link :to="item.link">
+            <button
+              class="flex justify-center items-center text-center bg-secondaryRed text-white rounded-2xl py-2 px-4 my-4"
+            >
+              <span class="text-[0.75rem] font-normal mr-2"> Czytaj więcej </span
+              ><img class="w-3 h-3" src="/src/assets/icons/baseball_ball_icon.svg" />
+            </button>
+          </router-link>
+          {{ item.button }}
         </div>
       </div>
     </div>
