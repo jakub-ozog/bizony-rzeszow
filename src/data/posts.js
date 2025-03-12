@@ -2,7 +2,8 @@ export const blogPosts = [
   {
     id: 1,
     title: 'Pierwszy post',
-    excerpt: 'To jest krótka zapowiedź pierwszego posta.',
+    excerpt:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequunt  mollit anim id est laborum.".... ',
     date: '2025-03-11',
     slug: 'pierwszy-post',
     component: () => import('@/components/posts/PostMain.vue'),
@@ -10,7 +11,8 @@ export const blogPosts = [
   {
     id: 2,
     title: 'Drugi post',
-    excerpt: 'To jest krótka zapowiedź drugiego posta.',
+    excerpt:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequunt  mollit anim id est laborum.".... .',
     date: '2025-03-10',
     slug: 'drugi-post',
     component: () => import('@/components/posts/PostSub.vue'),
@@ -18,7 +20,8 @@ export const blogPosts = [
   {
     id: 3,
     title: 'Trzeci post',
-    excerpt: 'To jest krótka zapowiedź trzeciego posta.',
+    excerpt:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation',
     date: '2025-03-10',
     slug: 'trzeci-post',
     component: () => import('@/components/posts/PostSub2.vue'),
