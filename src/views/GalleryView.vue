@@ -1,7 +1,9 @@
 <script setup>
-
+import GalleryFirst from '@/components/galleries/GalleryFirst.vue'
 </script>
 
 <template>
-  <h1>This is Gallery View</h1>
+  <main>
+    <GalleryFirst />
+  </main>
 </template>
