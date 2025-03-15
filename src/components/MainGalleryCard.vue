@@ -30,12 +30,15 @@ const props = defineProps({
       </div>
 
       <p class="text-gray-500 text-sm text-left font-normal">{{ galleryCard.description }}</p>
-      <button
-        class="flex justify-center items-center text-left text-secondaryRed rounded-2xl py-2 px-4 my-4 pl-0 hover:underline"
-      >
-        <span class="text-[0.75rem] font-normal mr-2"> Czytaj więcej </span
-        ><img class="w-4 h-4 hover:" :src="arrowBtnRounded" />
-      </button>
+
+      <router-link :to="galleryCard.link" :key="$route.fullPath">
+        <button
+          class="flex justify-center items-center text-left text-secondaryRed rounded-2xl py-2 px-4 my-4 pl-0 hover:underline"
+        >
+          <span class="text-[0.75rem] font-normal mr-2"> Czytaj więcej </span
+          ><img class="w-4 h-4 hover:" :src="arrowBtnRounded" />
+        </button>
+      </router-link>
     </div>
   </div>
 </template>
