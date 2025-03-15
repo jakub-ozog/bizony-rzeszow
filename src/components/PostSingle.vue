@@ -23,7 +23,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <article v-if="post">
+  <article v-if="post" class="p-4">
     <component :is="post.component" />
   </article>
   <div v-else class="text-center text-gray-500">Post not found</div>
