@@ -29,7 +29,7 @@ const photos = Object.values(images).map((img) => img.default)
     </h2>
 
     <Swiper :modules="modules" :pagination="{ clickable: true }" :navigation="true" :spaceBetween="20"
-      class="relative select-none w-3/4 my-12 rounded-lg">
+      class="relative select-none w-full md:w-3/4 my-12 rounded-lg">
       <SwiperSlide v-for="(photo, index) in photos" :key="index" class="select-none mx-auto">
         <!-- <img :src="`src/assets/images/galleries/gallery-1/${photo}`" class="cursor-grab rounded-lg" /> -->
         <!-- <img :src="new URL(`@/assets/images/galleries/gallery-1/${photo}`, import.meta.url).href"
