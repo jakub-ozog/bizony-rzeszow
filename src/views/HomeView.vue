@@ -9,17 +9,13 @@ import SupportUs from '@/components/SupportUs.vue'
 
 <template>
   <section class="container mx-auto grid place-content-center mt-24">
-    <img
-      src="@/assets/images/bison-bg.svg"
-      alt="obrazek bizona"
-      class="hidden sm:block w-[24rem] absolute left-0"
-    />
+    <img src="@/assets/images/bison-bg.svg" alt="obrazek bizona" class="hidden sm:block w-[24rem] absolute left-0" />
     <div class="flex gap-8 flex-col items-center text-center">
       <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-lobster text-secondaryRed">
         Bizony Rzeszów
       </h1>
       <h2 class="text-sm md:text-xl text-lightGrey font-urbanist font-thin italic">
-        Razem budujemy historię bejsbolu
+        Baseball to nasz styl życia
       </h2>
       <!-- <img src="@/assets/images/bat-ball-icon.svg" alt="baseball ikona" class="w-14 lg:w-24 mt-3" /> -->
       <hr class="border border-superLightGrey w-full mt-3" />
@@ -34,26 +30,10 @@ import SupportUs from '@/components/SupportUs.vue'
 
   <section class="mx-auto max-w-[2560px] mt-24">
     <div class="grid grid-cols-1 sm:grid-cols-4 gap-5 sm:gap-0 overflow-hidden">
-      <img
-        src="@/assets/images/player_2_card.png"
-        class="w-1/2 m-auto sm:m-0 sm:w-full h-full object-cover"
-        alt=""
-      />
-      <img
-        src="@/assets/images/player_4_card.png"
-        class="w-1/2 m-auto sm:m-0 sm:w-full h-full object-cover"
-        alt=""
-      />
-      <img
-        src="@/assets/images/player_3_card.png"
-        class="w-1/2 m-auto sm:m-0 sm:w-full h-full object-cover"
-        alt=""
-      />
-      <img
-        src="@/assets/images/player_1_card.png"
-        class="w-1/2 m-auto sm:m-0 sm:w-full h-full object-cover"
-        alt=""
-      />
+      <img src="@/assets/images/player_2_card.png" class="w-1/2 m-auto sm:m-0 sm:w-full h-full object-cover" alt="" />
+      <img src="@/assets/images/player_4_card.png" class="w-1/2 m-auto sm:m-0 sm:w-full h-full object-cover" alt="" />
+      <img src="@/assets/images/player_3_card.png" class="w-1/2 m-auto sm:m-0 sm:w-full h-full object-cover" alt="" />
+      <img src="@/assets/images/player_1_card.png" class="w-1/2 m-auto sm:m-0 sm:w-full h-full object-cover" alt="" />
     </div>
   </section>
 

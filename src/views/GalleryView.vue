@@ -1,5 +1,4 @@
 <script setup>
-import GalleryEl1 from '@/components/galleries/GalleryEl1.vue'
 import MainGallery from '@/components/MainGallery.vue'
 
 import { Swiper, SwiperSlide } from 'swiper/vue'

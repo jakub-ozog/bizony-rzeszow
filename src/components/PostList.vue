@@ -7,11 +7,7 @@ const posts = ref(blogPosts)
 
 <template>
   <div class="container mx-auto text-left my-12 font-urbanist flex flex-col gap-12 max-w-4xl">
-    <div
-      v-for="post in posts"
-      :key="post.id"
-      class="hover:text-primaryRed transition duration-300 ease-in-out"
-    >
+    <div v-for="post in posts" :key="post.id" class="hover:text-primaryRed transition duration-300 ease-in-out p-4">
       <router-link :to="{ name: 'postDetail', params: { slug: post.slug } }">
         <h2 class="text-3xl font-bold">{{ post.title }}</h2>
         <p class="mt-2">{{ post.excerpt }}</p>
