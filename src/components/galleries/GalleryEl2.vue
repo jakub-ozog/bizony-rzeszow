@@ -8,12 +8,14 @@ import 'swiper/css'
 
 const modules = [Pagination, Navigation]
 
-const photos = ['1.webp', '2.webp', '3.webp', '5.webp', '6.webp']
+
+const images = import.meta.glob('@/assets/images/galleries/gallery-1/*.webp', { eager: true })
+const photos = Object.values(images).map((img) => img.default)
 </script>
 
 <template>
   <section class="container mx-auto font-urbanist">
-    <h1 class="font-bold text-5xl text-primaryRed">Dzień osiedla Miłocin</h1>
+    <h1 class="font-bold text-5xl text-primaryRed">Dzień osiedla Miłocin 2</h1>
     <div class="flex items-center mt-1 gap-2">
       <img :src="calendarIcon" alt="" class="w-4" />
       <p class="text-lightGrey text-base">31.08.2024</p>
@@ -26,18 +28,13 @@ const photos = ['1.webp', '2.webp', '3.webp', '5.webp', '6.webp']
       facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quae accusantium nisi.
     </h2>
 
-    <Swiper
-      :modules="modules"
-      :pagination="{ clickable: true }"
-      :navigation="true"
-      :spaceBetween="20"
-      class="relative select-none w-3/4 my-12 rounded-lg"
-    >
-      <SwiperSlide v-for="photo in photos" :key="photo" class="select-none mx-auto">
-        <img
-          :src="`src/assets/images/galleries/gallery-1/${photo}`"
-          class="cursor-grab rounded-lg"
-        />
+    <Swiper :modules="modules" :pagination="{ clickable: true }" :navigation="true" :spaceBetween="20"
+      class="relative select-none w-3/4 my-12 rounded-lg">
+      <SwiperSlide v-for="(photo, index) in photos" :key="index" class="select-none mx-auto">
+        <!-- <img :src="`src/assets/images/galleries/gallery-1/${photo}`" class="cursor-grab rounded-lg" /> -->
+        <!-- <img :src="new URL(`@/assets/images/galleries/gallery-1/${photo}`, import.meta.url).href"
+          class="cursor-grab rounded-lg" /> -->
+        <img :src="photo" alt="">
       </SwiperSlide>
     </Swiper>
 

@@ -5,8 +5,9 @@ import AboutView from '../views/AboutView.vue'
 import PlayersView from '../views/PlayersView.vue'
 import StatisticsView from '@/views/StatisticsView.vue'
 import BlogView from '@/views/BlogView.vue'
-import GalleryView from '@/views/GalleryView.vue'
 import PostSingle from '@/components/PostSingle.vue'
+import GalleryView from '@/views/GalleryView.vue'
+import GallerySingle from '@/components/GallerySingle.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -35,6 +36,12 @@ const router = createRouter({
       path: '/galeria',
       name: 'galeria',
       component: GalleryView,
+    },
+    {
+      path: '/galeria/:slug',
+      name: 'gallerySingle',
+      component: GallerySingle, // Komponent wyświetlający szczegóły posta
+      props: true,
     },
     {
       path: '/blog',
