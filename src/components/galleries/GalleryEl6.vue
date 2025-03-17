@@ -1,5 +1,4 @@
 <script setup>
-import { defineProps } from 'vue'
 import calendarIcon from '@/assets/icons/calendar_icon.svg'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, Pagination } from 'swiper/modules'
@@ -11,18 +10,11 @@ const modules = [Pagination, Navigation]
 
 const images = import.meta.glob('@/assets/images/galleries/gallery-1/*.webp', { eager: true })
 const photos = Object.values(images).map((img) => img.default)
-
-const propse = defineProps({
-  galleryCard: Object,
-})
-
-// const photos = ['1.webp', '2.webp', '3.webp', '5.webp', '6.webp']
 </script>
 
 <template>
   <section class="container mx-auto font-urbanist">
-    <h1 class="font-bold text-5xl text-primaryRed">Dzień osiedla Miłocin</h1>
-    <!-- <h1 class="font-bold text-5xl text-primaryRed">{{ article.title }}</h1> -->
+    <h1 class="font-bold text-5xl text-primaryRed">Dzień osiedla Miłocin 3</h1>
     <div class="flex items-center mt-1 gap-2">
       <img :src="calendarIcon" alt="" class="w-4" />
       <p class="text-lightGrey text-base">31.08.2024</p>
@@ -41,7 +33,7 @@ const propse = defineProps({
         <!-- <img :src="`src/assets/images/galleries/gallery-1/${photo}`" class="cursor-grab rounded-lg" /> -->
         <!-- <img :src="new URL(`@/assets/images/galleries/gallery-1/${photo}`, import.meta.url).href"
           class="cursor-grab rounded-lg" /> -->
-        <img :src="photo" alt="" class="cursor-grab rounded-lg" />
+        <img :src="photo" alt="">
       </SwiperSlide>
     </Swiper>
 

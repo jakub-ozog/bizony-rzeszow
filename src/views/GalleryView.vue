@@ -9,8 +9,8 @@ import 'swiper/css/pagination'
 </script>
 
 <template>
-  <main class="container mx-auto">
-    <MainGallery />
+  <main class="container mx-auto mb-12">
+    <MainGallery :itemsToShow="Infinity" />
     <!-- <GalleryEl1 /> -->
   </main>
 </template>
