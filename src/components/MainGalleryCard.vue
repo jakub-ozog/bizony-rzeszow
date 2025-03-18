@@ -18,17 +18,17 @@ const props = defineProps({
       <h3 class="font-bold text-xl mb-2 text-left">{{ galleryCard.title }}</h3>
 
       <div class="flex gap-4 items-center mb-4">
-        <div class="flex flex-row items-center gap-2">
+        <!-- <div class="flex flex-row items-center gap-2">
           <img :src="userIcon" alt="gallery card" class="w-4 object-cover" />
           <p class="text-gray-400 text-xs text-left font-light">{{ galleryCard.author }}</p>
-        </div>
+        </div> -->
         <div class="flex flex-row items-center gap-2">
           <img :src="calendarIcon" alt="gallery card" class="w-4 object-cover" />
           <p class="text-gray-400 text-xs text-left font-light">{{ galleryCard.date }}</p>
         </div>
       </div>
 
-      <p class="text-gray-500 text-sm text-left font-normal">{{ galleryCard.description }}</p>
+      <!-- <p class="text-gray-500 text-sm text-left font-normal">{{ galleryCard.description }}</p> -->
 
       <router-link :to="galleryCard.link" :key="$route.fullPath">
         <button
