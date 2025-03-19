@@ -24,7 +24,7 @@ const props = defineProps({
         </div> -->
         <div class="flex flex-row items-center gap-2">
           <img :src="calendarIcon" alt="gallery card" class="w-4 object-cover" />
-          <p class="text-gray-400 text-xs text-left font-light">{{ galleryCard.date }}</p>
+          <p class="text-gray-400 text-xs text-left font-light">{{ galleryCard.formattedDate }}</p>
         </div>
       </div>
 
