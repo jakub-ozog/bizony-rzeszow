@@ -8,6 +8,7 @@ import BlogView from '@/views/BlogView.vue'
 import PostSingle from '@/components/PostSingle.vue'
 import GalleryView from '@/views/GalleryView.vue'
 import GallerySingle from '@/components/GallerySingle.vue'
+import ContactView from '@/views/ContactView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -53,6 +54,11 @@ const router = createRouter({
       name: 'postDetail',
       component: PostSingle, // Komponent wyświetlający szczegóły posta
       props: true,
+    },
+    {
+      path: '/kontakt',
+      name: 'kontakt',
+      component: ContactView,
     },
   ],
 })
