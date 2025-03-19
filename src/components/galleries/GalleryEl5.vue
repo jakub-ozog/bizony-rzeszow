@@ -8,16 +8,16 @@ import 'swiper/css'
 
 const modules = [Pagination, Navigation]
 
-const images = import.meta.glob('@/assets/images/galleries/gallery-1/*.webp', { eager: true })
+const images = import.meta.glob('@/assets/images/galleries/gallery-5/*.webp', { eager: true })
 const photos = Object.values(images).map((img) => img.default)
 </script>
 
 <template>
   <section class="container mx-auto font-urbanist">
-    <h1 class="font-bold text-5xl text-primaryRed">Dzień osiedla Miłocin 3</h1>
+    <h1 class="font-bold text-5xl text-primaryRed">Dzień Osiedla Miłocin (31.08.2024)</h1>
     <div class="flex items-center mt-1 gap-2">
       <img :src="calendarIcon" alt="" class="w-4" />
-      <p class="text-lightGrey text-base">31.08.2024</p>
+      <p class="text-lightGrey text-base">1.09.2024</p>
     </div>
     <h2 class="text-xl text-lightBlack mt-4">
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam officiis incidunt
@@ -37,26 +37,6 @@ const photos = Object.values(images).map((img) => img.default)
       </SwiperSlide>
     </Swiper>
 
-    <p class="my-8 text-lightBlack">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Quisquam
-      voluptates, quidem, quod, quos quas quae quia quibusdam, voluptate doloribus doloremque
-      voluptatum. Quisquam voluptates, quidem, quod, quos quas quae quia quibusdam, voluptate
-      doloribus doloremque voluptatum.
-    </p>
-    <p class="my-8 text-lightBlack">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Quisquam
-      voluptates, quidem, quod, quos quas quae quia quibusdam, voluptate doloribus doloremque
-      voluptatum. Quisquam voluptates, quidem, quod, quos quas quae quia quibusdam, voluptate
-      doloribus doloremque voluptatum.
 
-      <br />
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, nam ipsam accusantium
-      repellendus voluptatem atque adipisci totam quia! Magnam minima quisquam, vero officia,
-      tenetur, aspernatur pariatur suscipit fuga animi eligendi accusantium dolores hic sint non
-      modi quae consectetur optio asperiores necessitatibus quod similique maiores iste. Itaque, aut
-      quam temporibus, ipsum sapiente non expedita inventore sint assumenda quidem commodi
-      necessitatibus error ullam beatae, nostrum corrupti quisquam doloremque magnam corporis
-      exercitationem. Perspiciatis accusantium ut quidem autem at, suscipit maxime. Ipsum?
-    </p>
   </section>
 </template>

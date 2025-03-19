@@ -1,4 +1,5 @@
 <script setup>
+import { defineProps } from 'vue'
 import calendarIcon from '@/assets/icons/calendar_icon.svg'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, Pagination } from 'swiper/modules'
@@ -8,17 +9,23 @@ import 'swiper/css'
 
 const modules = [Pagination, Navigation]
 
-
-const images = import.meta.glob('@/assets/images/galleries/gallery-1/*.webp', { eager: true })
+const images = import.meta.glob('@/assets/images/galleries/gallery-2/*.webp', { eager: true })
 const photos = Object.values(images).map((img) => img.default)
+
+const props = defineProps({
+  galleryCard: Object,
+})
+
+// const photos = ['1.webp', '2.webp', '3.webp', '5.webp', '6.webp']
 </script>
 
 <template>
   <section class="container mx-auto font-urbanist">
-    <h1 class="font-bold text-5xl text-primaryRed">Dzień osiedla Miłocin 2</h1>
+    <h1 class="font-bold text-5xl text-primaryRed">Bizony Rzeszów - Kings Kraków (14.07.2024)</h1>
+    <!-- <h1 class="font-bold text-5xl text-primaryRed">{{ article.title }}</h1> -->
     <div class="flex items-center mt-1 gap-2">
       <img :src="calendarIcon" alt="" class="w-4" />
-      <p class="text-lightGrey text-base">31.08.2024</p>
+      <p class="text-lightGrey text-base">15.07.2024</p>
     </div>
     <h2 class="text-xl text-lightBlack mt-4">
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam officiis incidunt
@@ -34,30 +41,10 @@ const photos = Object.values(images).map((img) => img.default)
         <!-- <img :src="`src/assets/images/galleries/gallery-1/${photo}`" class="cursor-grab rounded-lg" /> -->
         <!-- <img :src="new URL(`@/assets/images/galleries/gallery-1/${photo}`, import.meta.url).href"
           class="cursor-grab rounded-lg" /> -->
-        <img :src="photo" alt="">
+        <img :src="photo" alt="" class="cursor-grab rounded-lg" />
       </SwiperSlide>
     </Swiper>
 
-    <p class="my-8 text-lightBlack">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Quisquam
-      voluptates, quidem, quod, quos quas quae quia quibusdam, voluptate doloribus doloremque
-      voluptatum. Quisquam voluptates, quidem, quod, quos quas quae quia quibusdam, voluptate
-      doloribus doloremque voluptatum.
-    </p>
-    <p class="my-8 text-lightBlack">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Quisquam
-      voluptates, quidem, quod, quos quas quae quia quibusdam, voluptate doloribus doloremque
-      voluptatum. Quisquam voluptates, quidem, quod, quos quas quae quia quibusdam, voluptate
-      doloribus doloremque voluptatum.
 
-      <br />
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, nam ipsam accusantium
-      repellendus voluptatem atque adipisci totam quia! Magnam minima quisquam, vero officia,
-      tenetur, aspernatur pariatur suscipit fuga animi eligendi accusantium dolores hic sint non
-      modi quae consectetur optio asperiores necessitatibus quod similique maiores iste. Itaque, aut
-      quam temporibus, ipsum sapiente non expedita inventore sint assumenda quidem commodi
-      necessitatibus error ullam beatae, nostrum corrupti quisquam doloremque magnam corporis
-      exercitationem. Perspiciatis accusantium ut quidem autem at, suscipit maxime. Ipsum?
-    </p>
   </section>
 </template>
