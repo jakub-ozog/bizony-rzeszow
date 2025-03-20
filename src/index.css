@@ -54,3 +54,7 @@
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #b81011;
 }
+
+.swiper-pagination.swiper-pagination-fraction.swiper-pagination-horizontal {
+  color: #e9e9e9
+}
