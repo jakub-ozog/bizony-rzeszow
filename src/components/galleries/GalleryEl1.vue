@@ -1,50 +1,59 @@
 <script setup>
-import { defineProps } from 'vue'
+import { ref } from 'vue';
 import calendarIcon from '@/assets/icons/calendar_icon.svg'
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Navigation, Pagination } from 'swiper/modules'
-import 'swiper/css/pagination'
-import 'swiper/css/navigation'
-import 'swiper/css'
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+import { FreeMode, Navigation, Pagination, Thumbs } from 'swiper/modules';
 
-const modules = [Pagination, Navigation]
+const modules = [FreeMode, Navigation, Thumbs, Pagination];
 
-const images = import.meta.glob('@/assets/images/galleries/gallery-1/*.webp', { eager: true })
-const photos = Object.values(images).map((img) => img.default)
-
+const thumbsSwiper = ref(null);
+const setThumbsSwiper = (swiper) => {
+  thumbsSwiper.value = swiper;
+};
 const props = defineProps({
   galleryCard: Object,
-})
+});
 
-// const photos = ['1.webp', '2.webp', '3.webp', '5.webp', '6.webp']
+
+const images = import.meta.glob('@/assets/images/galleries/gallery-1/*.webp', { eager: true });
+const photos = Object.values(images).map((img) => img.default);
 </script>
 
+
+
+
 <template>
+
+
+
   <section class="container mx-auto font-urbanist">
     <h1 class="font-bold text-5xl text-primaryRed">Bizony Rzeszów - Kings Kraków (23.03.2024)</h1>
-    <!-- <h1 class="font-bold text-5xl text-primaryRed">{{ article.title }}</h1> -->
     <div class="flex items-center mt-1 gap-2">
       <img :src="calendarIcon" alt="" class="w-4" />
       <p class="text-lightGrey text-base">24.03.2024</p>
     </div>
-    <h2 class="text-xl text-lightBlack mt-4">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam officiis incidunt
-      necessitatibus voluptatem culpa id, quisquam totam unde itaque voluptatum earum. Aut, repellat
-      facilis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam officiis incidunt
-      necessitatibus voluptatem culpa id, quisquam totam unde itaque voluptatum earum. Aut, repellat
-      facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quae accusantium nisi.
+    <h2 class="text-xl text-lightBlack mt-4 mb-12">
+      W sobotę 23 marca Bizony rozegrały pierwsze mecze towarzyskie w 2024 roku. Inauguracja sezonu zakończyła się dwoma
+      wygranymi Kraków Kings, jednak Bizony pozostawiły dobre wrażenie po wyrównanej walce z doświadczoną ekipą z
+      Krakowa.
     </h2>
 
-    <Swiper :modules="modules" :pagination="{ clickable: true }" :navigation="true" :spaceBetween="20"
-      class="relative select-none w-full md:w-3/4 my-12 rounded-lg">
-      <SwiperSlide v-for="(photo, index) in photos" :key="index" class="select-none mx-auto">
-        <!-- <img :src="`src/assets/images/galleries/gallery-1/${photo}`" class="cursor-grab rounded-lg" /> -->
-        <!-- <img :src="new URL(`@/assets/images/galleries/gallery-1/${photo}`, import.meta.url).href"
-          class="cursor-grab rounded-lg" /> -->
-        <img :src="photo" alt="" class="cursor-grab rounded-lg" />
-      </SwiperSlide>
-    </Swiper>
-
-
+    <swiper :spaceBetween="10" :navigation="true" :thumbs="{ swiper: thumbsSwiper }" :modules="modules" :pagination="{
+      type: 'fraction',
+    }" class="mySwiper2">
+      <swiper-slide v-for="(photo, index) in photos" :key="index">
+        <img :src="photo" class='cursor-grab' />
+      </swiper-slide>
+    </swiper>
+    <swiper @swiper="setThumbsSwiper" :loop="true" :spaceBetween="5" :slidesPerView="4" :watchSlidesProgress="true"
+      :modules="modules" class="mySwiper">
+      <swiper-slide class="opacity-75 h-full mt-8" v-for="(photo, index) in photos" :key="index">
+        <img :src="photo" class='cursor-grab select-none' />
+      </swiper-slide>
+    </swiper>
   </section>
 </template>
