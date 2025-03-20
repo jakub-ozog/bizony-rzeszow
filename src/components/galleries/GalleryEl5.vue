@@ -1,15 +1,26 @@
 <script setup>
+import { ref } from 'vue';
 import calendarIcon from '@/assets/icons/calendar_icon.svg'
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Navigation, Pagination } from 'swiper/modules'
-import 'swiper/css/pagination'
-import 'swiper/css/navigation'
-import 'swiper/css'
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+import { FreeMode, Navigation, Pagination, Thumbs } from 'swiper/modules';
 
-const modules = [Pagination, Navigation]
+const modules = [FreeMode, Navigation, Thumbs, Pagination];
 
-const images = import.meta.glob('@/assets/images/galleries/gallery-5/*.webp', { eager: true })
-const photos = Object.values(images).map((img) => img.default)
+const thumbsSwiper = ref(null);
+const setThumbsSwiper = (swiper) => {
+  thumbsSwiper.value = swiper;
+};
+const props = defineProps({
+  galleryCard: Object,
+});
+
+
+const images = import.meta.glob('@/assets/images/galleries/gallery-4/*.webp', { eager: true });
+const photos = Object.values(images).map((img) => img.default);
 </script>
 
 <template>
@@ -19,23 +30,26 @@ const photos = Object.values(images).map((img) => img.default)
       <img :src="calendarIcon" alt="" class="w-4" />
       <p class="text-lightGrey text-base">1.09.2024</p>
     </div>
-    <h2 class="text-xl text-lightBlack mt-4">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam officiis incidunt
-      necessitatibus voluptatem culpa id, quisquam totam unde itaque voluptatum earum. Aut, repellat
-      facilis?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam officiis incidunt
-      necessitatibus voluptatem culpa id, quisquam totam unde itaque voluptatum earum. Aut, repellat
-      facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quae accusantium nisi.
+    <h2 class="text-xl text-lightBlack mt-4 mb-12">
+      W sobotę 31 sierpnia 2024 roku na placu obok Hali Sportowej przy ul. Miłocińskiej 35 odbył się Dzień Osiedla -
+      Energiczny Miłocin. Dużą popularnością cieszyły się warsztaty baseballowe i stanowisko z popcornem zorganizowane
+      przez Bizony Rzeszów. Zapraszamy do obejrzenia galerii zdjęć.
+
     </h2>
 
-    <Swiper :modules="modules" :pagination="{ clickable: true }" :navigation="true" :spaceBetween="20"
-      class="relative select-none w-full md:w-3/4 my-12 rounded-lg">
-      <SwiperSlide v-for="(photo, index) in photos" :key="index" class="select-none mx-auto">
-        <!-- <img :src="`src/assets/images/galleries/gallery-1/${photo}`" class="cursor-grab rounded-lg" /> -->
-        <!-- <img :src="new URL(`@/assets/images/galleries/gallery-1/${photo}`, import.meta.url).href"
-          class="cursor-grab rounded-lg" /> -->
-        <img :src="photo" alt="">
-      </SwiperSlide>
-    </Swiper>
+    <swiper :spaceBetween="10" :navigation="true" :thumbs="{ swiper: thumbsSwiper }" :modules="modules" :pagination="{
+      type: 'fraction',
+    }" class="">
+      <swiper-slide class="h-unset" v-for="(photo, index) in photos" :key="index">
+        <img :src="photo" class='cursor-grab select-none h-full' />
+      </swiper-slide>
+    </swiper>
+    <swiper @swiper="setThumbsSwiper" :loop="true" :spaceBetween="5" :slidesPerView="4" :watchSlidesProgress="true"
+      :modules="modules" class="mySwiper">
+      <swiper-slide class="opacity-75 mt-8 h-unset" v-for="(photo, index) in photos" :key="index">
+        <img :src="photo" class='cursor-grab select-none h-full' />
+      </swiper-slide>
+    </swiper>
 
 
   </section>

@@ -57,22 +57,3 @@ const photos = Object.values(images).map((img) => img.default);
     </swiper>
   </section>
 </template>
-
-
-<style scoped>
-.mySwiper .swiper-slide-thumb-active {
-  opacity: 1;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.mySwiper2 {
-  height: 80%;
-  width: 100%;
-}
-</style>
