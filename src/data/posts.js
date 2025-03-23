@@ -1,11 +1,11 @@
 export const blogPosts = [
   {
     id: 1,
-    title: 'Pierwszy post',
+    title: 'Poznaj Bizona: Krzysztof Jurczyński',
     excerpt:
       '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequunt  mollit anim id est laborum.".... ',
     date: '2025-03-11',
-    slug: 'pierwszy-post',
+    slug: 'poznaj-bizona-krzysztof-jurczynski',
     component: () => import('@/components/posts/PostMain.vue'),
   },
   {
