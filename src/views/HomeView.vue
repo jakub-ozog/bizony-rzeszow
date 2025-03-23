@@ -43,7 +43,7 @@ import SupportUs from '@/components/SupportUs.vue'
 
   <UpcomingMatchCounter />
 
-  <section class="max-w-[1440px] w-full mx-auto text-center my-12 font-urbanist font-bold">
+  <section class="container w-full mx-auto text-center my-12 font-urbanist font-bold">
     <MainNews />
   </section>
 
