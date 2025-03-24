@@ -37,18 +37,8 @@ import postMainThumb from '@/assets/images/post-main-thumb.webp'
     </p>
     <img :src="postMainThumb" class="w-full h-auto mt-10" alt="obrazek główny wpisu" />
 
-    <p class="font-base text-lg mt-12">
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequunt mollit anim id est laborum.""Lorem ipsum
-      dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-      ut aliquip ex ea commodo consequunt mollit anim id est laborum."....
-    </p>
 
-    <h2 class="text-3xl font-semibold text-lightBlack my-12">
-      Nam libero tempore, cum soluta nobis est eligendi optio cumque
-    </h2>
+
 
 
 
