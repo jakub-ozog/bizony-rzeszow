@@ -19,7 +19,7 @@ const props = defineProps({
 });
 
 
-const images = import.meta.glob('@/assets/images/galleries/gallery-4/*.webp', { eager: true });
+const images = import.meta.glob('@/assets/images/galleries/gallery-5/*.webp', { eager: true });
 const photos = Object.values(images).map((img) => img.default);
 </script>
 

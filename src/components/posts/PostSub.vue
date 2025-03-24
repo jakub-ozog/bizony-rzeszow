@@ -6,7 +6,7 @@ import postMainThumb from '@/assets/images/post-main-thumb.webp'
 
 <template>
   <section class="container mx-auto text-left my-12 font-urbanist">
-    <h1 class="text-5xl font-bold text-primaryRed">Bizony Rzeszów: Historia drużyny, która narodziła się z pasji</h1>
+    <h1 class="text-5xl font-bold text-primaryRed">Bizony Rzeszów: Drużyna, która narodziła się z pasji z bejsbolu</h1>
     <div class="flex flex-row gap-6 mt-2 mb-12">
       <div class="flex flex-row gap-2 items-center">
         <img :src="authorIcon" class="w-7" alt="Ikona autora" />
@@ -80,7 +80,7 @@ import postMainThumb from '@/assets/images/post-main-thumb.webp'
       Dzięki pasji i determinacji stado Bizonów urosło do rozmiaru, który pozwolił drużynie na udział w lokalnych
       imprezach sportowo-kulturalnych i rozgrywanie meczów towarzyskich. Dodatkowym atutem Bizonów jest „amerykańskość”
       baseballu, partnerskie relacje Rzeszowa z Buffalo oraz obecność amerykańskiego wojska na Podkarpaciu. To dlatego
-      czerwono-czarno-szare barwy wzbogaciły wydarzenia takie jak Paniaga, Dzień Niepodległości USA w Dworze Ostoya czy
+      czerwono-czarno barwy wzbogaciły wydarzenia takie jak Paniaga, Dzień Niepodległości USA w Dworze Ostoya czy
       Piknik Polsko-Amerykański.
     </p>
 

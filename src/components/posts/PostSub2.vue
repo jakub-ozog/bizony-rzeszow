@@ -1,4 +1,10 @@
 <script setup>
+import { ref } from 'vue'
+import { gamesSummary } from '@/data/gamesSummary.js'
+
+// const gamesData = ref(gamesSummary)
+
+
 import authorIcon from '@/assets/images/michal-oberc-author.webp'
 import calendarIcon from '@/assets/icons/calendar-icon.svg'
 import postMainThumb from '@/assets/images/post-main-thumb.webp'
@@ -44,74 +50,79 @@ import postMainThumb from '@/assets/images/post-main-thumb.webp'
       Nam libero tempore, cum soluta nobis est eligendi optio cumque
     </h2>
 
-    <p class="font-base text-lg">
-      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-      voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-      cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est
-      laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero
-      tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-      placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. <br /><br />
 
-      emporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
-      voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a
-      sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
-      doloribus asperiores repellat."
-    </p>
 
-    <h2 class="text-3xl font-semibold text-lightBlack my-12">
-      Nam libero tempore, cum soluta nobis est eligendi optio cumque
-    </h2>
 
-    <p class="font-base text-lg">
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequunt mollit anim id est laborum.""Lorem ipsum
-      dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-      ut aliquip ex ea commodo consequunt mollit anim id est laborum."....
-      <br /><br />
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequunt mollit anim id est laborum.""Lorem ipsum
-      dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-      ut aliquip ex ea commodo consequunt mollit anim id est laborum."....
-    </p>
-
-    <blockquote class="italic py-12 w-3/4 text-center mx-auto text-lightGrey my-4">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores eligendi earum corporis
-      temporibus? Nam quidem quisquam iusto cumque voluptate cupiditate commodi ad impedit eos ipsam
-      veniam placeat quaerat modi, ipsa expedita repudiandae consequatur est? Enim nihil dicta nemo
-      quas ullam.
-    </blockquote>
-
-    <p class="font-base text-lg">
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequunt mollit anim id est laborum.""Lorem ipsum
-      dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-      ut aliquip ex ea commodo consequunt mollit anim id est laborum."....
-      <br /><br />
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequunt mollit anim id est laborum.""Lorem ipsum
-      dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-      ut aliquip ex ea commodo consequunt mollit anim id est laborum."....
-    </p>
-
-    <h2 class="text-3xl font-semibold text-lightBlack my-12">
-      Nam libero tempore, cum soluta nobis est eligendi optio cumque
-    </h2>
 
     <p class="font-base text-lg mt-12">
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequunt mollit anim id est laborum.""Lorem ipsum
-      dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-      ut aliquip ex ea commodo consequunt mollit anim id est laborum."....
+      Mijający rok obfitował w wydarzenia i emocje, które potwierdziły, że Bizony Rzeszów zmierzają we właściwym
+      kierunku.
+      W pierwszym pełnym roku istnienia drużyny zaliczyliśmy pierwsze zwycięstwa i pouczające przegrane boje przeciwko
+      doświadczonym zespołom.
+      Bizony angażowały się w życie kulturalne naszego pięknego miasta. Przedstawiliśmy lokalnej społeczności ukochaną
+      dyscyplinę sportu i wzbudziliśmy ciekawość, która potem zaowocowała wzrostem frekwencji na treningach i meczach
+      rozgrywanych w Rzeszowie.
+      Zdobyte doświadczenie dodaje nam pewności, że baseball na stałe zagości w życiu mieszkańców Rzeszowa, a my zrobimy
+      co w naszej mocy, by godnie reprezentować nasze miasto w rozgrywkach Bałtyckiej Ligi Baseballu w 2025 roku.
+
     </p>
+
+    <DataTable :value="gamesSummary" stripedRows showGridlines tableStyle="min-width: 50rem" class="my-12">
+      <PrimeColumn field="termin" header="Termin"></PrimeColumn>
+      <PrimeColumn field="miejsce" header="Miejsce"></PrimeColumn>
+      <PrimeColumn field="przeciwnik" header="Przeciwnik"></PrimeColumn>
+    </DataTable>
+
+    <h2 class="text-3xl font-semibold text-lightBlack my-12">
+      Byliśmy również obecni na:
+    </h2>
+
+    <ul class="font-base text-lg mt-12 text-black">
+      <li>
+        1.Rzeszowska Paniaga
+
+      </li>
+      <li>
+
+        2.Piknik Polsko-Amerykański
+      </li>
+      <li>
+
+        3.Piknik Charytatywny w Kraczkowej
+      </li>
+      <li>
+
+        4.Dni osiedla Miłocin
+      </li>
+      <li>
+
+        5.Obchody Dnia Dziecka przy Oratorium Salezjanów
+      </li>
+      <li>
+
+        6.Razem w Baseballu
+      </li>
+      <li>
+        7.Dzień Niepodległości USA w Hotelu Ostoya
+
+      </li>
+      <li>
+        8. Międzynarodowy Dzień Uchodźcy w Rzeszowie
+      </li>
+      <li>
+        9.I Otwarty Puchar Polski Mażoretek w Rzeszowie
+
+      </li>
+      <li>
+        10. Letnia półkolonia w Zalesiu
+      </li>
+      <li>
+
+        11. Letnia półkolonia na Białej
+      </li>
+
+    </ul>
+
   </section>
+  <ScrollTop />
 </template>

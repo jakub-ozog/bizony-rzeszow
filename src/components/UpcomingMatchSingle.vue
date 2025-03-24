@@ -8,10 +8,8 @@ defineProps({
 
 <template>
   <div class="bg-white min-h-[17rem] rounded-xl shadow-gray-200-md border border-gray-400">
-    <div
-      class="w-full text-center bg-accentBlue text-white font-bold font-urbanist rounded-md py-3 leading-1"
-    >
-      <p class="text-xl">{{ match.date }}</p>
+    <div class="w-full text-center bg-accentBlue text-white font-bold font-urbanist rounded-md py-3 leading-1">
+      <p class="text-xl text-white">{{ match.date }}</p>
     </div>
 
     <div class="flex-col sm:flex-row gap-4 p-4 md:p-4 flex items-center justify-around">

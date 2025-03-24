@@ -39,14 +39,14 @@ import bizonyLogoWhite from '@/assets/logo/bizony_logo_white.svg'
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-8 xl:mt-0 gap-16">
           <div class="flex flex-col gap-4 text-center md:text-left">
-            <h5 class="text-xl font-bold">O nas</h5>
+            <h5 class="text-xl font-bold text-gray-200">O nas</h5>
             <!-- <p class="text-sm text-gray-300">Historia</p> -->
             <p class="text-sm text-gray-300">Kontakt</p>
             <p class="text-sm text-gray-300">Gdzie trenujemy</p>
             <!-- <p class="text-sm text-gray-300">Regulamin</p> -->
           </div>
           <div class="flex flex-col gap-4 text-center md:text-left">
-            <h3 class="text-xl font-bold">Drużyna</h3>
+            <h3 class="text-xl font-bold text-gray-200">Drużyna</h3>
             <p class="text-sm text-gray-300">Skład</p>
             <p class="text-sm text-gray-300">Terminarz</p>
             <p class="text-sm text-gray-300">Galeria</p>
