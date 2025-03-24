@@ -80,8 +80,8 @@ import postMainThumb from '@/assets/images/posts/main/IMG_5568.webp'
       belką dla miotaczy, stojaki do odbijania, siatki, drabinki refleksyjne oraz dziesiątki twardych i miękkich piłek.
       Sprzęt to jedno, ale trenerskiego fachu też nie zdobędziesz na podwórku.
       Musiałem zdobyć wiedzę o nowoczesnym baseballu, co nie było łatwe i wymagało wielu wyrzeczeń. Uczestniczyłem w
-      zajęciach Stali Kutno, Hops Lublin i Silesii Rybnik. Dzięki temu mogę prowadzić treningi, na których prezentuję
-      najnowsze techniki rzutu i odbijania. Zamierzam zdobyć uprawnienia trenerskie. Będę grał może jeszcze 5-6 lat na
+      zajęciach Stali Kutno, Hops Lublin i Silesii Rybnik. Dzięki temu mogę przekazywać zdobytą wiedzę w Rzeszowie.
+      Zamierzam zdobyć uprawnienia trenerskie. Będę grał może jeszcze 5-6 lat na
       niezłym poziomie, ale moim celem jest zostanie bardzo dobrym trenerem.
     </p>
 
@@ -97,7 +97,8 @@ import postMainThumb from '@/assets/images/posts/main/IMG_5568.webp'
       <b> W którym momencie poczułeś, że Bizony mają szansę dorównać innym zespołom?</b><br>
       Na wiosnę 2024 roku, gdy rozgrywaliśmy dwumecz przeciwko Silesii Rybnik. Nasz rywal wystawił rezerwowy skład, ale
       kiedy prowadziliśmy 6:0, nagle zmienili wszystkich zawodników, obawiając się o końcowy wynik. Ostatecznie pokonali
-      nas 22:6, ale pokazaliśmy, że możemy nawiązać walkę z zawodnikami trenującymi w jednej z czołowych polskich
+      nas różnicą ponad 10 punktów, ale pokazaliśmy, że możemy nawiązać walkę z zawodnikami trenującymi w jednej z
+      czołowych polskich
       drużyn.
       Kluczowym momentem był również dwumecz z Kraków Kings w lipcu 2024 roku – odnieśliśmy dwa zwycięstwa, co dało nam
       ogromny impuls do dalszego rozwoju.
