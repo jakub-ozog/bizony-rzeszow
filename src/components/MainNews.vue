@@ -34,10 +34,10 @@ const news = ref(newsData)
     </div>
     <div class="flex md:flex-col gap-4 w-1/2 justify-between shrink-0">
       <div v-for="(item, index) in news.slice(1)" :key="item.id" class="flex gap-4 mb-6 p-2 lg:p-0 md:mb-0">
-        <img :src="item.thumb2 || item.thumb3" :alt="item.title" class="w-[50%] h-full rounded-3xl"
+        <img :src="item.thumb2 || item.thumb3" :alt="item.title" class="w-[50%] h-full rounded-2xl"
           :class="index === 0 ? 'mb-4' : 'mb-0'" />
 
-        <div class="gap-2 text-left flex flex-col items-start">
+        <div class="gap-2 text-left flex flex-col items-start justify-between">
           <div>
             <h3 class="text-primaryRed text-2xl mb-4">{{ item.title }}</h3>
             <p class="pr-0 text-[13px] leading-5 font-semibold">{{ item.description }}</p>

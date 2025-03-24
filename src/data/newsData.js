@@ -1,5 +1,5 @@
 import articleImageSub1 from '@/assets/images/galleries/gallery-3/_DSC0335.webp'
-import articleImageMain from '@/assets/images/article_2_thumb.webp'
+import articleImageMain from '@/assets/images/posts/main/14.webp'
 import articleImageSub2 from '@/assets/images/galleries/gallery-4/11.webp'
 
 const mainNews = [
