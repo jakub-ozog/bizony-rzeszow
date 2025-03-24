@@ -107,6 +107,15 @@ export const gamesSummary = [
     punktyZdobyte: 7,
     punktyStracone: 13,
   },
+  {
+    termin: '2024.03.23',
+    miejsce: 'Rzeszów',
+    przeciwnik: 'Kraków Kings',
+    rozgrywki: 'Towarzyski',
+    wynik: 'L',
+    punktyZdobyte: 10,
+    punktyStracone: 14,
+  },
 ]
 
 export default gamesSummary
