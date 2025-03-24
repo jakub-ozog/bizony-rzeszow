@@ -1,5 +1,5 @@
 <script setup>
-import authorIcon from '@/assets/icons/author-icon.svg'
+import authorIcon from '@/assets/images/michal-oberc-author.webp'
 import calendarIcon from '@/assets/icons/calendar-icon.svg'
 import postMainThumb from '@/assets/images/posts/main/IMG_5568.webp'
 </script>
@@ -8,12 +8,12 @@ import postMainThumb from '@/assets/images/posts/main/IMG_5568.webp'
   <section class="container mx-auto text-left my-12 font-urbanist">
     <h1 class="text-5xl font-bold text-primaryRed">Poznaj Bizona: Krzysztof Jurczyński</h1>
     <div class="flex flex-row gap-6 mt-4 mb-12">
-      <div class="flex flex-row gap-1 items-center">
-        <img :src="authorIcon" class="w-4" alt="Ikona autora" />
-        <p class="text-sm text-gray-500">Redakcja</p>
+      <div class="flex flex-row gap-2 items-center">
+        <img :src="authorIcon" class="w-7" alt="Ikona autora" />
+        <p class="text-sm text-gray-500">Michał Oberc</p>
       </div>
-      <div class="flex flex-row gap-1 items-center">
-        <img :src="calendarIcon" class="w-4" alt="Ikona kalendarza" />
+      <div class="flex flex-row gap-2 items-center">
+        <img :src="calendarIcon" class="w-5" alt="Ikona kalendarza" />
         <p class="text-sm text-gray-500">20.03.2025</p>
       </div>
     </div>
@@ -24,10 +24,9 @@ import postMainThumb from '@/assets/images/posts/main/IMG_5568.webp'
 
 
     <h2 class="text-2xl font-semibold text-lightBlack my-12">
-      W ekskluzywnym wywiadzie Krzysztof, kluczowy zawodnik naszego zespołu bejsbolowego, opowiada o swojej pasji do
-      sportu, najtrudniejszych momentach sezonu i planach na przyszłość. Zdradza, jak radzi sobie z presją na boisku i
-      co najbardziej motywuje go do walki o zwycięstwo. Nie zabrakło też pytań o atmosferę w drużynie oraz osobiste cele
-      na nadchodzące rozgrywki!
+      Krzysztof Jurczyński, kluczowy zawodnik naszego zespołu, opowiada o swojej pasji do
+      sportu, najtrudniejszych momentach sezonu i planach na przyszłość. Nie zabrakło też pytań o atmosferę w drużynie
+      oraz osobiste cele na nadchodzące rozgrywki!
     </h2>
 
     <p class="font-base text-lg my-6">

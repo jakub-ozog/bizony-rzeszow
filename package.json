@@ -14,11 +14,13 @@
   },
   "dependencies": {
     "@mdx-js/vue": "^3.1.0",
+    "@primeuix/themes": "^1.0.0",
     "@splidejs/vue-splide": "^0.6.12",
     "glightbox": "^3.3.1",
     "gray-matter": "^4.0.3",
     "marked": "^15.0.7",
     "primeicons": "^7.0.0",
+    "primevue": "^4.3.2",
     "remark-frontmatter": "^5.0.0",
     "swiper": "^11.2.5",
     "vite-plugin-markdown": "^2.2.0",

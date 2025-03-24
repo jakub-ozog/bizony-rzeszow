@@ -67,3 +67,12 @@
 .mySwiper .swiper-slide-thumb-active {
   opacity: 1;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #202020;
+}
