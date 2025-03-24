@@ -1,5 +1,5 @@
 <script setup>
-import authorIcon from '@/assets/icons/author-icon.svg'
+import authorIcon from '@/assets/images/michal-oberc-author.webp'
 import calendarIcon from '@/assets/icons/calendar-icon.svg'
 import postMainThumb from '@/assets/images/post-main-thumb.webp'
 </script>
@@ -8,12 +8,12 @@ import postMainThumb from '@/assets/images/post-main-thumb.webp'
   <section class="container mx-auto text-left my-12 font-urbanist">
     <h1 class="text-5xl font-bold text-primaryRed">Bizony Rzeszów: Historia drużyny, która narodziła się z pasji</h1>
     <div class="flex flex-row gap-6 mt-2 mb-12">
-      <div class="flex flex-row gap-1 items-center">
-        <img :src="authorIcon" class="w-4" alt="Ikona autora" />
-        <p class="text-sm text-gray-500">Redakcja</p>
+      <div class="flex flex-row gap-2 items-center">
+        <img :src="authorIcon" class="w-7" alt="Ikona autora" />
+        <p class="text-sm text-gray-500">Michał Oberc</p>
       </div>
-      <div class="flex flex-row gap-1 items-center">
-        <img :src="calendarIcon" class="w-4" alt="Ikona kalendarza" />
+      <div class="flex flex-row gap-2 items-center">
+        <img :src="calendarIcon" class="w-5" alt="Ikona kalendarza" />
         <p class="text-sm text-gray-500">20.03.2025</p>
       </div>
     </div>
