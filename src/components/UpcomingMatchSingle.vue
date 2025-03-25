@@ -15,7 +15,7 @@ defineProps({
     <div class="flex-col sm:flex-row gap-4 p-4 md:p-4 flex items-center justify-around">
       <div class="flex flex-col items-center">
         <img :src="match.team1Logo" alt="Logo drużyny 1" class="w-28 h-28 lg:w-24 lg:h-24" />
-        <p class="text-lightBlack font-normal text-md">{{ match.team1 }}</p>
+        <p class="text-lightBlack font-normal text-md mt-2">{{ match.team1 }}</p>
       </div>
 
       <div class="flex flex-col items-center">
@@ -24,8 +24,8 @@ defineProps({
       </div>
 
       <div class="flex flex-col items-center">
-        <img :src="match.team2Logo" alt="Logo drużyny 1" class="w-28 h-28 lg:w-24 lg:h-24" />
-        <p class="text-lightBlack font-normal text-md">{{ match.team2 }}</p>
+        <img :src="match.team2Logo" alt="Logo drużyny 1" class="w-28 lg:w-24" />
+        <p class="text-lightBlack font-normal text-md mt-2">{{ match.team2 }}</p>
       </div>
     </div>
 

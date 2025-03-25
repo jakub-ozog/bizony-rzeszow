@@ -21,7 +21,7 @@ watch(
           <img src="@/assets/logo/logo-nav.svg" class="h-18" alt="Logo Bizony Rzeszów" />
         </router-link>
       </div>
-      <button @click="isOpen = !isOpen" class="lg:hidden text-xl z-30">
+      <button @click="isOpen = !isOpen" class="lg:hidden text-xl z-30 text-black">
         <i :class="isOpen ? 'pi pi-times' : 'pi pi-bars'"></i>
       </button>
       <ul class="hidden lg:flex items-center gap-12 text-grey uppercase font-urbanist">
