@@ -6,10 +6,10 @@ const news = ref(newsData)
 </script>
 
 <template>
-  <div class="flex flex-col xl:flex-row gap-4">
+  <div class="flex flex-col 2xl:flex-row gap-4">
     <div class="relative">
       <img :src="news[0].thumb1" class="w-full h-full object-cover rounded-3xl md:rounded-2xl" alt="news image" />
-      <div class="absolute bottom-0 left-0 w-full h-[60%] bg-gradient-to-t from-black to-transparent">
+      <div class="hidden md:block absolute bottom-0 left-0 w-full h-[60%] bg-gradient-to-t from-black to-transparent">
 
       </div>
       <div
@@ -32,7 +32,7 @@ const news = ref(newsData)
         </router-link>
       </div>
     </div>
-    <div class="flex md:flex-col gap-4 w-1/2 justify-between shrink-0">
+    <div class="flex flex-col gap-4 w-full 2xl:w-1/2 justify-between shrink-0">
       <div v-for="(item, index) in news.slice(1)" :key="item.id" class="flex gap-4 mb-6 p-2 lg:p-0 md:mb-0">
         <img :src="item.thumb2 || item.thumb3" :alt="item.title" class="w-[50%] h-full rounded-2xl"
           :class="index === 0 ? 'mb-4' : 'mb-0'" />

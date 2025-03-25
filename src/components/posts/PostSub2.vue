@@ -61,6 +61,10 @@ import postMainThumb from '@/assets/images/post-main-thumb.webp'
       <PrimeColumn field="termin" header="Termin"></PrimeColumn>
       <PrimeColumn field="miejsce" header="Miejsce"></PrimeColumn>
       <PrimeColumn field="przeciwnik" header="Przeciwnik"></PrimeColumn>
+      <PrimeColumn field="rozgrywki" header="Rozgrywki"></PrimeColumn>
+      <PrimeColumn field="wynik" header="Wynik"></PrimeColumn>
+      <PrimeColumn field="punktyZdobyte" header="Punkty zdobyte"></PrimeColumn>
+      <PrimeColumn field="punktyStracone" header="Punkty stracone"></PrimeColumn>
     </DataTable>
 
     <h2 class="text-3xl font-semibold text-lightBlack my-12">
