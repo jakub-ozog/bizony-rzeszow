@@ -9,6 +9,7 @@ import { RouterView } from 'vue-router'
     <NavbarMain />
     <main>
       <router-view />
+      <ScrollTop />
     </main>
     <Footer />
   </div>

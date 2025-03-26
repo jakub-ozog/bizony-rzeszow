@@ -4,7 +4,8 @@ import UpcomingMatchCounter from '@/components/UpcomingMatchCounter.vue'
 import MainNews from '@/components/MainNews.vue'
 import MainGallery from '@/components/MainGallery.vue'
 import PlayerFeatured from '@/components/PlayerFeatured.vue'
-import SupportUs from '@/components/SupportUs.vue'
+// import SupportUs from '@/components/SupportUs.vue'
+import AboutJoinUs from '@/components/AboutJoinUs.vue'
 </script>
 
 <template>
@@ -56,6 +57,7 @@ import SupportUs from '@/components/SupportUs.vue'
   </section>
 
   <section class="container mx-auto mt-[6rem] mb-12 font-urbanist">
-    <SupportUs />
+    <!-- <SupportUs /> -->
+    <AboutJoinUs />
   </section>
 </template>

@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink } from 'vue-router';
 import playerFeaturedImg from '@/assets/images/player_featured_img.png'
 </script>
 
@@ -36,12 +37,12 @@ import playerFeaturedImg from '@/assets/images/player_featured_img.png'
           <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#f6f6f6]"></div>
         </div>
       </div>
-
-      <button
-        class="flex justify-center items-center text-center border border-primaryRed text-primaryRed rounded-2xl py-2 px-4 my-4 mt-8"
-      >
-        <span class="text-[0.75rem] font-normal mr-2">Przeczytaj cały wywiad z Bizonem tutaj </span>
-      </button>
+      <router-link to="/blog/poznaj-bizona-krzysztof-jurczynski">
+        <button
+          class="flex justify-center items-center text-center border border-primaryRed text-primaryRed rounded-2xl py-2 px-4 my-4 mt-8">
+          <span class="text-[0.75rem] font-normal mr-2">Przeczytaj cały wywiad z Bizonem tutaj </span>
+        </button>
+      </router-link>
     </div>
 
     <div class="hidden lg:block relative w-full">

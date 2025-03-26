@@ -8,7 +8,8 @@ const joinBgImg = {
 </script>
 
 <template>
-  <div class="flex flex-col justify-center items center font-urbanist min-h-[15rem] p-6 my-12" :style="joinBgImg">
+  <div class="flex flex-col justify-center items-center relative font-urbanist min-h-[22rem] p-6 my-12"
+    :style="joinBgImg">
     <h3 class="text-5xl text-white mx-auto text-center font-semibold mb-4 mt-4">
       Zostań jednym z Bizonów
     </h3>
