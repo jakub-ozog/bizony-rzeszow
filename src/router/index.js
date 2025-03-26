@@ -3,12 +3,12 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import PlayersView from '../views/PlayersView.vue'
-import StatisticsView from '@/views/StatisticsView.vue'
 import BlogView from '@/views/BlogView.vue'
 import PostSingle from '@/components/PostSingle.vue'
 import GalleryView from '@/views/GalleryView.vue'
 import GallerySingle from '@/components/GallerySingle.vue'
 import ContactView from '@/views/ContactView.vue'
+import GamesView from '@/views/GamesView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -29,9 +29,9 @@ const router = createRouter({
       component: PlayersView,
     },
     {
-      path: '/statystyki',
-      name: 'statystyki',
-      component: StatisticsView,
+      path: '/rozgrywki',
+      name: 'rozgrywki',
+      component: GamesView,
     },
     {
       path: '/galeria',

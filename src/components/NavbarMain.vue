@@ -37,9 +37,9 @@ watch(
         <li>
           <router-link to="/galeria">Galeria</router-link>
         </li>
-        <!-- <li>
-          <router-link class="text-secondaryRed" to="/zawodnicy">Statystyki</router-link>
-        </li> -->
+        <li>
+          <router-link class="text-secondaryRed" to="/rozgrywki">Rozgrywki</router-link>
+        </li>
         <li>
           <router-link to="/blog">Blog</router-link>
         </li>
@@ -58,16 +58,17 @@ watch(
           <router-link to="/o-nas" class="block text-gray-800 transition-all duration-400 hover:opacity-50 p-3">O
             klubie</router-link>
         </li>
-        <!-- <li class="py-2">
-          <router-link to="/zawodnicy" class="block text-gray-800 hover:opacity-50 p-3"
-            >Zawodnicy</router-link
-          >
-        </li> -->
+        <li class="py-2">
+          <router-link to="/rozgrywki" class="block text-gray-800 hover:opacity-50 p-3">Rozgrywki</router-link>
+        </li>
         <li class="py-2">
           <router-link to="/galeria" class="block text-gray-800 hover:opacity-50 p-3">Galeria</router-link>
         </li>
         <li class="py-2">
           <router-link to="/blog" class="block text-gray-800 hover:opacity-50 p-3">Blog</router-link>
+        </li>
+        <li class="py-2">
+          <router-link to="/kontakt" class="block text-gray-800 hover:opacity-50 p-3">Kontakt</router-link>
         </li>
         <button @click="isOpen = !isOpen" class="lg:hidden text-xl z-50 absolute top-6 right-6">
           <i class="pi pi-times"></i>
