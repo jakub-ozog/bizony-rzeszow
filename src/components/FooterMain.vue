@@ -1,4 +1,6 @@
 <script setup>
+import { RouterLink } from 'vue-router'
+
 import facebookIcon from '@/assets/icons/fb-icon.svg'
 import instagramIcon from '@/assets/icons/ig-icon.svg'
 // import patroniteIcon from '@/assets/icons/patronite-icon.svg'
@@ -37,19 +39,26 @@ import bizonyLogoWhite from '@/assets/logo/bizony_logo_white.svg'
 
         <img :src="bizonyLogoWhite" class="w-44 h-full" alt="bizony rzeszów logo" />
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-8 xl:mt-0 gap-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-8 xl:mt-0 gap-32">
+          <div class="flex flex-col gap-4 text-center md:text-left">
+            <h5 class="text-xl font-bold text-gray-200">Mapa strony</h5>
+            <router-link class="text-sm text-gray-300" to="/">Strona Główna</router-link>
+            <router-link class="text-sm text-gray-300" to="/galeria">Galeria</router-link>
+
+            <router-link class="text-sm text-gray-300" to="/blog">Blog</router-link>
+            <router-link class="text-sm text-gray-300" to="/kontakt">Kontakt</router-link>
+          </div>
           <div class="flex flex-col gap-4 text-center md:text-left">
             <h5 class="text-xl font-bold text-gray-200">O nas</h5>
             <!-- <p class="text-sm text-gray-300">Historia</p> -->
-            <p class="text-sm text-gray-300">Kontakt</p>
-            <p class="text-sm text-gray-300">Gdzie trenujemy</p>
+            <router-link class="text-sm text-gray-300" to="/o-nas">O klubie</router-link>
             <!-- <p class="text-sm text-gray-300">Regulamin</p> -->
           </div>
           <div class="flex flex-col gap-4 text-center md:text-left">
             <h3 class="text-xl font-bold text-gray-200">Drużyna</h3>
             <p class="text-sm text-gray-300">Skład</p>
             <p class="text-sm text-gray-300">Terminarz</p>
-            <p class="text-sm text-gray-300">Galeria</p>
+            <router-link class="text-sm text-gray-300" to="/blog">Zawodnicy</router-link>
           </div>
           <!-- <div class="flex flex-col gap-4 text-center md:text-left">
             <h3 class="text-xl font-bold">Sponsorzy</h3>
@@ -72,8 +81,12 @@ import bizonyLogoWhite from '@/assets/logo/bizony_logo_white.svg'
         </div>
         <div class="flex justify-center sm:justify-end">
           <div class="flex flex-row gap-4">
-            <img :src="facebookIcon" alt="facebook" />
-            <img :src="instagramIcon" alt="instagram" />
+            <a href="https://www.facebook.com/BizonyRzeszow" target="_blank">
+              <img :src="facebookIcon" alt="facebook" />
+            </a>
+            <a href="https://www.instagram.com/bizony__rzeszow/" target="_blank">
+              <img :src="instagramIcon" alt="instagram" />
+            </a>
             <!-- <img :src="patroniteIcon" alt="patronite" /> -->
           </div>
         </div>

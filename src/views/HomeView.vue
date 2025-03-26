@@ -6,6 +6,7 @@ import MainGallery from '@/components/MainGallery.vue'
 import PlayerFeatured from '@/components/PlayerFeatured.vue'
 // import SupportUs from '@/components/SupportUs.vue'
 import AboutJoinUs from '@/components/AboutJoinUs.vue'
+import HomeTable from '@/components/HomeTable.vue'
 </script>
 
 <template>
@@ -43,6 +44,10 @@ import AboutJoinUs from '@/components/AboutJoinUs.vue'
   </section>
 
   <UpcomingMatchCounter />
+
+  <section class="container w-full mx-auto text-center my-12 font-urbanist font-bold">
+    <HomeTable />
+  </section>
 
   <section class="container w-full mx-auto text-center my-12 font-urbanist font-bold">
     <MainNews />
