@@ -1,7 +1,6 @@
 import BizonyLogo from '@/assets/logo/bizony.webp'
 import KingsLogo from '@/assets/logo/kings.webp'
 import RawaLogo from '@/assets/logo/rawa.webp'
-import SilesiaLogo from '@/assets/logo/rybnik.webp'
 import WizardsLogo from '@/assets/logo/wizards.webp'
 
 export const homeTable = [
@@ -38,20 +37,6 @@ export const homeTable = [
     druzyna: {
       nazwa: 'Rawa Katowice',
       logo: RawaLogo, // Załóżmy, że masz logo o takiej nazwie
-    },
-    mecze: 0,
-    runyPlus: 0,
-    runyMinus: 0,
-    zwyciestwa: 0,
-    remisy: 0,
-    przegrane: 0,
-    punkty: 0,
-  },
-  {
-    poz: 4,
-    druzyna: {
-      nazwa: 'Silesia Rybnik',
-      logo: SilesiaLogo, // Załóżmy, że masz logo o takiej nazwie
     },
     mecze: 0,
     runyPlus: 0,

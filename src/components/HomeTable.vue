@@ -4,8 +4,8 @@ import { homeTable } from '@/data/homeTable.js';
 
 <template>
   <div class="my-16">
-    <DataTable :value="homeTable" stripedRows showGridlines tableStyle="min-width: 50rem" class="my-12">
-      <div class="text-left w-full bg-blue-800 text-white p-6 rounded-t-lg ">
+    <DataTable :value="homeTable" stripedRows showGridlines tableStyle="min-width: 50rem" class="my-12 shadow-md">
+      <div class="text-left w-full bg-accentBlue text-white p-6 rounded-t-lg ">
         <h3 class="text-white text-2xl font-semibold">Grupa C</h3>
       </div>
       <PrimeColumn field="poz" header="poz"></PrimeColumn>
