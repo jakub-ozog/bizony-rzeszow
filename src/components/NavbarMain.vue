@@ -6,15 +6,16 @@
   const isOpen = ref(false)
   const router = useRouter()
   const menuDropdown = ref(false)
+  const isMenuDropdownOpen = ref(false)
 
   watch(
     () => router.currentRoute.value.path,
     () => {
       isOpen.value = false
+      isMenuDropdownOpen.value = false
     },
   )
 
-  const isMenuDropdownOpen = ref(false)
 
   const toggleMenuDropdown = () => {
     isMenuDropdownOpen.value = !isMenuDropdownOpen.value
