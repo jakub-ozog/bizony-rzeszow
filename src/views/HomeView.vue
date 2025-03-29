@@ -39,7 +39,7 @@ import HomeTable from '@/components/HomeTable.vue'
     </div>
   </section>
 
-  <section class="container mx-auto text-center my-12 font-urbanist font-bold">
+  <section class="container mx-auto text-center mt-12 font-urbanist font-bold mb-[-4rem]">
     <UpcomingMatches />
   </section>
 

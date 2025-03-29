@@ -3,7 +3,7 @@ import MatchCounterBg from '@/assets/images/match-counter-bg.webp'
 </script>
 
 <template>
-  <section class="w-full text-white min-h-52 flex bg-cover bg-center relative font-urbanist"
+  <section class="w-full text-white min-h-[20rem] flex bg-cover bg-center relative font-urbanist"
     :style="{ backgroundImage: `url(${MatchCounterBg})` }">
     <div class="container mx-auto flex flex-col justify-center items-center">
       <p class="text-xl font-bold text-white">Do najbliższego meczu pozostało</p>
