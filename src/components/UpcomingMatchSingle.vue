@@ -1,5 +1,6 @@
 <script setup>
 import { defineProps } from 'vue'
+import Chip from 'primevue/chip';
 
 defineProps({
   match: Object,
@@ -14,21 +15,25 @@ defineProps({
 
     <div class="flex-col sm:flex-row gap-4 p-4 md:p-4 flex items-center justify-around">
       <div class="flex flex-col items-center">
-        <img :src="match.team1Logo" alt="Logo drużyny 1" class="w-28 h-28 lg:w-24 lg:h-24" />
+        <img :src="match.team1Logo" alt="Logo drużyny 1" class="w-16" />
         <p class="text-lightBlack font-normal text-md mt-2">{{ match.team1 }}</p>
       </div>
 
       <div class="flex flex-col items-center">
-        <p class="text-lightBlack font-bold text-2xl">vs</p>
+        <p class="text-lightBlack font-bold text-xl">vs</p>
         <p class="text-lightBlack font-bold text-3xl">{{ match.time }}</p>
       </div>
 
       <div class="flex flex-col items-center">
-        <img :src="match.team2Logo" alt="Logo drużyny 1" class="w-28 lg:w-24" />
+        <img :src="match.team2Logo" alt="Logo drużyny 1" class="w-16" />
         <p class="text-lightBlack font-normal text-md mt-2">{{ match.team2 }}</p>
       </div>
     </div>
+    <div class=" mb-4 md:mb-0 mt-4 flex flex-col lg:flex-row gap-4 items-center justify-center">
+      <Chip :label="match.location" icon="pi pi-map-marker" />
 
+      <Chip :label="match.gameType" icon="pi pi-info-circle" />
+    </div>
     <!-- <button
       class="flex justify-center items-center text-center mx-auto bg-secondaryRed text-white rounded-2xl py-2 px-4 my-4"
     >
