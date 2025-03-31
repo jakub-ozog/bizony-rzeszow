@@ -47,7 +47,7 @@ export const homeTable = [
     punkty: 0,
   },
   {
-    poz: 5,
+    poz: 4,
     druzyna: {
       nazwa: 'Wizards Opole',
       logo: WizardsLogo, // Załóżmy, że masz logo o takiej nazwie

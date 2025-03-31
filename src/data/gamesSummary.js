@@ -130,7 +130,7 @@ export const gamesSummary = [
     miejsce: 'Żory',
     przeciwnik: 'Wizards Opole',
     rozgrywki: 'Towarzyski',
-    wynik: 'L',
+    wynik: 'W',
     punktyZdobyte: 5,
     punktyStracone: 3,
   },
