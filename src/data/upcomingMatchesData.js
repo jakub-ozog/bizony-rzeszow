@@ -15,6 +15,7 @@ const upcomingMatches = [
     location: 'Żory',
     gameType: 'BLB',
     dateTime: new Date('2025-04-13T11:00:00'),
+    locationDetails: 'Minimalna 2, 44-247 Żory',
   },
   {
     id: 2,
@@ -25,6 +26,7 @@ const upcomingMatches = [
     team1Logo: BizonyLogo,
     team2Logo: RawaLogo,
     location: 'Katowice',
+    locationDetails: 'Asnyka 27, 40-696 Katowice',
     gameType: 'BLB',
     dateTime: new Date('2025-05-25T11:00:00'),
   },
@@ -37,6 +39,7 @@ const upcomingMatches = [
     team2Logo: BizonyLogo,
     team1Logo: KingsLogo,
     location: 'Rzeszów',
+    locationDetails: 'Salos, Witolda Świadka 5a, 35-310 Rzeszów',
     gameType: 'BLB',
     dateTime: new Date('2025-06-08T11:00:00'),
   },

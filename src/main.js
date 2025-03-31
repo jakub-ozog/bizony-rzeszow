@@ -8,8 +8,10 @@ import Aura from '@primeuix/themes/aura'
 import DataTable from 'primevue/datatable'
 import Column from 'primevue/column'
 import ScrollTop from 'primevue/scrolltop'
+import Tooltip from 'primevue/tooltip'
 
 const app = createApp(App)
+app.directive('tooltip', Tooltip)
 app.use(router)
 
 app.use(PrimeVue, {

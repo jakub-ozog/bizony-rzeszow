@@ -31,8 +31,8 @@ defineProps({
     </div>
     <div class=" mb-4 md:mb-0 mt-4 flex flex-col lg:flex-row gap-4 items-center justify-center">
       <Chip :label="match.location" icon="pi pi-map-marker" />
-
-      <Chip :label="match.gameType" icon="pi pi-info-circle" />
+      <Chip :label="match.gameType" icon="pi pi-info-circle"
+        v-tooltip.top="{ value: match.locationDetails, autoHide: false }" type="text" />
     </div>
     <!-- <button
       class="flex justify-center items-center text-center mx-auto bg-secondaryRed text-white rounded-2xl py-2 px-4 my-4"
