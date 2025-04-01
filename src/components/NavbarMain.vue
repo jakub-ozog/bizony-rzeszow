@@ -1,18 +1,44 @@
   <script setup>
-  import { ref, watch, onMounted, onUnmounted } from 'vue'
+  import {
+    NavigationMenu,
+    NavigationMenuContent,
+    NavigationMenuItem,
+    NavigationMenuLink,
+    NavigationMenuList,
+    NavigationMenuTrigger,
+  } from '@/components/ui/navigation-menu';
+
+  import {
+    Sheet,
+    SheetContent,
+    SheetHeader,
+    SheetTitle,
+    SheetTrigger,
+  } from "@/components/ui/sheet";
+
+  import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+  } from "@/components/ui/accordion";
+  import { Button } from "@/components/ui/button"
+
+
+
+  import { ref, watch } from 'vue'
   import { RouterLink, useRouter } from 'vue-router'
   import 'primeicons/primeicons.css'
 
   const isOpen = ref(false)
   const router = useRouter()
-  const menuDropdown = ref(false)
-  const isMenuDropdownOpen = ref(false)
+
+
 
   watch(
     () => router.currentRoute.value.path,
     () => {
       isOpen.value = false
-      isMenuDropdownOpen.value = false
     },
   )
 
@@ -20,34 +46,393 @@
   const toggleMenuDropdown = () => {
     isMenuDropdownOpen.value = !isMenuDropdownOpen.value
   }
+  const components = [
+    {
+      title: 'Alert Dialog',
+      href: '/docs/components/alert-dialog',
+      description:
+        'A modal dialog that interrupts the user with important content and expects a response.',
+    },
+    {
+      title: 'Hover Card',
+      href: '/docs/components/hover-card',
+      description:
+        'For sighted users to preview content available behind a link.',
+    },
+    {
+      title: 'Progress',
+      href: '/docs/components/progress',
+      description:
+        'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
+    },
+    {
+      title: 'Scroll-area',
+      href: '/docs/components/scroll-area',
+      description: 'Visually or semantically separates content.',
+    },
+    {
+      title: 'Tabs',
+      href: '/docs/components/tabs',
+      description:
+        'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
+    },
+    {
+      title: 'Tooltip',
+      href: '/docs/components/tooltip',
+      description:
+        'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
+    },
+  ]
 
 </script>
 
 <template>
-  <header>
-    <nav class="flex items-center justify-between p-6 lg:px-8 select-none" aria-label="Global">
-      <div>
+
+  <section class="p-8">
+    <!-- {/* Desktop Menu */} -->
+    <NavigationMenu class="hidden justify-between xl:flex items-center font-urbanist">
+      <NavigationMenuLink>
         <router-link to="/">
           <img src="@/assets/logo/logo-nav.svg" class="h-18" alt="Logo Bizony Rzeszów" />
         </router-link>
+      </NavigationMenuLink>
+      <NavigationMenuList class="flex gap-8">
+        <NavigationMenuItem>
+          <NavigationMenuLink>
+            <router-link to="/" class="uppercase py-2 px-4">
+              strona główna
+            </router-link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+
+
+
+        <NavigationMenuItem>
+          <NavigationMenuLink>
+            <router-link to="/galeria" class="uppercase py-2 px-4">
+              galeria
+            </router-link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+
+
+
+        <NavigationMenuItem>
+          <NavigationMenuTrigger class="font-urbanist uppercase text-md bg-transparent">Rozgrywki
+          </NavigationMenuTrigger>
+          <NavigationMenuContent>
+
+
+            <NavigationMenuLink as-child>
+              <ul class="flex flex-col gap-3 p-6 md:w-[400px] lg:w-[500px] ">
+                <li>
+                  <router-link to="/rozgrywki/wyniki" class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none uppercase
+                  transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent
+                  focus:text-accent-foreground">
+                    Wyniki
+                  </router-link>
+                </li>
+                <li>
+                  <router-link to="/rozgrywki/tabela-blb" class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none uppercase
+                  transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent
+                  focus:text-accent-foreground">
+                    tabela blb
+                  </router-link>
+                </li>
+              </ul>
+            </NavigationMenuLink>
+
+
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+
+
+        <NavigationMenuItem>
+          <NavigationMenuTrigger class="font-urbanist uppercase text-md bg-transparent">Drużyna
+          </NavigationMenuTrigger>
+          <NavigationMenuContent>
+
+
+            <NavigationMenuLink as-child>
+              <ul class="flex flex-col gap-3 p-6 md:w-[400px] lg:w-[500px] ">
+                <li>
+                  <router-link to="/rozgrywki/wyniki" class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none uppercase
+                  transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent
+                  focus:text-accent-foreground">
+                    Kadra
+                  </router-link>
+                </li>
+                <li>
+                  <router-link to="/rozgrywki/tabela-blb" class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none uppercase
+                  transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent
+                  focus:text-accent-foreground">
+                    terminarz i wyniki
+                  </router-link>
+                </li>
+                <li>
+                  <router-link to="/rozgrywki/tabela-blb" class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none uppercase
+                  transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent
+                  focus:text-accent-foreground">
+                    zawodnicy
+                  </router-link>
+                </li>
+              </ul>
+            </NavigationMenuLink>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem>
+          <NavigationMenuLink>
+            <router-link to="/blog" class="uppercase py-2 px-4">
+              blog
+            </router-link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem>
+          <NavigationMenuLink>
+            <router-link to="/kontakt" class="uppercase py-2 px-4">
+              kontakt
+            </router-link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+      </NavigationMenuList>
+    </NavigationMenu>
+
+
+
+
+    <!-- Mobile -->
+
+    <div class="block xl:hidden">
+      <div class="flex items-center justify-between">
+        <router-link to="/">
+          <img src="@/assets/logo/logo-nav.svg" class="h-18" alt="Logo Bizony Rzeszów" />
+        </router-link>
+        <Sheet @click="isOpen = !isOpen">
+          <SheetTrigger>
+            <Button class="bg-primaryRed border-solid">
+              <i class="pi pi-align-justify" style="font-size: 1rem; "></i>
+            </Button>
+          </SheetTrigger>
+          <SheetContent class="overflow-y-auto">
+            <SheetHeader>
+              <SheetTitle>
+                <a href="" class="flex items-center gap-2">
+                  <img src="" class="max-h-8" alt="" />
+                </a>
+              </SheetTitle>
+            </SheetHeader>
+            <div class="flex flex-col gap-6 p-4">
+              <Accordion type="single" collapsible class="flex w-full flex-col gap-4">
+
+
+                <AccordionItem value="item-1">
+                  <router-link to="/" class="uppercase py-2 px-4">
+                    strona główna
+                  </router-link>
+                </AccordionItem>
+
+
+                <AccordionItem value="item-2">
+                  <router-link to="/galeria" class="uppercase py-2 px-4">
+                    galeria
+                  </router-link>
+                </AccordionItem>
+
+                <AccordionItem value="item-3">
+                  <AccordionTrigger class=" px-4 font-normal uppercase">rozgrywki</AccordionTrigger>
+                  <AccordionContent>
+                    <router-link to="/rozgrywki/wyniki" class="uppercase py-2 px-4">
+                      wyniki
+                    </router-link>
+                  </AccordionContent>
+                  <AccordionContent>
+                    <router-link to="/rozgrywki/tabela-blb" class="uppercase py-2 px-4">
+                      tabela blb
+                    </router-link>
+                  </AccordionContent>
+                </AccordionItem>
+
+
+                <AccordionItem value="item-4">
+                  <AccordionTrigger class=" px-4 font-normal uppercase">drużyna</AccordionTrigger>
+                  <AccordionContent>
+                    <router-link to="/rozgrywki/wyniki" class="uppercase py-2 px-4">
+                      o klubie
+                    </router-link>
+                  </AccordionContent>
+                  <AccordionContent>
+                    <router-link to="/rozgrywki/tabela-blb" class="uppercase py-2 px-4">
+                      tabela blb
+                    </router-link>
+                  </AccordionContent>
+                </AccordionItem>
+
+
+
+                <AccordionItem value="item-5">
+                  <router-link to="/blog" class="uppercase py-2 px-4">
+                    blog
+                  </router-link>
+                </AccordionItem>
+              </Accordion>
+
+              <div class="flex flex-col gap-3">
+                <Button>
+                  <a href="">Login</a>
+                </Button>
+                <Button>
+                  <a href="">Signup</a>
+                </Button>
+              </div>
+            </div>
+          </SheetContent>
+        </Sheet>
       </div>
-      <button @click="isOpen = !isOpen" class="lg:hidden text-xl z-30 text-black">
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <header>
+    <div class="flex items-center justify-between p-6 lg:px-8 select-none" aria-label="Global"> -->
+  <!-- <div>
+        <router-link to="/">
+          <img src="@/assets/logo/logo-nav.svg" class="h-18" alt="Logo Bizony Rzeszów" />
+        </router-link>
+      </div> -->
+  <!-- <button @click="isOpen = !isOpen" class="lg:hidden text-xl z-30 text-black">
         <i :class="isOpen ? 'pi pi-times' : 'pi pi-bars'"></i>
-      </button>
-      <ul class="hidden lg:flex items-center gap-14 text-grey uppercase font-urbanist">
-        <li>
+      </button> -->
+
+
+  <!-- ShadCn menu type -->
+  <!-- <NavigationMenu class="font-urbanist flex align-center justify-between">
+        <NavigationMenuList>
+
+          <NavigationMenuItem>
+            <NavigationMenuLink as-child>
+              <router-link to="/">
+                <img src="@/assets/logo/logo-nav.svg" class="h-18" alt="Logo Bizony Rzeszów" />
+              </router-link>
+            </NavigationMenuLink>
+
+          </NavigationMenuItem>
+
+
+
+          <NavigationMenuItem>
+            <NavigationMenuLink as-child>
+              <RouterLink to="/" class="uppercase px-4 py-2">Strona Główna</RouterLink>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+
+          <NavigationMenuItem>
+            <NavigationMenuTrigger class="uppercase text-md bg-transparent">Drużyna</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul class="grid gap-6 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-1">
+                <li>
+                  <NavigationMenuLink as-child>
+                    <router-link to="/">
+                      <div href="/docs/introduction"
+                        class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                        <div class="text-sm font-medium leading-none">Kadra</div>
+                        <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          Re-usable components built using Radix UI and Tailwind CSS.
+                        </p>
+                      </div>
+                    </router-link>
+                  </NavigationMenuLink>
+                </li>
+                <li>
+                  <NavigationMenuLink as-child>
+                    <a href="/docs/installation"
+                      class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                      <div class="text-sm font-medium leading-none">Installation</div>
+                      <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                        How to install dependencies and structure your app.
+                      </p>
+                    </a>
+                  </NavigationMenuLink>
+                </li>
+                <li>
+                  <NavigationMenuLink as-child>
+                    <a href="/docs/typography"
+                      class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                      <div class="text-sm font-medium leading-none">Typography</div>
+                      <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                        Styles for headings, paragraphs, lists...etc
+                      </p>
+                    </a>
+                  </NavigationMenuLink>
+                </li>
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <NavigationMenuTrigger class="uppercase text-md bg-transparent">rozgrywki</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul class="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                <li v-for="component in components" :key="component.title">
+                  <NavigationMenuLink as-child>
+                    <a :href="component.href"
+                      class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                      <div class="text-sm font-medium leading-none">{{ component.title }}</div>
+                      <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                        {{ component.description }}
+                      </p>
+                    </a>
+                  </NavigationMenuLink>
+                </li>
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <NavigationMenuLink class="uppercase text-md bg-transparent">
+              <router-link to="/blog" class="px-4 py-2">
+                BLOG
+              </router-link>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+            <NavigationMenuLink class="uppercase text-md bg-transparent">
+              <router-link to="/kontakt" class="px-4 py-2">
+                kontakt
+              </router-link>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+        </NavigationMenuList>
+      </NavigationMenu> -->
+
+
+
+
+
+  <!-- <ul class="hidden lg:flex items-center gap-14 text-grey uppercase font-urbanist"> -->
+  <!-- <li>
           <router-link to="/" class="font-urbanist block p-1">Strona główna</router-link>
-        </li>
-        <li>
+        </li> -->
+  <!-- <li>
           <router-link to="/o-nas" class="block p-1">O klubie</router-link>
-        </li>
-        <!-- <li>
+        </li> -->
+  <!-- <li>
           <router-link to="/zawodnicy">Zawodnicy</router-link>
         </li> -->
-        <li>
+  <!-- <li>
           <router-link to="/galeria" class="block p-1">Galeria</router-link>
-        </li>
-        <li class="relative">
+        </li> -->
+  <!-- <li class="relative">
           <div class="text-secondaryRed cursor-pointer flex items-center gap-2 " @click="toggleMenuDropdown"
             ref="menuDropdown">
             Rozgrywki
@@ -66,17 +451,17 @@
           </ul>
 
 
-        </li>
-        <li>
+        </li> -->
+  <!-- <li>
           <router-link to="/blog" class="block p-1">Blog</router-link>
         </li>
         <li>
           <router-link to="/kontakt" class="block p-1">Kontakt</router-link>
-        </li>
-      </ul>
+        </li> -->
+  <!-- </ul> -->
 
 
-      <ul :class="isOpen ? 'translate-x-0' : 'translate-x-full'"
+  <!-- <ul :class="isOpen ? 'translate-x-0' : 'translate-x-full'"
         class="text-xl lg:hidden fixed top-0 right-0 w-72 h-full bg-white shadow-lg text-gray-500 font-urbanist text-[1rem] transition-transform transform duration-300 ease-in-out z-40 p-6 flex flex-col gap-1 font-semibold">
         <li class="py-2 mt-12">
           <router-link to="/" class="block text-gray-800 hover:opacity-50 p-3">Strona główna</router-link>
@@ -86,7 +471,6 @@
             klubie</router-link>
         </li>
         <li class="py-2 relative">
-          <!-- <router-link to="/rozgrywki" class="block  hover:opacity-50 p-3">Rozgrywki</router-link> -->
           <div class="text-gray-800 p-3" @click="toggleMenuDropdown">Rozgrywki</div>
           <ul v-if="isMenuDropdownOpen" class=" left-0  w-max">
             <li>
@@ -116,7 +500,10 @@
 
       <div v-if="isOpen" @click="isOpen = false"
         class="fixed inset-0 bg-white/10 backdrop-blur-lg backdrop-saturate-150 border border-white/20 shadow-lg p-6 rounded-xl z-30 lg:gidden">
-      </div>
-    </nav>
-  </header>
+      </div> -->
+  <!-- </div>
+  </header> -->
+
+
+
 </template>

@@ -1,19 +1,18 @@
 <script setup>
-import AboutMap from '@/components/AboutMap.vue'
+
 import AboutJoinUs from '@/components/AboutJoinUs.vue'
 import AboutTimeline from '@/components/AboutTimeline.vue'
-
 import sectionColorBar from '@/assets/images/about-section-color-bar.svg'
 import clubHeaderPhoto from '@/assets/images/about-club-header-photo.webp'
-import teamStadiumPhoto from '@/assets/images/team-stadium-img.webp'
+
 </script>
 
 <template>
   <section class="container mx-auto grid place-content-center mt-24 font-urbanist font-bold">
     <img src="@/assets/images/bison-bg.svg" alt="obrazek bizona" class="hidden sm:block w-[24rem] absolute left-0" />
-    <div class="flex justify-center items-center mt-[7rem] mb-16 text-primaryRed">
+    <div class="flex justify-center items-center mb-16 ">
       <h1
-        class="text-3xl md:text-4xl lg:text-5xl text-primary-red uppercase relative leading-[4rem] after:content-[''] after:absolute after:bottom-[-10px] after:left-0 after:right-0 after:w-full after:h-[2px] after:text-center after:mx-auto after:rounded-full after:z-20 after:bg-primaryRed">
+        class="text-3xl md:text-4xl lg:text-5xl text-primaryRed uppercase relative leading-[4rem] after:content-[''] after:absolute after:bottom-[-10px] after:left-0 after:right-0 after:w-full after:h-[2px] after:text-center after:mx-auto after:rounded-full after:z-20 after:bg-primaryRed">
         o klubie
       </h1>
     </div>
@@ -29,62 +28,35 @@ import teamStadiumPhoto from '@/assets/images/team-stadium-img.webp'
     <h2 class="font-bold text-black text-2xl mb-4">Kim są Bizony</h2>
 
     <p class=" mb-4">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequunt mollit anim id est laborum.""Lorem ipsum
-      dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-      ut aliquip ex ea commodo consequunt mollit anim id est laborum."....
+      Bizony Rzeszów powstały, aby rozwijać baseball w mieście i stworzyć drużynę dla lokalnych pasjonatów. Przejęły
+      inicjatywę po Eagles Rzeszów, nadając zespołowi nową nazwę i strukturę. Pierwszy mecz rozegrały w październiku
+      2023 roku, a w lipcu 2024 odniosły historyczne zwycięstwo nad Kraków Kings. W 2025 roku dołączyły do Bałtyckiej
+      Ligi Baseballu, umacniając swoją pozycję na baseballowej mapie Polski.
     </p>
 
     <p class=" mb-4">
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequunt mollit anim id est laborum.""Lorem ipsum
-      dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-      ut aliquip ex ea commodo consequunt mollit anim id est laborum."....
+      Bizonów najłatwiej spotkać na boisku „Salos” w pobliżu pływalni Delfin oraz ZSO nr 4 w Rzeszowie, a także podczas
+      lokalnych wydarzeń sportowo-kulturalnych.
     </p>
 
     <h2 class="font-bold text-black text-2xl mb-4">Misja naszego klubu</h2>
 
     <p class="font-xl mb-4">
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequunt mollit anim id est laborum.""Lorem ipsum
-      dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-      ut aliquip ex ea commodo consequunt mollit anim id est laborum."....
+      Nadrzędnym celem Bizonów Rzeszów jest popularyzacja baseballu w Rzeszowie. Dzięki współpracy z m.in. Rzeszowskim
+      Domem Kultury, bierzemy udział w lokalnych wydarzeniach sportowo-kulturalnych, prowadzimy zajęcia dla dzieci
+      podczas letnich półkolonii oraz organizujemy mecze baseballowe. Działania Bizonów mają na celu stworzenie
+      alternatywnej ścieżki rozwoju sportowego i personalnego, opartej na wyjątkowej atmosferze i kulturze baseballu. Ta
+      dyscyplina, z jej unikalnymi zasadami i podejściem do gry, wyróżnia się na tle innych popularniejszych sportów,
+      oferując uczestnikom nie tylko rozwój fizyczny, ale także integrację w duchu współpracy i pasji.
     </p>
 
     <h2 class="font-bold text-black text-2xl mb-8">Jak zaczynaliśmy</h2>
     <AboutTimeline />
 
-    <h2 class="font-bold text-black text-2xl mb-8">Gdzie trenujemy</h2>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-      <div class="flex flex-col justify-between">
-        <p class="text-xl mb-4 text-primaryRed">
-          <span class="font-bold">SALOS Rzeszów</span> <br />
-          Witolda Świadka 5a, <br />
-          35-310 Rzeszów
-        </p>
-        <AboutMap />
-      </div>
-
-      <img :src="teamStadiumPhoto" class="w-full lg:w-[650px] h-full rounded-lg" alt="" />
-    </div>
 
     <h2 class="font-bold text-black text-2xl mb-4">Społeczność i nasze działania</h2>
 
-    <p class="font-xl mb-4">
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequunt mollit anim id est laborum.""Lorem ipsum
-      dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-      ut aliquip ex ea commodo consequunt mollit anim id est laborum."....
-    </p>
 
     <AboutJoinUs />
   </section>
