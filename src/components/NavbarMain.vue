@@ -115,8 +115,6 @@
           </NavigationMenuLink>
         </NavigationMenuItem>
 
-
-
         <NavigationMenuItem>
           <NavigationMenuTrigger class="font-urbanist uppercase text-md bg-transparent">Rozgrywki
           </NavigationMenuTrigger>
@@ -141,22 +139,17 @@
                 </li>
               </ul>
             </NavigationMenuLink>
-
-
           </NavigationMenuContent>
         </NavigationMenuItem>
-
 
         <NavigationMenuItem>
           <NavigationMenuTrigger class="font-urbanist uppercase text-md bg-transparent">Drużyna
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-
-
             <NavigationMenuLink as-child>
               <ul class="flex flex-col gap-3 p-6 md:w-[400px] lg:w-[500px] ">
                 <li>
-                  <router-link to="/rozgrywki/wyniki" class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none uppercase
+                  <router-link to="/druzyna/kadra" class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none uppercase
                   transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent
                   focus:text-accent-foreground">
                     Kadra
@@ -166,14 +159,14 @@
                   <router-link to="/rozgrywki/tabela-blb" class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none uppercase
                   transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent
                   focus:text-accent-foreground">
-                    terminarz i wyniki
+                    statystyki
                   </router-link>
                 </li>
                 <li>
-                  <router-link to="/rozgrywki/tabela-blb" class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none uppercase
+                  <router-link to="/o-nas" class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none uppercase
                   transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent
                   focus:text-accent-foreground">
-                    zawodnicy
+                    O klubie
                   </router-link>
                 </li>
               </ul>
@@ -198,9 +191,6 @@
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
-
-
-
 
     <!-- Mobile -->
 
@@ -258,13 +248,18 @@
                 <AccordionItem value="item-4">
                   <AccordionTrigger class=" px-4 font-normal uppercase">drużyna</AccordionTrigger>
                   <AccordionContent>
-                    <router-link to="/rozgrywki/wyniki" class="uppercase py-2 px-4">
-                      o klubie
+                    <router-link to="/druzyna/kadra" class="uppercase py-2 px-4">
+                      kadra
                     </router-link>
                   </AccordionContent>
                   <AccordionContent>
                     <router-link to="/rozgrywki/tabela-blb" class="uppercase py-2 px-4">
-                      tabela blb
+                      statystyki
+                    </router-link>
+                  </AccordionContent>
+                  <AccordionContent>
+                    <router-link to="/rozgrywki/tabela-blb" class="uppercase py-2 px-4">
+                      o klubie
                     </router-link>
                   </AccordionContent>
                 </AccordionItem>
