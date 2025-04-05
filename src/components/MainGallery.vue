@@ -3,6 +3,7 @@ import { computed, ref } from 'vue'
 import MainGalleryCard from '../components/MainGalleryCard.vue'
 import galleryCardsData from '../data/galleryCardsData.js'
 
+
 const props = defineProps({
   itemsToShow: {
     type: Number,
@@ -25,4 +26,6 @@ const galleryCards = computed(() => galleryCardsData.slice(0, props.itemsToShow)
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8 p-2 md:p-0">
     <MainGalleryCard v-for="galleryCard in galleryCards" :key="galleryCard.id" :galleryCard="galleryCard" />
   </div>
+
+
 </template>

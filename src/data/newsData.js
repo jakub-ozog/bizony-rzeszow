@@ -22,7 +22,10 @@ const mainNews = [
     author: '18:00',
     thumb2: articleImageSub1,
     isFeatured: false,
-    link: { name: 'postDetail', params: { slug: 'drugi-post' } },
+    link: {
+      name: 'postDetail',
+      params: { slug: 'bizony-rzeszow-druzyna-ktora-narodila-sie-z-pasji-do-baseballu' },
+    },
   },
   {
     id: 3,
@@ -33,7 +36,7 @@ const mainNews = [
     author: '18:00',
     thumb3: articleImageSub2,
     isFeatured: false,
-    link: { name: 'postDetail', params: { slug: 'trzeci-post' } },
+    link: { name: 'postDetail', params: { slug: 'bizonowe-podsumowanie-2024-roku' } },
   },
 ]
 

@@ -67,6 +67,10 @@ const router = createRouter({
       component: TeamView,
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    // always scroll to top
+    return { top: 0 }
+  },
 })
 
 export default router

@@ -4,9 +4,9 @@ import UpcomingMatchCounter from '@/components/UpcomingMatchCounter.vue'
 import MainNews from '@/components/MainNews.vue'
 import MainGallery from '@/components/MainGallery.vue'
 import PlayerFeatured from '@/components/PlayerFeatured.vue'
-// import SupportUs from '@/components/SupportUs.vue'
 import AboutJoinUs from '@/components/AboutJoinUs.vue'
 import HomeTable from '@/components/HomeTable.vue'
+import arrowBtnRounded from '@/assets/icons/btn_arrow_rounded.svg'
 </script>
 
 <template>
@@ -55,6 +55,12 @@ import HomeTable from '@/components/HomeTable.vue'
 
   <section class="container mx-auto text-center my-12 font-urbanist font-bold">
     <MainGallery />
+    <router-link to="/galeria" class="container mx-auto text-center mt-2 flex justify-end">
+      <button class="flex justify-center items-center text-center text-primaryRed underline rounded-2xl py-2  mt-8">
+        <span class="text-[0.75rem] font-semibold mr-2">Zobacz więcej zdjęć </span> <img class="w-3 h-3"
+          :src="arrowBtnRounded" />
+      </button>
+    </router-link>
   </section>
 
   <section class="container mx-auto my-12 font-urbanist font-bold px-2 md:px-0">
