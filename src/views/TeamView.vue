@@ -1,6 +1,7 @@
 <script setup>
 import { playersStatistics } from '@/data/playersStatistics.js'
 import { pitchersStatistics } from '@/data/pitchersStatistics';
+import Card from 'primevue/card';
 </script>
 
 <template>
@@ -27,7 +28,9 @@ import { pitchersStatistics } from '@/data/pitchersStatistics';
 
       <DataTable :value="playersStatistics" removableSort row-hover="">
         <PrimeColumn field="nr" header="Nr" sortable></PrimeColumn>
-        <PrimeColumn field="zawodnik" header="ZAWODNIK" sortable class="font-bold text-primaryRed"></PrimeColumn>
+        <PrimeColumn field="zawodnik" header="ZAWODNIK" sortable class="font-bold text-primaryRed">
+
+        </PrimeColumn>
         <PrimeColumn field="poz" header="POZ" sortable></PrimeColumn>
         <PrimeColumn field="g" header="G" sortable></PrimeColumn>
         <PrimeColumn field="pa" header="PA" sortable></PrimeColumn>

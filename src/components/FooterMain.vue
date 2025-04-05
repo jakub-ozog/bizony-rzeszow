@@ -3,8 +3,8 @@ import { RouterLink } from 'vue-router'
 
 import facebookIcon from '@/assets/icons/fb-icon.svg'
 import instagramIcon from '@/assets/icons/ig-icon.svg'
-// import patroniteIcon from '@/assets/icons/patronite-icon.svg'
 import bizonyLogoWhite from '@/assets/logo/bizony_logo_white.svg'
+// import patroniteIcon from '@/assets/icons/patronite-icon.svg'
 </script>
 
 <template>

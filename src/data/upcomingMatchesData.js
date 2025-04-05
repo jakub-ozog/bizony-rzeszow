@@ -1,5 +1,5 @@
 import BizonyLogo from '@/assets/logo/bizony.webp'
-import WizardsLogo from '@/assets/logo/kings.webp'
+import WizardsLogo from '@/assets/logo/wizards.webp'
 import KingsLogo from '@/assets/logo/kings.webp'
 import RawaLogo from '@/assets/logo/rawa.webp'
 

@@ -59,8 +59,8 @@ export const gamesSummary = [
     przeciwnik: 'Kraków Kings',
     rozgrywki: 'Towarzyski',
     wynik: 'W',
-    punktyZdobyte: 13,
-    punktyStracone: 21,
+    punktyZdobyte: 21,
+    punktyStracone: 13,
   },
   {
     termin: '2024.07.14',
@@ -126,7 +126,7 @@ export const gamesSummary = [
     punktyStracone: 15,
   },
   {
-    termin: '2025.03.22',
+    termin: '2025.03.23',
     miejsce: 'Żory',
     przeciwnik: 'Wizards Opole',
     rozgrywki: 'Towarzyski',

@@ -1,4 +1,6 @@
   <script setup>
+  import { ref, watch, defineProps } from 'vue'
+  import { RouterLink, useRouter } from 'vue-router'
   import {
     NavigationMenu,
     NavigationMenuContent,
@@ -23,17 +25,12 @@
     AccordionTrigger,
   } from "@/components/ui/accordion";
   import { Button } from "@/components/ui/button"
-
-
-
-  import { ref, watch } from 'vue'
-  import { RouterLink, useRouter } from 'vue-router'
+  import facebookIcon from '@/assets/icons/fb-icon.svg'
+  import instagramIcon from '@/assets/icons/ig-icon.svg'
   import 'primeicons/primeicons.css'
 
   const isOpen = ref(false)
   const router = useRouter()
-
-
 
   watch(
     () => router.currentRoute.value.path,
@@ -46,43 +43,6 @@
   const toggleMenuDropdown = () => {
     isMenuDropdownOpen.value = !isMenuDropdownOpen.value
   }
-  const components = [
-    {
-      title: 'Alert Dialog',
-      href: '/docs/components/alert-dialog',
-      description:
-        'A modal dialog that interrupts the user with important content and expects a response.',
-    },
-    {
-      title: 'Hover Card',
-      href: '/docs/components/hover-card',
-      description:
-        'For sighted users to preview content available behind a link.',
-    },
-    {
-      title: 'Progress',
-      href: '/docs/components/progress',
-      description:
-        'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
-    },
-    {
-      title: 'Scroll-area',
-      href: '/docs/components/scroll-area',
-      description: 'Visually or semantically separates content.',
-    },
-    {
-      title: 'Tabs',
-      href: '/docs/components/tabs',
-      description:
-        'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
-    },
-    {
-      title: 'Tooltip',
-      href: '/docs/components/tooltip',
-      description:
-        'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
-    },
-  ]
 
 </script>
 
@@ -213,73 +173,92 @@
                 </a>
               </SheetTitle>
             </SheetHeader>
-            <div class="flex flex-col gap-6 p-4">
-              <Accordion type="single" collapsible class="flex w-full flex-col gap-4">
+            <div class="flex flex-col gap-8 py-8">
+              <Accordion type="single" collapsible class="flex w-full flex-col gap-6">
 
 
-                <AccordionItem value="item-1">
-                  <router-link to="/" class="uppercase py-2 px-4">
+                <AccordionItem value="item-1" class="border-none">
+                  <router-link to="/" class="uppercase p-2 font-semibold text-xl text-gray-700">
                     strona główna
                   </router-link>
                 </AccordionItem>
 
 
-                <AccordionItem value="item-2">
-                  <router-link to="/galeria" class="uppercase py-2 px-4">
+                <AccordionItem value="item-2" class="border-none">
+                  <router-link to="/galeria" class="uppercase p-2 font-semibold text-xl text-gray-700">
                     galeria
                   </router-link>
                 </AccordionItem>
 
-                <AccordionItem value="item-3">
-                  <AccordionTrigger class=" px-4 font-normal uppercase">rozgrywki</AccordionTrigger>
-                  <AccordionContent>
-                    <router-link to="/rozgrywki/wyniki" class="uppercase py-2 px-4">
+                <AccordionItem value="item-3" class="border-none p-0">
+                  <AccordionTrigger class="uppercase p-2 py-0 font-semibold text-xl text-gray-700">rozgrywki
+                  </AccordionTrigger>
+                  <AccordionContent class="py-4">
+                    <router-link to="/rozgrywki/wyniki"
+                      class="flex items-center justify-start gap-3 uppercase ml-2 p-2 text-lg font-semibold text-gray-700">
+                      <i class="pi pi-circle-fill" style="color: #ddd; font-size: .5rem;"></i>
                       wyniki
                     </router-link>
                   </AccordionContent>
                   <AccordionContent>
-                    <router-link to="/rozgrywki/tabela-blb" class="uppercase py-2 px-4">
+
+                    <router-link to="/rozgrywki/tabela-blb"
+                      class="flex items-center justify-start gap-3 uppercase ml-2 p-2 text-lg font-semibold text-gray-700">
+                      <i class="pi pi-circle-fill" style="color: #ddd; font-size: .5rem;"></i>
                       tabela blb
                     </router-link>
                   </AccordionContent>
                 </AccordionItem>
 
 
-                <AccordionItem value="item-4">
-                  <AccordionTrigger class=" px-4 font-normal uppercase">drużyna</AccordionTrigger>
-                  <AccordionContent>
-                    <router-link to="/druzyna/kadra" class="uppercase py-2 px-4">
+                <AccordionItem value="item-4" class="border-none  p-0">
+                  <AccordionTrigger class=" p-2 py-0 text-xl font-semibold uppercase  text-gray-700">drużyna
+                  </AccordionTrigger>
+                  <AccordionContent class="py-4">
+
+                    <router-link to="/druzyna/kadra"
+                      class="flex items-center justify-start gap-3 uppercase ml-2 p-2 text-lg font-semibold text-gray-700">
+                      <i class="pi pi-circle-fill" style="color: #ddd; font-size: .5rem;"></i>
                       kadra
                     </router-link>
+
                   </AccordionContent>
                   <AccordionContent>
-                    <router-link to="/rozgrywki/tabela-blb" class="uppercase py-2 px-4">
+                    <router-link to="/rozgrywki/tabela-blb"
+                      class="flex items-center justify-start gap-3 uppercase ml-2 p-2 text-lg font-semibold text-gray-700">
+                      <i class="pi pi-circle-fill" style="color: #ddd; font-size: .5rem;"></i>
                       statystyki
                     </router-link>
                   </AccordionContent>
                   <AccordionContent>
-                    <router-link to="/rozgrywki/tabela-blb" class="uppercase py-2 px-4">
+
+                    <router-link to="/o-nas"
+                      class="flex items-center justify-start gap-3 uppercase ml-2 p-2 text-lg font-semibold text-gray-700">
+                      <i class="pi pi-circle-fill" style="color: #ddd; font-size: .5rem;"></i>
                       o klubie
                     </router-link>
                   </AccordionContent>
                 </AccordionItem>
 
-
-
-                <AccordionItem value="item-5">
-                  <router-link to="/blog" class="uppercase py-2 px-4">
+                <AccordionItem value="item-5" class="border-none">
+                  <router-link to="/blog" class="uppercase p-2 font-semibold text-xl text-gray-700">
                     blog
                   </router-link>
                 </AccordionItem>
               </Accordion>
 
-              <div class="flex flex-col gap-3">
-                <Button>
-                  <a href="">Login</a>
-                </Button>
-                <Button>
-                  <a href="">Signup</a>
-                </Button>
+              <div class="flex flex-row justify-end gap-3">
+
+                <div class="flex flex-row gap-4">
+                  <a href="https://www.facebook.com/BizonyRzeszow" target="_blank">
+                    <img :src="facebookIcon" alt="facebook" class="w-6" />
+                  </a>
+                  <a href="https://www.instagram.com/bizony__rzeszow/" target="_blank">
+                    <img :src="instagramIcon" alt="instagram" class="w-7" />
+                  </a>
+                  <!-- <img :src="patroniteIcon" alt="patronite" /> -->
+                </div>
+
               </div>
             </div>
           </SheetContent>
