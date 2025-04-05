@@ -1,7 +1,7 @@
 <script setup>
 import authorIcon from '@/assets/images/michal-oberc-author.webp'
 import calendarIcon from '@/assets/icons/calendar-icon.svg'
-import postMainThumb from '@/assets/images/post-main-thumb.webp'
+import postMainThumb from '@/assets/images/galleries/gallery-4/11.webp'
 </script>
 
 <template>

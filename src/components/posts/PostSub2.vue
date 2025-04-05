@@ -1,13 +1,8 @@
 <script setup>
-import { ref } from 'vue'
 import { gamesSummary } from '@/data/gamesSummary.js'
-
-// const gamesData = ref(gamesSummary)
-
-
 import authorIcon from '@/assets/images/michal-oberc-author.webp'
 import calendarIcon from '@/assets/icons/calendar-icon.svg'
-import postMainThumb from '@/assets/images/post-main-thumb.webp'
+import postMainThumb from '@/assets/images/galleries/gallery-4/16.webp'
 </script>
 
 <template>
@@ -71,48 +66,40 @@ import postMainThumb from '@/assets/images/post-main-thumb.webp'
       Byliśmy również obecni na:
     </h2>
 
-    <ul class="font-base text-lg mt-12 text-black">
-      <li>
-        1.Rzeszowska Paniaga
-
+    <ul
+      class="font-base text-lg mt-12 text-slate-700 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 font-semibold">
+      <li class="bg-blue-800 text-white p-4">
+        Rzeszowska Paniaga
       </li>
-      <li>
-
-        2.Piknik Polsko-Amerykański
+      <li class="bg-blue-800 text-white p-4">
+        Piknik Polsko-Amerykański
       </li>
-      <li>
-
-        3.Piknik Charytatywny w Kraczkowej
+      <li class="bg-blue-800 text-white p-4">
+        Piknik Charytatywny w Kraczkowej
       </li>
-      <li>
-
-        4.Dni osiedla Miłocin
+      <li class="bg-blue-800 text-white p-4">
+        Dni osiedla Miłocin
       </li>
-      <li>
-
-        5.Obchody Dnia Dziecka przy Oratorium Salezjanów
+      <li class="bg-blue-800 text-white p-4">
+        Obchody Dnia Dziecka przy Oratorium Salezjanów
       </li>
-      <li>
-
-        6.Razem w Baseballu
+      <li class="bg-blue-800 text-white p-4">
+        Razem w Baseballu
       </li>
-      <li>
-        7.Dzień Niepodległości USA w Hotelu Ostoya
-
+      <li class="bg-blue-800 text-white p-4">
+        Dzień Niepodległości USA w Hotelu Ostoya
       </li>
-      <li>
-        8. Międzynarodowy Dzień Uchodźcy w Rzeszowie
+      <li class="bg-blue-800 text-white p-4">
+        Międzynarodowy Dzień Uchodźcy w Rzeszowie
       </li>
-      <li>
-        9.I Otwarty Puchar Polski Mażoretek w Rzeszowie
-
+      <li class="bg-blue-800 text-white p-4">
+        Otwarty Puchar Polski Mażoretek w Rzeszowie
       </li>
-      <li>
-        10. Letnia półkolonia w Zalesiu
+      <li class="bg-blue-800 text-white p-4">
+        Letnia półkolonia w Zalesiu
       </li>
-      <li>
-
-        11. Letnia półkolonia na Białej
+      <li class="bg-blue-800 text-white p-4">
+        Letnia półkolonia na Białej
       </li>
 
     </ul>

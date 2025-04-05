@@ -1,6 +1,26 @@
 <script setup>
+import { ref } from 'vue';
 import { playersStatistics } from '@/data/playersStatistics.js'
 import { pitchersStatistics } from '@/data/pitchersStatistics';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog'
+
+const selectedPlayer = ref(null)
+const isDialogOpen = ref(false)
+
+function openPlayerDialog(player) {
+  selectedPlayer.value = player
+  isDialogOpen.value = true
+}
+
+
 </script>
 
 <template>
@@ -15,19 +35,60 @@ import { pitchersStatistics } from '@/data/pitchersStatistics';
   </main>
 
 
-
   <section class="container mx-auto my-12 font-urbanist px-2 md:px-0 text-center">
+
     <h2 class="text-3xl font-bold text-midGrayupper uppercase">Skład drużyny (sezon 2025)
     </h2>
 
     <div class="my-16 shadow-lg">
       <div class="text-left w-full bg-gradient-to-r from-accentBlue to-slate-950 text-white p-6 rounded-t-lg ">
         <h3 class="text-white text-xl font-semibold">Statystki pałkarzy</h3>
+        <p class="text-blue-100">Kliknij na zawodnika aby wyświetlić jego statystyki</p>
       </div>
 
+
+
+      <!-- Dialog component Shadcn -->
+
+      <Dialog v-model:open="isDialogOpen">
+        <DialogContent class="max-w-xl">
+          <DialogHeader>
+            <DialogTitle>{{ selectedPlayer?.zawodnik }}</DialogTitle>
+            <DialogDescription>
+              Pozycja: {{ selectedPlayer?.poz }} | Numer: {{ selectedPlayer?.nr }}
+            </DialogDescription>
+          </DialogHeader>
+
+          <div class="grid grid-cols-2 gap-4 mt-4 text-sm">
+            <div><strong>H:</strong> {{ selectedPlayer?.h }}</div>
+            <div><strong>HR:</strong> {{ selectedPlayer?.hr }}</div>
+            <div><strong>BA:</strong> {{ selectedPlayer?.ba }}</div>
+            <div><strong>OBP:</strong> {{ selectedPlayer?.obp }}</div>
+            <!-- Dodaj więcej statystyk wg uznania -->
+          </div>
+
+          <DialogFooter class="mt-6">
+            <button @click="isDialogOpen = false" class="btn btn-secondary">Zamknij</button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+
+
+
+
+      <!-- PrimeVue DataTables structure -->
       <DataTable :value="playersStatistics" removableSort row-hover="">
         <PrimeColumn field="nr" header="Nr" sortable></PrimeColumn>
-        <PrimeColumn field="zawodnik" header="ZAWODNIK" sortable class="font-bold text-primaryRed"></PrimeColumn>
+        <PrimeColumn field="zawodnik" header="ZAWODNIK" sortable class="font-bold text-primaryRed">
+          <template #body="slotProps">
+            <button @click="openPlayerDialog(slotProps.data)"
+              class="text-primaryRed underline hover:opacity-80 transition">
+              {{ slotProps.data.zawodnik }}
+            </button>
+          </template>
+        </PrimeColumn>
+
         <PrimeColumn field="poz" header="POZ" sortable></PrimeColumn>
         <PrimeColumn field="g" header="G" sortable></PrimeColumn>
         <PrimeColumn field="pa" header="PA" sortable></PrimeColumn>
@@ -47,6 +108,26 @@ import { pitchersStatistics } from '@/data/pitchersStatistics';
         <PrimeColumn field="hbp" header="HBP" sortable></PrimeColumn>
       </DataTable>
     </div>
+
+
+    <Dialog>
+      <DialogTrigger>
+        Edit Profile
+      </DialogTrigger>
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle>Edit profile</DialogTitle>
+          <DialogDescription>
+            Make changes to your profile here. Click save when you're done.
+          </DialogDescription>
+        </DialogHeader>
+
+        <DialogFooter>
+          Save changes
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
+
 
 
     <div class="my-16 shadow-lg">

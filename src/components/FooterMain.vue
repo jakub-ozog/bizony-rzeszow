@@ -3,8 +3,8 @@ import { RouterLink } from 'vue-router'
 
 import facebookIcon from '@/assets/icons/fb-icon.svg'
 import instagramIcon from '@/assets/icons/ig-icon.svg'
-// import patroniteIcon from '@/assets/icons/patronite-icon.svg'
 import bizonyLogoWhite from '@/assets/logo/bizony_logo_white.svg'
+// import patroniteIcon from '@/assets/icons/patronite-icon.svg'
 </script>
 
 <template>
@@ -49,16 +49,17 @@ import bizonyLogoWhite from '@/assets/logo/bizony_logo_white.svg'
             <router-link class="text-sm text-gray-300" to="/kontakt">Kontakt</router-link>
           </div>
           <div class="flex flex-col gap-4 text-center md:text-left">
-            <h5 class="text-xl font-bold text-gray-200">O nas</h5>
+            <h5 class="text-xl font-bold text-gray-200">Rozgrywki</h5>
             <!-- <p class="text-sm text-gray-300">Historia</p> -->
-            <router-link class="text-sm text-gray-300" to="/o-nas">O klubie</router-link>
+            <router-link class="text-sm text-gray-300" to="/rozgrywki/wyniki">Wyniki</router-link>
+            <router-link class="text-sm text-gray-300" to="/rozgrywki/tabela-blb">Tabela BLB</router-link>
             <!-- <p class="text-sm text-gray-300">Regulamin</p> -->
           </div>
           <div class="flex flex-col gap-4 text-center md:text-left">
             <h3 class="text-xl font-bold text-gray-200">Drużyna</h3>
-            <p class="text-sm text-gray-300">Skład</p>
-            <p class="text-sm text-gray-300">Terminarz</p>
-            <router-link class="text-sm text-gray-300" to="/blog">Zawodnicy</router-link>
+            <router-link class="text-sm text-gray-300" to="/druzyna/kadra">Kadra</router-link>
+            <p class="text-sm text-gray-300">Statystyki</p>
+            <router-link class="text-sm text-gray-300" to="/o-nas">O klubie</router-link>
           </div>
           <!-- <div class="flex flex-col gap-4 text-center md:text-left">
             <h3 class="text-xl font-bold">Sponsorzy</h3>
