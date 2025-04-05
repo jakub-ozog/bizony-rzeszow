@@ -149,7 +149,7 @@ export const playersStatistics = [
   {
     nr: 1,
     zawodnik: 'Kula Barłomiej',
-    poz: 'CF',
+    poz: 'CF / 1B',
     g: 0,
     pa: 0,
     ab: 0,
@@ -170,7 +170,7 @@ export const playersStatistics = [
   {
     nr: 97,
     zawodnik: 'Kużel Mikołaj',
-    poz: '1B',
+    poz: '1B / OF',
     g: 0,
     pa: 0,
     ab: 0,
