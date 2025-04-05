@@ -169,7 +169,7 @@ export const playersStatistics = [
   },
   {
     nr: 97,
-    zawodnik: 'Kužel Mikołaj',
+    zawodnik: 'Kużel Mikołaj',
     poz: '1B',
     g: 0,
     pa: 0,
