@@ -14,7 +14,7 @@ const posts = ref(blogPosts)
       </div>
       <router-link :to="{ name: 'postDetail', params: { slug: post.slug } }" class="">
         <h2 class="text-3xl text-primaryRed font-bold mb-4">{{ post.title }}</h2>
-        <p class="mt-2 font-semibold leading-7">{{ post.excerpt }}</p>
+        <p class="mt-2 font-semibold ">{{ post.excerpt }}</p>
       </router-link>
     </div>
   </div>
