@@ -3,6 +3,7 @@ import galleryCardThumb2 from '@/assets/images/galleries/gallery-2/IMG_5569.webp
 import galleryCardThumb3 from '@/assets/images/galleries/gallery-3/_DSC0285.webp'
 import galleryCardThumb4 from '@/assets/images/galleries/gallery-4/12.webp'
 import galleryCardThumb5 from '@/assets/images/galleries/gallery-5/IMG_6224.webp'
+import galleryCardThumb6 from '@/assets/images/galleries/gallery-6/12.webp'
 
 const mainGalleryCards = [
   {
@@ -59,6 +60,17 @@ const mainGalleryCards = [
     slug: 'dzien-osiedla-milocin-31-08-2024',
     component: () => import('@/components/galleries/GalleryEl5.vue'),
     link: { name: 'gallerySingle', params: { slug: 'dzien-osiedla-milocin-31-08-2024' } },
+  },
+  {
+    id: 6,
+    title: 'Bizony Rzeszów - Wizards Opole (22.03.2025)',
+    date: new Date(2025, 2, 22),
+    time: '18:00',
+    thumb: galleryCardThumb6,
+    author: 'Michał',
+    slug: 'bizony-rzeszow-vs-wizards-opole-22-03-2025',
+    component: () => import('@/components/galleries/GalleryEl6.vue'),
+    link: { name: 'gallerySingle', params: { slug: 'bizony-rzeszow-vs-wizards-opole-22-03-2025' } },
   },
 ]
 
