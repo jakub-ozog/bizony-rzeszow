@@ -37,9 +37,9 @@ import bizonyLogoWhite from '@/assets/logo/bizony_logo_white.svg'
           </form>
         </div> -->
 
-        <img :src="bizonyLogoWhite" class="w-44 h-full" alt="bizony rzeszów logo" />
+        <img :src="bizonyLogoWhite" class="w-44 h-full mx-auto md:m-0" alt="bizony rzeszów logo" />
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-8 xl:mt-0 gap-32">
+        <div class="grid grid-cols-1  md:grid-cols-3 mt-8 xl:mt-0 gap-8 lg:gap-32">
           <div class="flex flex-col gap-4 text-center md:text-left">
             <h5 class="text-xl font-bold text-gray-200">Mapa strony</h5>
             <router-link class="text-sm text-gray-300" to="/">Strona Główna</router-link>

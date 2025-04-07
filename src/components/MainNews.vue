@@ -17,14 +17,14 @@ const news = ref(newsData)
       <div class="hidden lg:block absolute bottom-0 left-0 w-full h-[60%] bg-gradient-to-t from-black to-transparent">
       </div>
 
-      <div class="relative lg:absolute lg:bottom-8 lg:left-10 text-left w-3/4">
-        <h3 class="text-3xl text-midBlack lg:text-white"> {{ news[0].title }}</h3>
+      <div class="relative lg:absolute lg:bottom-8 lg:left-10 text-center w-full lg:text-left lg:w-3/4 p-5 lg:p-0">
+        <h3 class="text-3xl text-primaryRed mt-6 lg:text-white"> {{ news[0].title }}</h3>
         <p class="text-lightBlack lg:text-white font-semibold text-sm mb-8 mt-4 md:mb-0">
           {{ news[0].description }}
         </p>
-        <router-link :to="news[0].link">
+        <router-link :to="news[0].link" class="mx-auto text-center">
           <button
-            class="flex justify-center items-center text-center bg-secondaryRed text-white rounded-2xl py-2 px-4 mt-4 w-36">
+            class="flex justify-center items-center mx-auto my-6 text-center bg-secondaryRed text-white rounded-2xl py-2 px-4 mt-4 w-36">
             <span class="text-[0.75rem] font-normal mr-2"> Czytaj więcej </span><img class="w-3 h-3"
               src="/src/assets/icons/baseball_ball_icon.svg" />
           </button>

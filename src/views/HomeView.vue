@@ -55,7 +55,7 @@ import arrowBtnRounded from '@/assets/icons/btn_arrow_rounded.svg'
 
   <section class="container mx-auto text-center my-12 font-urbanist font-bold">
     <MainGallery />
-    <router-link to="/galeria" class="container mx-auto text-center mt-2 flex justify-end">
+    <router-link to="/galeria" class="mx-auto text-center mt-2 flex justify-end p-2">
       <button class="flex justify-center items-center text-center text-primaryRed underline rounded-2xl py-2  mt-8">
         <span class="text-[0.75rem] font-semibold mr-2">Zobacz więcej zdjęć </span> <img class="w-3 h-3"
           :src="arrowBtnRounded" />
