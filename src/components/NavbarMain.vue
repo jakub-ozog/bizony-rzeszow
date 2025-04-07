@@ -40,9 +40,9 @@
   )
 
 
-  const toggleMenuDropdown = () => {
-    isMenuDropdownOpen.value = !isMenuDropdownOpen.value
-  }
+  // const toggleMenuDropdown = () => {
+  //   isMenuDropdownOpen.value = !isMenuDropdownOpen.value
+  // }
 
 </script>
 
@@ -159,7 +159,7 @@
         <router-link to="/">
           <img src="@/assets/logo/logo-nav.svg" class="w-3/4 md:w-full" alt="Logo Bizony Rzeszów" />
         </router-link>
-        <Sheet @click="isOpen = !isOpen">
+        <Sheet :open="isOpen" @update:open="val => isOpen = val">
           <SheetTrigger>
             <Button
               class="bg-transparent text-primaryRed hover:bg-transparent  transition duration-300 ease-in-out hover:scale-75 border-solid">
