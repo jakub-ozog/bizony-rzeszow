@@ -48,7 +48,7 @@
 
 <template>
 
-  <section class="p-8">
+  <header class="p-4 lg:p-8">
     <!-- {/* Desktop Menu */} -->
     <NavigationMenu class="hidden justify-between xl:flex items-center font-urbanist">
       <NavigationMenuLink>
@@ -115,13 +115,13 @@
                     Kadra
                   </router-link>
                 </li>
-                <li>
+                <!-- <li>
                   <router-link to="/rozgrywki/tabela-blb" class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none uppercase
                   transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent
                   focus:text-accent-foreground">
                     statystyki
                   </router-link>
-                </li>
+                </li> -->
                 <li>
                   <router-link to="/o-nas" class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none uppercase
                   transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent
@@ -157,11 +157,12 @@
     <div class="block xl:hidden">
       <div class="flex items-center justify-between">
         <router-link to="/">
-          <img src="@/assets/logo/logo-nav.svg" class="h-18" alt="Logo Bizony Rzeszów" />
+          <img src="@/assets/logo/logo-nav.svg" class="w-3/4 md:w-full" alt="Logo Bizony Rzeszów" />
         </router-link>
         <Sheet @click="isOpen = !isOpen">
           <SheetTrigger>
-            <Button class="bg-primaryRed border-solid">
+            <Button
+              class="bg-transparent text-primaryRed hover:bg-transparent  transition duration-300 ease-in-out hover:scale-75 border-solid">
               <i class="pi pi-align-justify" style="font-size: 1rem; "></i>
             </Button>
           </SheetTrigger>
@@ -223,15 +224,15 @@
                     </router-link>
 
                   </AccordionContent>
-                  <AccordionContent>
+                  <!-- <AccordionContent>
                     <router-link to="/rozgrywki/tabela-blb"
                       class="flex items-center justify-start gap-3 uppercase ml-2 p-2 text-lg font-semibold text-gray-700">
                       <i class="pi pi-circle-fill" style="color: #ddd; font-size: .5rem;"></i>
                       statystyki
                     </router-link>
-                  </AccordionContent>
-                  <AccordionContent>
+                  </AccordionContent> -->
 
+                  <AccordionContent>
                     <router-link to="/o-nas"
                       class="flex items-center justify-start gap-3 uppercase ml-2 p-2 text-lg font-semibold text-gray-700">
                       <i class="pi pi-circle-fill" style="color: #ddd; font-size: .5rem;"></i>
@@ -265,7 +266,7 @@
         </Sheet>
       </div>
     </div>
-  </section>
+  </header>
 
 
 

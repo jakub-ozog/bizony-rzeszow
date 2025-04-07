@@ -31,11 +31,11 @@ import arrowBtnRounded from '@/assets/icons/btn_arrow_rounded.svg'
   </section>
 
   <section class="mx-auto max-w-[2560px] mt-24">
-    <div class="grid grid-cols-1 sm:grid-cols-4 gap-5 sm:gap-0 overflow-hidden">
-      <img src="@/assets/images/player_2_card.png" class="w-3/4 m-auto sm:m-0 sm:w-full h-full object-cover" alt="" />
-      <img src="@/assets/images/player_4_card.png" class="w-3/4 m-auto sm:m-0 sm:w-full h-full object-cover" alt="" />
-      <img src="@/assets/images/player_3_card.png" class="w-3/4 m-auto sm:m-0 sm:w-full h-full object-cover" alt="" />
-      <img src="@/assets/images/player_1_card.png" class="w-3/4 m-auto sm:m-0 sm:w-full h-full object-cover" alt="" />
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-1 lg:gap-5 overflow-hidden">
+      <img src="@/assets/images/player_2_card.png" class="w-full  m-auto sm:m-0 sm:w-full h-full object-cover" alt="" />
+      <img src="@/assets/images/player_4_card.png" class="w-full  m-auto sm:m-0 sm:w-full h-full object-cover" alt="" />
+      <img src="@/assets/images/player_3_card.png" class="w-full  m-auto sm:m-0 sm:w-full h-full object-cover" alt="" />
+      <img src="@/assets/images/player_1_card.png" class="w-full  m-auto sm:m-0 sm:w-full h-full object-cover" alt="" />
     </div>
   </section>
 

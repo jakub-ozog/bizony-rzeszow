@@ -117,7 +117,7 @@ export const gamesSummary = [
     punktyStracone: 14,
   },
   {
-    termin: '2025.03.23',
+    termin: '2025.03.22',
     miejsce: 'Żory',
     przeciwnik: 'Wizards Opole',
     rozgrywki: 'Towarzyski',
@@ -126,7 +126,7 @@ export const gamesSummary = [
     punktyStracone: 15,
   },
   {
-    termin: '2025.03.23',
+    termin: '2025.03.22',
     miejsce: 'Żory',
     przeciwnik: 'Wizards Opole',
     rozgrywki: 'Towarzyski',
