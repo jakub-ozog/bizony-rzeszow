@@ -1,7 +1,9 @@
 <script setup>
 import { ref } from 'vue';
 import { playersStatistics } from '@/data/playersStatistics.js'
-import { pitchersStatistics } from '@/data/pitchersStatistics';
+import { pitchersStatistics } from '@/data/pitchersStatistics.js';
+import { positionsData } from '@/data/positionsData.js'
+import diagramImg from '@/assets/images/baseball_diagram_with_positions.webp'
 import {
   Dialog,
   DialogContent,
@@ -20,6 +22,10 @@ function openPlayerDialog(player) {
   isDialogOpen.value = true
 }
 
+
+const trainerDetails = [{
+  Trener: 'Jurczyński Krzysztof',
+}]
 
 </script>
 
@@ -45,8 +51,6 @@ function openPlayerDialog(player) {
         <h3 class="text-white text-xl font-semibold">Statystki pałkarzy</h3>
         <p class="text-blue-100">Kliknij na zawodnika aby wyświetlić jego statystyki</p>
       </div>
-
-
 
       <!-- Dialog component Shadcn -->
 
@@ -74,10 +78,8 @@ function openPlayerDialog(player) {
       </Dialog>
 
 
-
-
-
       <!-- PrimeVue DataTables structure -->
+
       <DataTable :value="playersStatistics" removableSort row-hover="">
         <PrimeColumn field="nr" header="Nr" sortable></PrimeColumn>
         <PrimeColumn field="zawodnik" header="ZAWODNIK" sortable class="font-bold text-primaryRed">
@@ -107,28 +109,14 @@ function openPlayerDialog(player) {
         <PrimeColumn field="obp" header="OBP" sortable></PrimeColumn>
         <PrimeColumn field="hbp" header="HBP" sortable></PrimeColumn>
       </DataTable>
+      <div>
+
+        <DataTable :value="trainerDetails" row-hover="" class="mt-6">
+          <PrimeColumn field="Trener" header="Trener" class="font-bold bg-primaryRed text-white">
+          </PrimeColumn>
+        </DataTable>
+      </div>
     </div>
-
-
-    <Dialog>
-      <DialogTrigger>
-        Edit Profile
-      </DialogTrigger>
-      <DialogContent>
-        <DialogHeader>
-          <DialogTitle>Edit profile</DialogTitle>
-          <DialogDescription>
-            Make changes to your profile here. Click save when you're done.
-          </DialogDescription>
-        </DialogHeader>
-
-        <DialogFooter>
-          Save changes
-        </DialogFooter>
-      </DialogContent>
-    </Dialog>
-
-
 
     <div class="my-16 shadow-lg">
       <div class="text-left w-full bg-gradient-to-r from-accentBlue to-slate-950 text-white p-6 rounded-t-lg ">
@@ -146,6 +134,34 @@ function openPlayerDialog(player) {
         <PrimeColumn field="h" header="H" sortable></PrimeColumn>
         <PrimeColumn field="bb" header="BB" sortable></PrimeColumn>
       </DataTable>
+    </div>
+
+
+    <div class="my-16 shadow-lg">
+      <div class="text-left w-full bg-gradient-to-r from-accentBlue to-slate-950 text-white p-6 rounded-t-lg ">
+        <h3 class="text-white text-xl font-semibold">Legenda pozycji</h3>
+      </div>
+
+
+
+
+      <div class="flex flex-col lg:flex-row gap-4 items-center">
+
+
+
+
+        <img :src="diagramImg" alt="" class="w-full lg:w-[580px] ">
+
+
+        <div class="w-full">
+          <DataTable :value="positionsData" row-hover="">
+            <PrimeColumn field="position" header="Pozycja"></PrimeColumn>
+            <PrimeColumn field="polskaNazwa" header="PL"></PrimeColumn>
+            <PrimeColumn field="angielskaNazwa" header="EN"></PrimeColumn>
+          </DataTable>
+        </div>
+      </div>
+
     </div>
   </section>
 </template>

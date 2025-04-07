@@ -24,8 +24,8 @@ const yearSummary = computed(() => {
         W: 3,
         L: 10,
         D: 0,
-        punktyZdobyte: 117,
-        punktyStracone: 204,
+        punktyZdobyte: 125,
+        punktyStracone: 196,
       },
     ];
   } else {
