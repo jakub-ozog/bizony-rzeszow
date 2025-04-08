@@ -24,7 +24,7 @@ const news = ref(newsData)
         </p>
         <router-link :to="news[0].link" class="mx-auto text-center">
           <button
-            class="flex justify-center items-center mx-auto my-6 text-center bg-secondaryRed text-white rounded-2xl py-2 px-4 mt-4 w-36">
+            class="flex justify-center items-center mx-auto lg:mx-0 my-6 text-center bg-secondaryRed text-white rounded-2xl py-2 px-4 mt-4 w-36">
             <span class="text-[0.75rem] font-normal mr-2"> Czytaj więcej </span><img class="w-3 h-3"
               src="/src/assets/icons/baseball_ball_icon.svg" />
           </button>

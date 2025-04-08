@@ -66,22 +66,22 @@ onUnmounted(() => {
     <p class="text-md md:text-xl font-bold text-white">Do najbliższego meczu pozostało</p>
     <div class="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8 mt-8">
       <div class="flex flex-col items-center text-white">
-        <p class="text-3xl md:text-5xl font-bold text-white ">{{ countdown.days }}</p>
+        <p class="text-3xl sm:text-5xl font-bold text-white ">{{ countdown.days }}</p>
         <p class="text-sm font-light text-white">dni</p>
       </div>
       <p class="text-white text-2xl font-bold">:</p>
       <div class="flex flex-col items-center">
-        <p class="text-3xl md:text-5xl font-bold text-white"> {{ countdown.hours }}</p>
+        <p class="text-3xl sm:text-5xl font-bold text-white"> {{ countdown.hours }}</p>
         <p class="text-sm font-light text-white">godzin</p>
       </div>
       <p class="text-white text-2xl font-bold">:</p>
       <div class="flex flex-col items-center">
-        <p class="text-3xl md:text-5xl font-bold text-white ">{{ countdown.minutes }}</p>
+        <p class="text-3xl sm:text-5xl font-bold text-white ">{{ countdown.minutes }}</p>
         <p class="text-sm font-light text-white">minut</p>
       </div>
       <p class="text-white text-2xl font-bold">:</p>
       <div class="flex flex-col items-center">
-        <p class="text-3xl md:text-5xl font-bold text-white ">{{ countdown.seconds }}</p>
+        <p class="text-3xl sm:text-5xl font-bold text-white ">{{ countdown.seconds }}</p>
         <p class="text-sm font-light text-white">sekund</p>
       </div>
     </div>

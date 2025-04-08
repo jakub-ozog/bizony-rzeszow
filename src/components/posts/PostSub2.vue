@@ -2,7 +2,7 @@
 import { gamesSummary } from '@/data/gamesSummary.js'
 import authorIcon from '@/assets/images/michal-oberc-author.webp'
 import calendarIcon from '@/assets/icons/calendar-icon.svg'
-import postMainThumb from '@/assets/images/galleries/gallery-4/16.webp'
+import postMainThumb from '@/assets/images/galleries/gallery-4/11.webp'
 </script>
 
 <template>
@@ -11,11 +11,11 @@ import postMainThumb from '@/assets/images/galleries/gallery-4/16.webp'
     <div class="flex flex-row gap-6 mt-2 mb-12">
       <div class="flex flex-row gap-2 items-center">
         <img :src="authorIcon" class="w-7" alt="Ikona autora" />
-        <p class="text-sm text-gray-500">Michał Oberc</p>
+        <p class="text-sm text-gray-500">Redakcja</p>
       </div>
       <div class="flex flex-row gap-2 items-center">
         <img :src="calendarIcon" class="w-5" alt="Ikona kalendarza" />
-        <p class="text-sm text-gray-500">20.03.2025</p>
+        <p class="text-sm text-gray-500">31.12.2024</p>
       </div>
     </div>
     <p class="font-semibold text-lg">
@@ -78,7 +78,7 @@ import postMainThumb from '@/assets/images/galleries/gallery-4/16.webp'
         Piknik Charytatywny w Kraczkowej
       </li>
       <li class="bg-blue-800 text-white p-4">
-        Dni osiedla Miłocin
+        Dzień Osiedla Energiczny Miłocin
       </li>
       <li class="bg-blue-800 text-white p-4">
         Obchody Dnia Dziecka przy Oratorium Salezjanów

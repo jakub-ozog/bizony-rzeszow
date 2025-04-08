@@ -1,5 +1,14 @@
 <script setup>
 import joinUsBg from '@/assets/images/join-us-bg.webp'
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog'
 
 const joinBgImg = {
   backgroundImage: `url(${joinUsBg})`,
@@ -14,18 +23,56 @@ const joinBgImg = {
       Zostań jednym z Bizonów
     </h3>
     <p class="text-white mx-auto text-center w-3/4 my-4">
-      Masz pasję do baseballa? Chcesz trenować i grać w zgranej drużynie? <b>Bizony Rzeszów</b> czekają na Ciebie!
-      Niezależnie od Twojego doświadczenia, jeśli masz zapał i chęć do nauki, dołącz do naszej ekipy. Kliknij poniżej i
-      skontaktuj się, aby dowiedzieć się więcej o treningach i naborze!
+      Lubisz sport? Chcesz trenować i grać w zgranej drużynie? Bizony Rzeszów czekają na Ciebie! Niezależnie od Twojego
+      doświadczenia, jeśli masz zapał i chęć do nauki, dołącz do naszej ekipy. Kliknij poniżej i skontaktuj się, aby
+      dowiedzieć się więcej o treningach i naborze!
     </p>
 
-    <a href="mailto:jurczynski95@gmail.com"
-      class="text-[0.75rem] font-normal mr-2 m-0 flex justify-center items-center text-center bg-white text-black rounded-2xl py-2 px-4 mt-4 mb-5">
-      <span class="flex flex-row gap-3 items-center text-center">
-        Dołącz do klubu
-        <img class="w-3 h-3" src="/src/assets/icons/join-us-icon.svg" />
-      </span>
-    </a>
+
+
+
+    <Dialog>
+      <DialogTrigger
+        class="text-[0.75rem] font-normal mr-2 m-0 flex justify-center items-center text-center bg-white text-black rounded-2xl py-2 px-4 mt-4 mb-5">
+        <span class="flex flex-row gap-3 items-center text-center">
+          Dołącz do klubu
+          <img class="w-3 h-3" src="/src/assets/icons/join-us-icon.svg" />
+        </span>
+      </DialogTrigger>
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle class="mx-auto text-2xl">Dołącz do klubu</DialogTitle>
+          <DialogDescription>
+
+
+
+            <a href="mailto:mailto:jurczynski95@gmail.com"
+              class="flex items-center gap-4 bg-secondaryRed text-center mx-auto justify-center text-white rounded-2xl  py-2 px-4 mt-4 mb-5 w-3/4 md:w-1/2">
+              <i class="pi pi-at" style="color: white;"></i>
+              Napisz do nas!
+
+            </a>
+
+            <a href="tel:"
+              class="flex items-center gap-4 bg-midBlack text-center mx-auto justify-center text-white rounded-2xl py-2 px-4 mt-4 mb-5 w-3/4 md:w-1/2">
+              <i class="pi pi-phone" style="color: white;"></i>
+              Zadzwoń teraz!
+            </a>
+
+            <a href="mailto:mailto:jurczynski95@gmail.com"
+              class="flex items-center gap-4 bg-accentBlue text-center mx-auto justify-center text-white rounded-2xl py-2 px-4 mt-4 mb-5 w-3/4 md:w-1/2">
+              <i class="pi pi-facebook" style="color: white;"></i>
+              Znajdź nas na Facebook
+
+            </a>
+
+
+          </DialogDescription>
+        </DialogHeader>
+
+
+      </DialogContent>
+    </Dialog>
 
   </div>
 </template>
