@@ -61,5 +61,3 @@ export const homeTable = [
     punkty: 0,
   },
 ]
-
-export default homeTable
