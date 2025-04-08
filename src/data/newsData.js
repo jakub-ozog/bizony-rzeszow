@@ -1,14 +1,15 @@
 import articleImageSub1 from '@/assets/images/galleries/gallery-3/_DSC0335.webp'
 import articleImageMain from '@/assets/images/posts/main/14.webp'
 import articleImageSub2 from '@/assets/images/galleries/gallery-4/11.webp'
+import articleImageSub3 from '@/assets/images/galleries/gallery-6/11.webp'
 
 const mainNews = [
   {
     id: 1,
     title: 'Poznaj Bizona: Krzysztof Jurczyński',
     description:
-      'W ekskluzywnym wywiadzie Krzysztof, kluczowy zawodnik naszego zespołu bejsbolowego, opowiada o swojej pasji do sportu, najtrudniejszych momentach sezonu i planach na przyszłość. Zdradza, jak radzi sobie z presją na boisku i co najbardziej motywuje go do walki o zwycięstwo. Nie zabrakło też pytań o atmosferę w drużynie oraz osobiste cele na nadchodzące rozgrywki!',
-    date: '21.06.2025',
+      'Krzysztof, kluczowy zawodnik naszego zespołu, opowiada o swojej pasji do baseballu, najważniejszych momentach poprzedniego sezonu oraz planach na przyszłość. Nie zabrakło też pytań o atmosferę w drużynie oraz osobiste cele na nadchodzące rozgrywki!',
+    date: '09.04.2025',
     author: '18:00',
     thumb1: articleImageMain,
     isFeatured: true,
@@ -16,9 +17,9 @@ const mainNews = [
   },
   {
     id: 2,
-    title: 'Bizony Rzeszów: Historia drużyny, która narodziła się z pasji',
+    title: 'Bizony Rzeszów: Drużyna, która narodziła się z pasji do baseballu.',
     description:
-      'W artykule przyglądamy się historii baseballu i jej wpływowi na rozwój tej dyscypliny w Polsce. Przechodzimy do opowieści o powstaniu Bizonów Rzeszów - drużyny, która zrodziła się z pasji i determinacji jej założycieli.',
+      'Baseball ma w sobie magię wynikającą z unikalnej kombinacji elegancji, taktyki i zasad gry. Dopiero głębsze zanurzenie się w tym świecie pozwala zrozumieć motywację grupy ludzi spędzających każdy weekend na doskonaleniu swoich umiejętności.',
     author: '18:00',
     thumb2: articleImageSub1,
     isFeatured: false,
@@ -37,6 +38,21 @@ const mainNews = [
     thumb3: articleImageSub2,
     isFeatured: false,
     link: { name: 'postDetail', params: { slug: 'bizonowe-podsumowanie-2024-roku' } },
+  },
+  {
+    id: 4,
+    title:
+      'Wiosenne słońce, pierwsze zwycięstwo. Relacja z dwumeczu towarzyskiego z Wizards Opole.',
+    description:
+      'Żory powitały zawodników piękną, wiosenną aurą – błękitne niebo, słońce i temperatura, która idealnie współgrała z rosnącym napięciem na boisku. W takich okolicznościach drużyny z Rzeszowa i Opola rozegrały swoje pierwsze starcie w sezonie 2025. Spotkanie zakończyło się zasłużonym zwycięstwem Bizonów, którzy pokonali Wizards 5:3 i zanotowali tym samym pierwszy triumf w nowym roku.',
+    date: '22.03.2025',
+    author: '18:00',
+    thumb4: articleImageSub3,
+    isFeatured: false,
+    link: {
+      name: 'postDetail',
+      params: { slug: 'relacja-z-dwumeczu-towarzyskiego-z-wizards-opole' },
+    },
   },
 ]
 

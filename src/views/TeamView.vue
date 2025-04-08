@@ -64,10 +64,10 @@ const trainerDetails = [{
           </DialogHeader>
 
           <div class="grid grid-cols-2 gap-4 mt-4 text-sm">
+            <div><strong>R:</strong> {{ selectedPlayer?.r }}</div>
             <div><strong>H:</strong> {{ selectedPlayer?.h }}</div>
-            <div><strong>HR:</strong> {{ selectedPlayer?.hr }}</div>
             <div><strong>BA:</strong> {{ selectedPlayer?.ba }}</div>
-            <div><strong>OBP:</strong> {{ selectedPlayer?.obp }}</div>
+            <div><strong>RBI:</strong> {{ selectedPlayer?.rbi }}</div>
             <!-- Dodaj więcej statystyk wg uznania -->
           </div>
 

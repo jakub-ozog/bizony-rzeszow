@@ -12,11 +12,11 @@ export const positionsData = [
   {
     position: '1B',
     polskaNazwa: 'PIERWSZOBAZOWY',
-    angielskaNazwa: 'First baseman',
+    angielskaNazwa: 'First Baseman',
   },
   {
     position: '2B',
-    polskaNazwa: 'DRUGIBAZOWY',
+    polskaNazwa: 'DRUGOBAZOWY',
     angielskaNazwa: 'Second Baseman',
   },
   {
@@ -27,7 +27,7 @@ export const positionsData = [
   {
     position: 'SS',
     polskaNazwa: 'ŁĄCZNIK',
-    angielskaNazwa: 'Short Stop',
+    angielskaNazwa: 'Shortstop',
   },
   {
     position: 'RF',

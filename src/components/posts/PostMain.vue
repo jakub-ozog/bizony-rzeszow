@@ -14,7 +14,7 @@ import postMainThumb from '@/assets/images/posts/main/IMG_5568.webp'
       </div>
       <div class="flex flex-row gap-2 items-center">
         <img :src="calendarIcon" class="w-5" alt="Ikona kalendarza" />
-        <p class="text-sm text-gray-500">20.03.2025</p>
+        <p class="text-sm text-gray-500">09.04.2025</p>
       </div>
     </div>
     <p class="font-semibold text-lg">
@@ -95,32 +95,21 @@ import postMainThumb from '@/assets/images/posts/main/IMG_5568.webp'
     <p class="font-base text-lg my-6">
       <b> W którym momencie poczułeś, że Bizony mają szansę dorównać innym zespołom?</b><br>
       Na wiosnę 2024 roku, gdy rozgrywaliśmy dwumecz przeciwko Silesii Rybnik. Nasz rywal wystawił rezerwowy skład, ale
-      kiedy prowadziliśmy 6:0, nagle zmienili wszystkich zawodników, obawiając się o końcowy wynik. Ostatecznie pokonali
+      kiedy prowadziliśmy 6:0, nagle zmienili część zawodników, obawiając się o końcowy wynik. Ostatecznie pokonali
       nas różnicą ponad 10 punktów, ale pokazaliśmy, że możemy nawiązać walkę z zawodnikami trenującymi w jednej z
       czołowych polskich
       drużyn.
       Kluczowym momentem był również dwumecz z Kraków Kings w lipcu 2024 roku – odnieśliśmy dwa zwycięstwa, co dało nam
       ogromny impuls do dalszego rozwoju.
     </p>
-    <p class="font-base text-lg my-6">
-      <b>Czy były momenty zwątpienia?</b><br>
-      Po kwietniowej porażce z Wizards Opole rozważałem grę w lidze dla Rawy Katowice. Dostałem także zaproszenia od
-      innych drużyn ligowych. Na szczęście moja żona przekonała mnie, bym został z Bizonami. Zaufałem jej – i miała
-      rację,
-      bo po tamtej przegranej zanotowaliśmy trzy zwycięstwa z rzędu. Asia stanowi dla mnie ogromne wsparcie i bardzo
-      pomaga całej drużynie. Przypuszczam, że bez niej historia Bizonów Rzeszów potoczyłaby się inaczej.
-    </p>
+
 
     <p class="font-base text-lg my-6">
-      <b>Debiutancki sezon w Bałtyckiej Lidze Baseballu zbliża się wielkimi krokami. Jaki jest plan Bizonów na
-        najbliższe
-        tygodnie?</b><br>
-      Zimowe treningi na hali były jedynie rozgrzewką przed tym, co czeka nas w nadchodzących tygodniach. Liczę, że
-      Bizony
-      licznie stawią się na treningach, aby przećwiczyć wszystkie elementy gry i pod koniec miesiąca sprawdzić się w
-      sparingach. Musimy wyrobić odpowiednie nawyki, wdrożyć elementy taktyki i popracować nad szybkością, by bez
-      problemu
-      kraść bazy naszym przeciwnikom.
+      <b>Debiutancki sezon w Bałtyckiej Lidze Baseballu zbliża się wielkimi krokami. Jaki podsumujesz przygotowania do
+        rozgrywek?</b><br>
+      Zimowe treningi na hali były jedynie rozgrzewką przed tym, co czekało nas w marcu. Bizony licznie stawiły się na
+      treningach, przećwiczyliśmy sporo elementów gry i sprawdziliśmy się w sparingu z Wizards Opole. Myślę, że
+      jesteśmy dobrze przygotowani do pierwszego meczu ligowego.
     </p>
     <p class="font-base text-lg my-6">
       <b>Jakie masz oczekiwania co do wyników w lidze?</b><br>

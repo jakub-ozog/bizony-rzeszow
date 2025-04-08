@@ -24,7 +24,7 @@ const news = ref(newsData)
         </p>
         <router-link :to="news[0].link" class="mx-auto text-center">
           <button
-            class="flex justify-center items-center mx-auto my-6 text-center bg-secondaryRed text-white rounded-2xl py-2 px-4 mt-4 w-36">
+            class="flex justify-center items-center mx-auto lg:mx-0 my-6 text-center bg-secondaryRed text-white rounded-2xl py-2 px-4 mt-4 w-36">
             <span class="text-[0.75rem] font-normal mr-2"> Czytaj więcej </span><img class="w-3 h-3"
               src="/src/assets/icons/baseball_ball_icon.svg" />
           </button>
@@ -93,20 +93,20 @@ const news = ref(newsData)
 
     <Card style=" overflow: hidden; text-align: left;">
       <template #header>
-        <img alt="user header" :src="news[2].thumb3" />
+        <img alt="user header" :src="news[3].thumb4" />
       </template>
       <template #title>
         <h3 class="font-bold text-2xl text-slate-700">
-          {{ news[2].title }}
+          {{ news[3].title }}
         </h3>
       </template>
       <template #content>
         <p class="m-0 font-normal">
-          {{ news[2].description }}
+          {{ news[3].description }}
         </p>
       </template>
       <template #footer>
-        <router-link :to="news[2].link">
+        <router-link :to="news[3].link">
           <button
             class="flex justify-center items-center text-center bg-secondaryRed text-white rounded-2xl py-2 px-4 mt-4 w-36">
             <span class="text-[0.75rem] font-normal mr-2"> Czytaj więcej </span><img class="w-3 h-3"
