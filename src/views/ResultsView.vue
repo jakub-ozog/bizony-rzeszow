@@ -15,15 +15,15 @@ import GamesSummaryTable from '@/components/GamesSummaryTable.vue';
   </main>
 
   <section class="container mx-auto my-12 font-urbanist px-2 md:px-0 text-center">
-    <h2 class="text-3xl font-bold text-midGrayupper uppercase">Poniżej prezentujemy tabelę z wynikami meczów 2024
-    </h2>
+    <!-- <h2 class="text-3xl font-bold text-midGrayupper uppercase">Poniżej prezentujemy tabelę z wynikami meczów 2024
+    </h2> -->
 
-    <!-- <div class="my-16 shadow-lg">
+    <div class="my-16 shadow-lg">
       <div class="text-left w-full bg-gradient-to-r from-accentBlue to-slate-950 text-white p-6 rounded-t-lg ">
         <h3 class="text-white text-xl font-semibold">2025</h3>
       </div>
       <GamesSummaryTable year="2025" />
-    </div> -->
+    </div>
 
     <div class="my-16 shadow-lg">
       <div class="text-left w-full bg-gradient-to-r from-accentBlue to-slate-950 text-white p-6 rounded-t-lg">
