@@ -1,6 +1,7 @@
 import articleImageSub1 from '@/assets/images/galleries/gallery-3/_DSC0335.webp'
 import articleImageMain from '@/assets/images/posts/main/14.webp'
 import articleImageSub2 from '@/assets/images/galleries/gallery-4/11.webp'
+import articleImageSub3 from '@/assets/images/galleries/gallery-6/11.webp'
 
 const mainNews = [
   {
@@ -37,6 +38,21 @@ const mainNews = [
     thumb3: articleImageSub2,
     isFeatured: false,
     link: { name: 'postDetail', params: { slug: 'bizonowe-podsumowanie-2024-roku' } },
+  },
+  {
+    id: 4,
+    title:
+      'Wiosenne słońce, pierwsze zwycięstwo. Relacja z dwumeczu towarzyskiego z Wizards Opole.',
+    description:
+      'Żory powitały zawodników piękną, wiosenną aurą – błękitne niebo, słońce i temperatura, która idealnie współgrała z rosnącym napięciem na boisku. W takich okolicznościach drużyny z Rzeszowa i Opola rozegrały swoje pierwsze starcie w sezonie 2025. Spotkanie zakończyło się zasłużonym zwycięstwem Bizonów, którzy pokonali Wizards 5:3 i zanotowali tym samym pierwszy triumf w nowym roku.',
+    date: '22.03.2025',
+    author: '18:00',
+    thumb4: articleImageSub3,
+    isFeatured: false,
+    link: {
+      name: 'postDetail',
+      params: { slug: 'relacja-z-dwumeczu-towarzyskiego-z-wizards-opole' },
+    },
   },
 ]
 

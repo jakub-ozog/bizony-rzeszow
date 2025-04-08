@@ -1,6 +1,7 @@
 import post1Thumb from '@/assets/images/posts/main/14.webp'
 import post2Thumb from '@/assets/images/galleries/gallery-4/11.webp'
 import post3Thumb from '@/assets/images/galleries/gallery-4/16.webp'
+import post4Thumb from '@/assets/images/galleries/gallery-6/11.webp'
 
 export const blogPosts = [
   {
@@ -32,5 +33,16 @@ export const blogPosts = [
     slug: 'bizonowe-podsumowanie-2024-roku',
     component: () => import('@/components/posts/PostSub2.vue'),
     thumb: post3Thumb,
+  },
+  {
+    id: 4,
+    title:
+      'Wiosenne słońce, pierwsze zwycięstwo. Relacja z dwumeczu towarzyskiego z Wizards Opole.',
+    excerpt:
+      'Żory powitały zawodników piękną, wiosenną aurą - błękitne niebo, słońce i temperatura, która idealnie współgrała z rosnącym napięciem na boisku. W takich okolicznościach drużyny z Rzeszowa i Opola rozegrały swoje pierwsze starcie w sezonie 2025. Spotkanie zakończyło się zasłużonym zwycięstwem Bizonów, którzy pokonali Wizards 5:3 i zanotowali tym samym pierwszy triumf w nowym roku.',
+    date: '2025-03-10',
+    slug: 'relacja-z-dwumeczu-towarzyskiego-z-wizards-opole',
+    component: () => import('@/components/posts/PostSub3.vue'),
+    thumb: post4Thumb,
   },
 ]
