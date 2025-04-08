@@ -3,6 +3,9 @@ import { gamesSummary } from '@/data/gamesSummary.js'
 import authorIcon from '@/assets/images/michal-oberc-author.webp'
 import calendarIcon from '@/assets/icons/calendar-icon.svg'
 import postMainThumb from '@/assets/images/galleries/gallery-4/11.webp'
+import GamesSummaryTable from '@/components/GamesSummaryTable.vue';
+
+
 </script>
 
 <template>
@@ -52,7 +55,7 @@ import postMainThumb from '@/assets/images/galleries/gallery-4/11.webp'
 
     </p>
 
-    <DataTable :value="gamesSummary" stripedRows showGridlines tableStyle="min-width: 50rem" class="my-12">
+    <!-- <DataTable :value="gamesSummary" stripedRows showGridlines tableStyle="min-width: 50rem" class="my-12">
       <PrimeColumn field="termin" header="Termin"></PrimeColumn>
       <PrimeColumn field="miejsce" header="Miejsce"></PrimeColumn>
       <PrimeColumn field="przeciwnik" header="Przeciwnik"></PrimeColumn>
@@ -60,7 +63,16 @@ import postMainThumb from '@/assets/images/galleries/gallery-4/11.webp'
       <PrimeColumn field="wynik" header="Wynik"></PrimeColumn>
       <PrimeColumn field="punktyZdobyte" header="Punkty zdobyte"></PrimeColumn>
       <PrimeColumn field="punktyStracone" header="Punkty stracone"></PrimeColumn>
-    </DataTable>
+    </DataTable> -->
+
+
+    <div class="my-16 shadow-lg">
+      <div class="text-left w-full bg-gradient-to-r from-accentBlue to-slate-950 text-white p-6 rounded-t-lg">
+        <h3 class="text-white text-xl font-semibold">2024</h3>
+      </div>
+      <GamesSummaryTable year="2024" />
+    </div>
+
 
     <h2 class="text-3xl font-semibold text-lightBlack my-12">
       Byliśmy również obecni na:

@@ -6,7 +6,7 @@ import postMainThumb from '@/assets/images/galleries/gallery-4/11.webp'
 
 <template>
   <section class="container mx-auto text-left my-12 font-urbanist">
-    <h1 class="text-5xl font-bold text-primaryRed">Bizony Rzeszów: Drużyna, która narodziła się z pasji z bejsbolu</h1>
+    <h1 class="text-5xl font-bold text-primaryRed">Bizony Rzeszów: Drużyna, która narodziła się z pasji z baseballu</h1>
     <div class="flex flex-row gap-6 mt-2 mb-12">
       <div class="flex flex-row gap-2 items-center">
         <img :src="authorIcon" class="w-7" alt="Ikona autora" />

@@ -44,7 +44,7 @@ const mainNews = [
     title:
       'Wiosenne słońce, pierwsze zwycięstwo. Relacja z dwumeczu towarzyskiego z Wizards Opole.',
     description:
-      'Żory powitały zawodników piękną, wiosenną aurą – błękitne niebo, słońce i temperatura, która idealnie współgrała z rosnącym napięciem na boisku. W takich okolicznościach drużyny z Rzeszowa i Opola rozegrały swoje pierwsze starcie w sezonie 2025. Spotkanie zakończyło się zasłużonym zwycięstwem Bizonów, którzy pokonali Wizards 5:3 i zanotowali tym samym pierwszy triumf w nowym roku.',
+      'Żory powitały zawodników piękną, wiosenną aurą – błękitne niebo, słońce i temperatura, która idealnie współgrała z rosnącym napięciem na boisku. W takich okolicznościach drużyny z Rzeszowa i Opola rozegrały swoje pierwsze starcie w sezonie 2025.',
     date: '22.03.2025',
     author: '18:00',
     thumb4: articleImageSub3,

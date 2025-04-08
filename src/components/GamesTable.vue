@@ -121,6 +121,12 @@ const modifiedGroupCTable = homeTable.map((team, index) => {
         <PrimeColumn field="przegrane" header="Przegrane"></PrimeColumn>
         <PrimeColumn field="punkty" header="Punkty"></PrimeColumn>
       </DataTable>
+
+      <div class="my-8">
+        <p class="text-xl text-lightBlack">Bezpośredni awans do TOP8 uzyskają 3 najlepsze drużyny z Grupy A oraz Grupy
+          B,
+          natomiast z Grupy C będą to 2 najlepsze drużyny</p>
+      </div>
     </div>
 
 
@@ -128,7 +134,7 @@ const modifiedGroupCTable = homeTable.map((team, index) => {
     <div class="my-16">
       <DataTable :value="timeTable" stripedRows showGridlines rowHover="" class="my-12 shadow-md">
         <div class="text-left w-full bg-indigo-950 text-white p-6 rounded-t-lg ">
-          <h3 class="text-white text-2xl font-semibold">Terminarz</h3>
+          <h3 class="text-white text-2xl font-semibold">Terminarz Bizonów</h3>
         </div>
         <PrimeColumn field="termin" header="Termin"></PrimeColumn>
         <PrimeColumn field="miejsce" header="Miejsce"></PrimeColumn>

@@ -58,7 +58,7 @@ import bizonyLogoWhite from '@/assets/logo/bizony_logo_white.svg'
           <div class="flex flex-col gap-4 text-center md:text-left">
             <h3 class="text-xl font-bold text-gray-200">Drużyna</h3>
             <router-link class="text-sm text-gray-300" to="/druzyna/kadra">Kadra</router-link>
-            <p class="text-sm text-gray-300">Statystyki</p>
+
             <router-link class="text-sm text-gray-300" to="/o-nas">O klubie</router-link>
           </div>
           <!-- <div class="flex flex-col gap-4 text-center md:text-left">

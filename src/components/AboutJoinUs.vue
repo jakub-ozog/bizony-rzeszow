@@ -59,7 +59,7 @@ const joinBgImg = {
               Zadzwoń teraz!
             </a>
 
-            <a href="mailto:mailto:jurczynski95@gmail.com"
+            <a href="https://www.facebook.com/BizonyRzeszow" target="_blank"
               class="flex items-center gap-4 bg-accentBlue text-center mx-auto justify-center text-white rounded-2xl py-2 px-4 mt-4 mb-5 w-3/4 md:w-1/2">
               <i class="pi pi-facebook" style="color: white;"></i>
               Znajdź nas na Facebook
