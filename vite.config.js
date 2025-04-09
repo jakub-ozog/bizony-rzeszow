@@ -6,6 +6,7 @@ import viteImagemin from 'vite-plugin-imagemin'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/',
   assetsInclude: ['**/*.JPG', '**/*.jpg', '**/*.png'],
   plugins: [
     vue(),

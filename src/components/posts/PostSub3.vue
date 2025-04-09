@@ -29,20 +29,20 @@ import postMainThumb from '@/assets/images/galleries/gallery-6/11.webp'
 
 
 
-    <p class="font-base text-lg mt-12">
+    <p class="font-base text-lg mt-8">
       Początek meczu należał do drużyny z Opola. W pierwszym inningu, korzystając z momentu niepewności w defensywie
       rywali, „Czarodzieje” zdołali zdobyć dwa punkty. Bizony odpowiedziały jednym runem w dolnej części tej samej
       odsłony, dając sygnał, że nie zamierzają oddać meczu bez walki.
 
     </p>
-    <p class="font-base text-lg mt-12">
+    <p class="font-base text-lg mt-8">
       W drugim inningu rzeszowianie doprowadzili do wyrównania, a z każdą kolejną zmianą zaczęli przejmować inicjatywę.
       Dobra dyspozycja miotacza Jurczyńskiego, wsparcie szczelnej obrony oraz coraz skuteczniejszy atak pozwalały im
       konsekwentnie budować przewagę.
     </p>
 
 
-    <p class="font-base text-lg mt-12">
+    <p class="font-base text-lg mt-8">
 
       Do końca czwartego inningu Bizony prowadziły już 5:2, pokazując solidność w każdym elemencie gry. Jednak ostatnia
       partia meczu dostarczyła kibicom jeszcze sporo emocji. Wizards w piątym inningu stworzyli sobie znakomitą okazję –
@@ -51,7 +51,7 @@ import postMainThumb from '@/assets/images/galleries/gallery-6/11.webp'
       zdołali jedynie zmniejszyć stratę o jeden punkt.
     </p>
 
-    <p class="font-semibold text-lg mt-12">
+    <p class="font-semibold text-lg mt-8">
       Mecz zakończył się wynikiem 5:3 dla Bizonów, którzy mogli cieszyć się z dobrze rozpoczętego sezonu.
     </p>
     <p class="font-base text-xl mt-6">
@@ -67,7 +67,7 @@ import postMainThumb from '@/assets/images/galleries/gallery-6/11.webp'
     </p>
 
 
-    <p class="font-base text-lg mt-12">
+    <p class="font-base text-lg mt-8">
       Drugi mecz dnia również nie zawiódł pod względem emocji. Tym razem obie drużyny zdecydowały się na roszady w
       składach – zarówno Wizards, jak i Bizony wystawiły rezerwowych miotaczy, a trener zespołu z Rzeszowa postawił
       także
@@ -75,8 +75,7 @@ import postMainThumb from '@/assets/images/galleries/gallery-6/11.webp'
       więcej
       do powiedzenia niż defensywa.
     </p>
-    base
-    <p class="font-base text-lg mt-12">
+    <p class="font-base text-lg mt-8">
       Bizony rozpoczęły spotkanie z impetem, zdobywając dwa punkty już w górnej części pierwszego inningu. Radość nie
       trwała jednak długo – dolna połowa tej odsłony przyniosła poważne kłopoty, a Wizards szybko odrobili straty i z
       nawiązką objęli prowadzenie. Przeciętna forma miotaczy po obu stronach sprawiła, że mecz przerodził się w
@@ -85,15 +84,14 @@ import postMainThumb from '@/assets/images/galleries/gallery-6/11.webp'
     </p>
     <p class="font-base text-lg mt-12">
       Najpierw to Wizards zdobyli sześć punktów z rzędu i wysunęli się na prowadzenie 6:2, by chwilę później oddać
-      inicjatywę – Bizony odpowiedziały równie efektowną serią i do połowy trzeciego inningu prowadziły już 8:6. Gra
-      falowała, a kibice mogli tylko przecierać oczy ze zdumienia.
+      inicjatywę – Bizony odpowiedziały równie efektowną serią i do połowy trzeciego inningu prowadziły już 8:6.
     </p>
-    <p class="font-base text-lg mt-12">
+    <p class="font-base text-lg mt-8">
       Niestety dla rzeszowskiej drużyny, ten fragment meczu okazał się ich ostatnim momentem dominacji. W kolejnych
       inningach ofensywa Bizonów wyraźnie przygasła, podczas gdy Wizards zyskali stabilność – zarówno na górce miotacza,
       jak i w obronie. Kolejne punkty wpadały na konto opolan, którzy sukcesywnie budowali przewagę.
     </p>
-    <p class="font-base text-lg mt-12">
+    <p class="font-base text-lg mt-8">
       Pomimo prób ratowania wyniku i rotacji w składzie, Bizonom nie udało się już odwrócić losów spotkania. W ostatnim
       inningu Wizards zagrali bezbłędnie w obronie, nie pozwalając przeciwnikom nawet na zdobycie bazy. Ostatecznie
       rewanż
