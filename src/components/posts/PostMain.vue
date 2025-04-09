@@ -105,7 +105,7 @@ import postMainThumb from '@/assets/images/posts/main/IMG_5568.webp'
 
 
     <p class="font-base text-lg my-6">
-      <b>Debiutancki sezon w Bałtyckiej Lidze Baseballu zbliża się wielkimi krokami. Jaki podsumujesz przygotowania do
+      <b>Debiutancki sezon w Bałtyckiej Lidze Baseballu zbliża się wielkimi krokami. Jak wyglądały przygotowania do
         rozgrywek?</b><br>
       Zimowe treningi na hali były jedynie rozgrzewką przed tym, co czekało nas w marcu. Bizony licznie stawiły się na
       treningach, przećwiczyliśmy sporo elementów gry i sprawdziliśmy się w sparingu z Wizards Opole. Myślę, że

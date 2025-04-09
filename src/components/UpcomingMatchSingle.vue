@@ -8,14 +8,14 @@ defineProps({
 </script>
 
 <template>
-  <div class="bg-white min-h-[17rem] rounded-xl shadow-gray-200-md border border-gray-400">
+  <div class="bg-white min-h-[16rem] md:min-h-[17rem] rounded-xl shadow-gray-200-md border border-gray-400">
     <div class="w-full text-center bg-accentBlue text-white font-bold font-urbanist rounded-md py-3 leading-1">
       <p class="text-xl text-white">{{ match.date }}</p>
     </div>
 
-    <div class="flex-col sm:flex-row gap-4 p-4 md:p-4 flex items-center justify-around">
+    <div class="flex-row gap-0 md:gap-4 p-4 md:p-4 flex items-center justify-between md:justify-around">
       <div class="flex flex-col items-center">
-        <img :src="match.team2Logo" alt="Logo drużyny 1" class="w-16" />
+        <img :src="match.team2Logo" alt="Logo drużyny 1" class=" w-14 sm:w-16" />
         <p class="text-lightBlack font-normal text-md mt-2">{{ match.team2 }}</p>
       </div>
 
@@ -25,11 +25,11 @@ defineProps({
       </div>
 
       <div class="flex flex-col items-center">
-        <img :src="match.team1Logo" alt="Logo drużyny 1" class="w-16" />
+        <img :src="match.team1Logo" alt="Logo drużyny 1" class="w-14 sm:w-16" />
         <p class="text-lightBlack font-normal text-md mt-2">{{ match.team1 }}</p>
       </div>
     </div>
-    <div class=" mb-4 md:mb-0 mt-4 flex flex-col lg:flex-row gap-4 items-center justify-center">
+    <div class=" flex flex-row lg:flex-row gap-4 items-center justify-center sm:justify-center mb-4 md:mb-0 mt-4 ">
       <Chip :label="match.location" icon="pi pi-map-marker"
         v-tooltip.top="{ value: match.locationDetails, autoHide: false }" type="text" />
       <Chip :label="match.gameType" icon="pi pi-info-circle" />
