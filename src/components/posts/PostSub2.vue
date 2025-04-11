@@ -13,7 +13,7 @@ import GamesSummaryTable from '@/components/GamesSummaryTable.vue';
     <h1 class="text-5xl font-bold text-primaryRed">Bizonowe podsumowanie 2024 roku</h1>
     <div class="flex flex-row gap-6 mt-2 mb-12">
       <div class="flex flex-row gap-2 items-center">
-        <img :src="authorIcon" class="w-7" alt="Ikona autora" />
+        <img :src="authorIcon" class="w-11 rounded-full" alt="Ikona autora" />
         <p class="text-sm text-gray-500">Redakcja</p>
       </div>
       <div class="flex flex-row gap-2 items-center">

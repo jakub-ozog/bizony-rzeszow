@@ -9,7 +9,7 @@ import postMainThumb from '@/assets/images/posts/main/IMG_5568.webp'
     <h1 class="text-5xl font-bold text-primaryRed">Poznaj Bizona: Krzysztof Jurczyński</h1>
     <div class="flex flex-row gap-6 mt-4 mb-12">
       <div class="flex flex-row gap-2 items-center">
-        <img :src="authorIcon" class="w-7" alt="Ikona autora" />
+        <img :src="authorIcon" class="w-11 rounded-full" alt="Ikona autora" />
         <p class="text-sm text-gray-500">Michał Oberc</p>
       </div>
       <div class="flex flex-row gap-2 items-center">

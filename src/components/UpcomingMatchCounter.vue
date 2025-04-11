@@ -4,7 +4,7 @@ import CountdownWatch from './CountdownWatch.vue';
 </script>
 
 <template>
-  <section class="w-full text-white min-h-[45rem] md:min-h-[20rem] flex bg-cover bg-center relative font-urbanist"
+  <section class="w-full text-white min-h-[25rem] md:min-h-[20rem] flex bg-cover bg-center relative font-urbanist"
     :style="{ backgroundImage: `url(${MatchCounterBg})` }">
     <CountdownWatch />
   </section>

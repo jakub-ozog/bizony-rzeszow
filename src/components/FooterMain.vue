@@ -10,7 +10,7 @@ import bizonyLogoWhite from '@/assets/logo/bizony_logo_white.svg'
 <template>
   <footer class="bg-midBlack font-urbanist">
     <div class="container w-full mx-auto">
-      <div class="flex flex-col lg:flex-row align-baseline justify-between text-white py-8 px-4 md:px-0">
+      <div class="flex flex-col lg:flex-row align-baseline justify-between text-white py-8 px-4">
         <!-- <div>
           <h5 class="font-bold">Dołącz do naszego Newslettera</h5>
           <h6 class="font-light text-sm">

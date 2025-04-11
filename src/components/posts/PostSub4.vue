@@ -11,7 +11,7 @@ import postMainThumb from '@/assets/images/galleries/gallery-3/_DSC0443.webp'
     </h1>
     <div class="flex flex-row gap-6 mt-2 mb-12">
       <div class="flex flex-row gap-2 items-center">
-        <img :src="authorIcon" class="w-7" alt="Ikona autora" />
+        <img :src="authorIcon" class="w-11 rounded-full" alt="Ikona autora" />
         <p class="text-sm text-gray-500">Redakcja</p>
       </div>
       <div class="flex flex-row gap-2 items-center">
@@ -20,18 +20,10 @@ import postMainThumb from '@/assets/images/galleries/gallery-3/_DSC0443.webp'
       </div>
     </div>
     <h2 class="font-semibold text-2xl">
-      13 kwietnia rusza nowy sezon Bałtyckiej Ligi Baseballu. Ekipa z Rzeszowa zmierzy się z dobrze
-      znanym rywalem. <br />
-      Czy Bizony przywiozą komplet punktów z Rybnika?
+      Już w najbliższą niedzielę, 13 kwietnia 2025 roku, rusza nowy sezon Bałtyckiej Ligi Baseballu. Jeśli pogoda pozwoli, na boisku w Rybniku czeka nas prawdziwe sportowe święto – debiutujące w lidze Bizony Rzeszów zmierzą się z dobrze znanym rywalem, Wizards Opole. Obie ekipy spotkały się niedawno w sparingach, więc emocji z pewnością nie zabraknie.
     </h2>
     <img :src="postMainThumb" class="w-full h-auto mt-10" alt="obrazek główny wpisu" />
 
-    <p class="font-base text-lg mt-8">
-      Już w najbliższą niedzielę, 13 kwietnia 2025 roku, rusza nowy sezon Bałtyckiej Ligi Baseballu.
-      Jeśli pogoda pozwoli, na boisku w Rybniku czeka nas prawdziwe sportowe święto – debiutujące w
-      lidze Bizony Rzeszów zmierzą się z dobrze znanym rywalem, Wizards Opole. Obie ekipy spotkały
-      się niedawno w sparingach, więc emocji z pewnością nie zabraknie.
-    </p>
     <p class="font-base text-lg mt-8">
       Dla Wizards będzie to kolejna kampania w ramach BLB. Choć w ostatnich latach nie należeli do
       ligowej czołówki, zgromadzone doświadczenie i umiejętności czynią z nich solidnego
@@ -53,7 +45,7 @@ import postMainThumb from '@/assets/images/galleries/gallery-3/_DSC0443.webp'
     </p>
 
     <p class="font-base text-lg mt-6">
-      <b>Start dwumeczu:</b> niedziela, 13 kwietnia 2025, godz. 11:00 <b>Miejsce</b>: Stadion
+      <b>Start dwumeczu:</b> niedziela, 13 kwietnia 2025, godz. 11:00 <br> <b>Miejsce</b>: Stadion
       Silesii, ul. Partyzantów 44, Rybnik
     </p>
 
@@ -67,7 +59,7 @@ import postMainThumb from '@/assets/images/galleries/gallery-3/_DSC0443.webp'
     </p>
     <h3 class="font-bold text-2xl mt-8">Dotychczasowy bilans Bizony vs. Wizards:</h3>
     <p class="font-base text-lg mt-8">
-      <b>Zwycięstwa–Porażki (W–L):</b> 2–3 <b>Punkty zdobyte–stracone (Runs):</b> 50–62
+      <b>Zwycięstwa–Porażki (W–L):</b> 2–3 <br><b>Punkty zdobyte–stracone (Runs):</b> 50–62
     </p>
   </section>
   <ScrollTop />

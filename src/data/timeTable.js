@@ -10,12 +10,12 @@ export const timeTable = [
     przeciwnik: 'Wizards Opole',
   },
   {
-    termin: '2025.06.08',
+    termin: '2025.06.07',
     miejsce: 'Rzeszów',
     przeciwnik: 'Kraków Kings',
   },
   {
-    termin: '2025.06.08',
+    termin: '2025.06.07',
     miejsce: 'Rzeszów',
     przeciwnik: 'Kraków Kings',
   },

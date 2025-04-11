@@ -49,7 +49,7 @@ export const blogPosts = [
   {
     id: 5,
     title:
-      'Wiosenne słońce, pierwsze zwycięstwo. Relacja z dwumeczu towarzyskiego z Wizards Opole.',
+      'Wielki start sezonu BLB! Bizony Rzeszów zmierzą się z Wizards Opole',
     excerpt:
       '13 kwietnia rusza nowy sezon Bałtyckiej Ligi Baseballu. Ekipa z Rzeszowa zmierzy się z dobrze znanym rywalem. Czy Bizony przywiozą komplet punktów z Rybnika?',
     date: '2025-03-10',

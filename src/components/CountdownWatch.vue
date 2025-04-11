@@ -64,7 +64,7 @@ onUnmounted(() => {
 
   <div class=" mx-auto flex flex-col justify-center items-center">
     <p class="text-xl text-center px-1 font-semibold text-white">Do najbliższego meczu pozostało</p>
-    <div class="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8 mt-8">
+    <div class="flex flex-row items-center justify-center gap-6 md:gap-8 mt-8">
       <div class="flex flex-col items-center text-white">
         <p class="text-4xl md:text-5xl font-bold text-white ">{{ countdown.days }}</p>
         <p class="text-sm font-light text-white">dni</p>

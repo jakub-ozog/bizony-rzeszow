@@ -6,7 +6,7 @@ const posts = ref(blogPosts)
 </script>
 
 <template>
-  <div class="container mx-auto text-left my-12 font-urbanist flex flex-col gap-12">
+  <div class="container mx-auto text-left my-12 font-urbanist flex flex-col-reverse gap-12">
     <div v-for="post in posts" :key="post.id"
       class="hover:text-primaryRed transition duration-300 ease-in-out p-4 grid  grid-cols-1 md:grid-cols-2 gap-8">
       <div>

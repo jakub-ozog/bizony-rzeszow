@@ -32,7 +32,7 @@ const cookieStatus = (status) => {
 <template>
   <div>
     <NavbarMain />
-    <main>
+    <main class="px-4">
       <router-view />
 
       <vue-cookie-accept-decline :debug="false" :disableDecline="false" :showPostponeButton="false"

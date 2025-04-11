@@ -10,10 +10,10 @@ import arrowBtnRounded from '@/assets/icons/btn_arrow_rounded.svg'
 </script>
 
 <template>
-  <section class="container mx-auto grid place-content-center mt-24">
+  <section class="container mx-auto grid place-content-center mt-12 md:mt-24">
     <img src="@/assets/images/bison-bg.svg" alt="obrazek bizona" class="hidden sm:block w-[24rem] absolute left-0" />
     <div class="flex gap-8 flex-col items-center text-center">
-      <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-lobster text-secondaryRed">
+      <h1 class=" text-[3.5rem] md:text-7xl lg:text-9xl font-lobster text-secondaryRed">
         Bizony Rzeszów
       </h1>
       <h2 class="text-sm md:text-xl text-lightGrey font-urbanist font-thin italic">
@@ -30,7 +30,7 @@ import arrowBtnRounded from '@/assets/icons/btn_arrow_rounded.svg'
     </div>
   </section>
 
-  <section class="mx-auto max-w-[2560px] mt-24">
+  <section class="mx-auto max-w-[2560px] mt-12 md:mt-24">
     <div class="grid grid-cols-2 md:grid-cols-4 gap-1 lg:gap-5 overflow-hidden">
       <img src="@/assets/images/player_2_card.png" class="w-full  m-auto sm:m-0 sm:w-full h-full object-cover" alt="" />
       <img src="@/assets/images/player_4_card.png" class="w-full  m-auto sm:m-0 sm:w-full h-full object-cover" alt="" />
@@ -55,12 +55,15 @@ import arrowBtnRounded from '@/assets/icons/btn_arrow_rounded.svg'
 
   <section class="container mx-auto text-center my-12 font-urbanist font-bold">
     <MainGallery />
-    <router-link to="/galeria" class="mx-auto text-center mt-2 flex justify-end p-2">
-      <button class="flex justify-center items-center text-center text-primaryRed underline rounded-2xl py-2  mt-8">
-        <span class="text-[0.75rem] font-semibold mr-2">Zobacz więcej zdjęć </span> <img class="w-3 h-3"
-          :src="arrowBtnRounded" />
+
+    <div class=" mx-auto text-center my-10 flex justify-center">
+    <router-link to="/galeria">
+      <button class="flex justify-center items-center text-center bg-accentBlue text-white rounded-2xl py-2 px-4 mt-8">
+        <span class="text-[0.75rem] font-normal mr-2">Zobacz więcej zdjęć</span><img class="w-3 h-3"
+          src="/src/assets/icons/baseball_ball_icon.svg" />
       </button>
     </router-link>
+  </div>
   </section>
 
   <section class="container mx-auto my-12 font-urbanist font-bold px-2 md:px-0">

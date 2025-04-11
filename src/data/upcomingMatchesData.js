@@ -22,7 +22,7 @@ const upcomingMatches = [
     id: 2,
     team2: 'Bizony Rzeszów',
     team1: 'Kraków Kings',
-    date: '08.06.2025',
+    date: '07.06.2025',
     time: '11:00',
     team2Logo: BizonyLogo,
     team1Logo: KingsLogo,
