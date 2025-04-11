@@ -2,6 +2,7 @@ import post1Thumb from '@/assets/images/posts/main/14.webp'
 import post2Thumb from '@/assets/images/galleries/gallery-4/11.webp'
 import post3Thumb from '@/assets/images/galleries/gallery-4/16.webp'
 import post4Thumb from '@/assets/images/galleries/gallery-6/11.webp'
+import post5Thumb from '@/assets/images/galleries/gallery-3/_DSC0443.webp'
 
 export const blogPosts = [
   {
@@ -44,5 +45,16 @@ export const blogPosts = [
     slug: 'relacja-z-dwumeczu-towarzyskiego-z-wizards-opole',
     component: () => import('@/components/posts/PostSub3.vue'),
     thumb: post4Thumb,
+  },
+  {
+    id: 5,
+    title:
+      'Wiosenne słońce, pierwsze zwycięstwo. Relacja z dwumeczu towarzyskiego z Wizards Opole.',
+    excerpt:
+      '13 kwietnia rusza nowy sezon Bałtyckiej Ligi Baseballu. Ekipa z Rzeszowa zmierzy się z dobrze znanym rywalem. Czy Bizony przywiozą komplet punktów z Rybnika?',
+    date: '2025-03-10',
+    slug: 'wielki-start-sezonu-blb-bizony-rzeszow-zmierza-sie-z-wizards-opole',
+    component: () => import('@/components/posts/PostSub4.vue'),
+    thumb: post5Thumb,
   },
 ]

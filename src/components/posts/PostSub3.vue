@@ -19,10 +19,7 @@ import postMainThumb from '@/assets/images/galleries/gallery-6/11.webp'
       </div>
     </div>
     <p class="font-semibold text-lg">
-      Żory powitały zawodników piękną, wiosenną aurą – błękitne niebo, słońce i temperatura, która idealnie współgrała z
-      rosnącym napięciem na boisku. W takich okolicznościach drużyny z Rzeszowa i Opola rozegrały swoje pierwsze starcie
-      w sezonie 2025. Spotkanie zakończyło się zasłużonym zwycięstwem Bizonów, którzy pokonali Wizards 5:3 i zanotowali
-      tym samym pierwszy triumf w nowym roku.
+      Żory powitały zawodników piękną, wiosenną aurą  W takich okolicznościach drużyny z Rzeszowa i Opola rozegrały swoje pierwsze mecze w sezonie 2025.
 
     </p>
     <img :src="postMainThumb" class="w-full h-auto mt-10" alt="obrazek główny wpisu" />
