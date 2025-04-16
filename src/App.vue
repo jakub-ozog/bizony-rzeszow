@@ -25,7 +25,7 @@ const cookieRemovedCookie = () => {
 }
 
 const cookieStatus = (status) => {
-  console.log('Status ciasteczek:', status)
+  console.log('Cookie status:', status)
 }
 </script>
 
