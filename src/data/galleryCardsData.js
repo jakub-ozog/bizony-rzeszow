@@ -4,6 +4,7 @@ import galleryCardThumb3 from '@/assets/images/galleries/gallery-3/_DSC0285.webp
 import galleryCardThumb4 from '@/assets/images/galleries/gallery-4/12.webp'
 import galleryCardThumb5 from '@/assets/images/galleries/gallery-5/IMG_6224.webp'
 import galleryCardThumb6 from '@/assets/images/galleries/gallery-6/12.webp'
+import galleryCardThumb7 from '@/assets/images/galleries/gallery-7/IMGP0154.webp'
 
 const mainGalleryCards = [
   {
@@ -71,6 +72,18 @@ const mainGalleryCards = [
     slug: 'bizony-rzeszow-vs-wizards-opole-22-03-2025',
     component: () => import('@/components/galleries/GalleryEl6.vue'),
     link: { name: 'gallerySingle', params: { slug: 'bizony-rzeszow-vs-wizards-opole-22-03-2025' } },
+  },
+
+  {
+    id: 7,
+    title: 'Bizony Rzeszów - Wizards Opole (13.04.2025)',
+    date: new Date(2025, 3, 13), // 13 kwietnia 2025
+    time: '18:00',
+    thumb: galleryCardThumb7,
+    author: 'Michał',
+    slug: 'bizony-rzeszow-vs-wizards-opole-13-04-2025',
+    component: () => import('@/components/galleries/GalleryEl7.vue'),
+    link: { name: 'gallerySingle', params: { slug: 'bizony-rzeszow-vs-wizards-opole-13-04-2025' } },
   },
 ]
 
