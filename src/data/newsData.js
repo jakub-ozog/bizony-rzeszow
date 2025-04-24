@@ -3,6 +3,7 @@ import articleImageMain from '@/assets/images/posts/main/14.webp'
 import articleImageSub2 from '@/assets/images/galleries/gallery-4/11.webp'
 import articleImageSub3 from '@/assets/images/galleries/gallery-6/11.webp'
 import articleImageSub4 from '@/assets/images/galleries/gallery-3/_DSC0443.webp'
+import articleImageSub5 from '@/assets/images/posts/main/DSC0113.webp'
 
 const mainNews = [
   {
@@ -57,8 +58,7 @@ const mainNews = [
   },
   {
     id: 5,
-    title:
-      'Wielki start sezonu BLB! Bizony Rzeszów zmierzą się z Wizards Opole',
+    title: 'Wielki start sezonu BLB! Bizony Rzeszów zmierzą się z Wizards Opole',
     description:
       '13 kwietnia rusza nowy sezon Bałtyckiej Ligi Baseballu. Ekipa z Rzeszowa zmierzy się z dobrze znanym rywalem. Czy Bizony przywiozą komplet punktów z Rybnika?',
     date: '12.04.2025',
@@ -68,6 +68,20 @@ const mainNews = [
     link: {
       name: 'postDetail',
       params: { slug: 'wielki-start-sezonu-blb-bizony-rzeszow-zmierza-sie-z-wizards-opole' },
+    },
+  },
+  {
+    id: 6,
+    title: 'Poznaj Bizona: Norbert Wietecha',
+    description:
+      'O tym, jak Pantera stała się Bizonem. Poznajcie Norberta Wietechę – doświadczonego zawodnika rodem z Jasła, którego umiejętności i doświadczenie znacząco wspierają rozwój Bizonów Rzeszów.',
+    date: '25.04.2025',
+    author: '18:00',
+    thumb6: articleImageSub5,
+    isFeatured: false,
+    link: {
+      name: 'postDetail',
+      params: { slug: 'poznaj-bizona-norbert-wietecha' },
     },
   },
 ]

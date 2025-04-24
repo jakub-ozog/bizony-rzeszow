@@ -6,7 +6,7 @@ import MainGallery from '@/components/MainGallery.vue'
 import PlayerFeatured from '@/components/PlayerFeatured.vue'
 import AboutJoinUs from '@/components/AboutJoinUs.vue'
 import HomeTable from '@/components/HomeTable.vue'
-import arrowBtnRounded from '@/assets/icons/btn_arrow_rounded.svg'
+// import arrowBtnRounded from '@/assets/icons/btn_arrow_rounded.svg'
 </script>
 
 <template>
@@ -57,13 +57,14 @@ import arrowBtnRounded from '@/assets/icons/btn_arrow_rounded.svg'
     <MainGallery />
 
     <div class=" mx-auto text-center my-10 flex justify-center">
-    <router-link to="/galeria">
-      <button class="flex justify-center items-center text-center bg-accentBlue text-white rounded-2xl py-2 px-4 mt-8">
-        <span class="text-[0.75rem] font-normal mr-2">Zobacz więcej zdjęć</span><img class="w-3 h-3"
-          src="/src/assets/icons/baseball_ball_icon.svg" />
-      </button>
-    </router-link>
-  </div>
+      <router-link to="/galeria">
+        <button
+          class="flex justify-center items-center text-center bg-accentBlue text-white rounded-2xl py-2 px-4 mt-8">
+          <span class="text-[0.75rem] font-normal mr-2">Zobacz więcej zdjęć</span><img class="w-3 h-3"
+            src="/src/assets/icons/baseball_ball_icon.svg" />
+        </button>
+      </router-link>
+    </div>
   </section>
 
   <section class="container mx-auto my-12 font-urbanist font-bold px-2 md:px-0">
