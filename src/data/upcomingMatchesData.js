@@ -4,19 +4,19 @@ import KingsLogo from '@/assets/logo/kings.webp'
 import RawaLogo from '@/assets/logo/rawa.webp'
 
 const upcomingMatches = [
-  // {
-  //   id: 1,
-  //   team1: 'Bizony Rzeszów',
-  //   team2: 'Wizards Opole',
-  //   date: '13.04.2025',
-  //   time: '11:00',
-  //   team1Logo: BizonyLogo,
-  //   team2Logo: WizardsLogo,
-  //   location: 'Rybnik',
-  //   gameType: 'BLB',
-  //   dateTime: new Date('2025-04-13T11:00:00'),
-  //   locationDetails: 'Partyzantów 44, 44-203 Rybnik',
-  // },
+  {
+    id: 1,
+    team1: 'Kraków Kings',
+    team2: 'Bizony Rzeszów',
+    date: '27.04.2025',
+    time: '11:00',
+    team1Logo: KingsLogo,
+    team2Logo: BizonyLogo,
+    location: 'Żory',
+    gameType: 'Towarzyski',
+    dateTime: new Date('2025-04-13T11:00:00'),
+    locationDetails: 'Minimalna 2, 44-247 Żory',
+  },
 
   {
     id: 1,

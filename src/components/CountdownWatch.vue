@@ -10,7 +10,7 @@ const countdown = ref({
 })
 
 const matchDates = [
-  { date: new Date('2025-04-13T11:00:00') },
+  { date: new Date('2025-04-27T11:00:00') },
   { date: new Date('2025-06-08T11:00:00') },
   { date: new Date('2025-06-15T11:00:00') },
 ]
