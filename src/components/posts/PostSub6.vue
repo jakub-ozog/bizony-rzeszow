@@ -5,8 +5,8 @@ import postMainThumb from '@/assets/images/posts/post-6/IMGP0081.webp'
 
 const resultsTable1 = {
   dane: [
-    { team: 'Bizony', '1': 7, '2': 6, '3': 1, '4': 0, '5': 0, '6': 0, '7': 0, R: 14 },
-    { team: 'Wizards', '1': 4, '2': 0, '3': 1, '4': 0, '5': 2, '6': 1, '7': 5, R: 13 },
+    { team: 'Bizony', 1: 7, 2: 6, 3: 1, 4: 0, 5: 0, 6: 0, 7: 0, R: 14 },
+    { team: 'Wizards', 1: 4, 2: 0, 3: 1, 4: 0, 5: 2, 6: 1, 7: 5, R: 13 },
   ],
   kolumny: [
     { field: 'team', header: 'Drużyna' },
@@ -19,12 +19,12 @@ const resultsTable1 = {
     { field: '7', header: '7' },
     { field: 'R', header: 'Suma' },
   ],
-};
+}
 
 const resultsTable2 = {
   dane: [
-    { team: 'Bizony', '1': 2, '2': 2, '3': 6, '4': 0, '5': 0, '6': 1, '7': 2, R: 13 },
-    { team: 'Wizards', '1': 7, '2': 0, '3': 0, '4': 4, '5': 1, '6': 6, '7': 2, R: 20 },
+    { team: 'Bizony', 1: 2, 2: 2, 3: 6, 4: 0, 5: 0, 6: 1, 7: 2, R: 13 },
+    { team: 'Wizards', 1: 7, 2: 0, 3: 0, 4: 4, 5: 1, 6: 6, 7: 2, R: 20 },
   ],
   kolumny: [
     { field: 'team', header: 'Drużyna' },
@@ -37,8 +37,7 @@ const resultsTable2 = {
     { field: '7', header: '7' },
     { field: 'R', header: 'Suma' },
   ],
-};
-
+}
 </script>
 
 <template>
@@ -125,14 +124,35 @@ const resultsTable2 = {
 
     <!-- tabela 1 -->
     <!-- <h3>Tabela 1</h3> -->
-    <DataTable  stripedRows showGridlines rowHover=""  :value="resultsTable1.dane">
-      <PrimeColumn v-for="col in resultsTable1.kolumny" :field="col.field" :header="col.header" :key="col.field" />
-      <template #empty>
-        Brak danych do wyświetlenia.
-      </template>
+    <DataTable :value="resultsTable1.dane">
+      <!-- Nazwa drużyny bold -->
+      <PrimeColumn field="team" header="Drużyna">
+        <template #body="slotProps">
+          <span class="font-bold">{{ slotProps.data.team }}</span>
+        </template>
+      </PrimeColumn>
+
+      <!-- Pozostałe kolumny -->
+      <PrimeColumn
+        v-for="col in resultsTable1.kolumny.slice(1, -1)"
+        :key="col.field"
+        :field="col.field"
+        :header="col.header"
+      />
+
+      <!-- Kolumna suma - bold -->
+      <PrimeColumn field="R">
+        <template #header>
+          <span class="font-bold">Suma</span>
+          <!-- Pogrubiony nagłówek -->
+        </template>
+        <template #body="slotProps">
+          <span class="font-bold">{{ slotProps.data.R }}</span>
+        </template>
+      </PrimeColumn>
+
+      <template #empty> Brak danych do wyświetlenia. </template>
     </DataTable>
-
-
 
     <p class="font-base text-lg my-6">
       <b> Bizony: </b><br />
@@ -203,11 +223,34 @@ const resultsTable2 = {
 
     <!-- tabela 2 -->
 
-    <DataTable  stripedRows showGridlines rowHover=""  :value="resultsTable2.dane">
-      <PrimeColumn v-for="col in resultsTable1.kolumny" :field="col.field" :header="col.header" :key="col.field" />
-      <template #empty>
-        Brak danych do wyświetlenia.
-      </template>
+    <DataTable :value="resultsTable2.dane">
+      <!-- Nazwa drużyny bold -->
+      <PrimeColumn field="team" header="Drużyna">
+        <template #body="slotProps">
+          <span class="font-bold">{{ slotProps.data.team }}</span>
+        </template>
+      </PrimeColumn>
+
+      <!-- Pozostałe kolumny -->
+      <PrimeColumn
+        v-for="col in resultsTable2.kolumny.slice(1, -1)"
+        :key="col.field"
+        :field="col.field"
+        :header="col.header"
+      />
+
+      <!-- Kolumna suma - bold -->
+      <PrimeColumn field="R">
+        <template #header>
+          <span class="font-bold">Suma</span>
+          <!-- Pogrubiony nagłówek -->
+        </template>
+        <template #body="slotProps">
+          <span class="font-bold">{{ slotProps.data.R }}</span>
+        </template>
+      </PrimeColumn>
+
+      <template #empty> Brak danych do wyświetlenia. </template>
     </DataTable>
 
     <p class="font-base text-lg my-6">
