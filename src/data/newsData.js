@@ -74,7 +74,7 @@ const mainNews = [
     id: 6,
     title: 'Poznaj Bizona: Norbert Wietecha',
     description:
-      'O tym, jak Pantera stała się Bizonem. Poznajcie Norberta Wietechę – doświadczonego zawodnika rodem z Jasła, którego umiejętności i doświadczenie znacząco wspierają rozwój Bizonów Rzeszów.',
+      'O tym, jak Pantera stała się Bizonem. Poznajcie Norberta Wietechę – pierwszoligowca z Jasła, który po latach przerwy wrócił do baseballu, tym razem jako zawodnik i mentor rzeszowskich Bizonów.',
     date: '25.04.2025',
     author: '18:00',
     thumb6: articleImageSub5,
