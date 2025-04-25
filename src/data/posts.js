@@ -4,6 +4,7 @@ import post3Thumb from '@/assets/images/galleries/gallery-4/16.webp'
 import post4Thumb from '@/assets/images/galleries/gallery-6/11.webp'
 import post5Thumb from '@/assets/images/galleries/gallery-3/_DSC0443.webp'
 import post6Thumb from '@/assets/images/posts/main/DSC0113.webp'
+import post7Thumb from '@/assets/images/posts/post-6/IMGP0081.webp'
 
 export const blogPosts = [
   {
@@ -63,9 +64,19 @@ export const blogPosts = [
     title: 'Poznaj Bizona: Norbert Wietecha',
     excerpt:
       'O tym, jak Pantera stała się Bizonem. Poznajcie Norberta Wietechę – pierwszoligowca z Jasła, który po latach przerwy wrócił do baseballu, tym razem jako zawodnik i mentor rzeszowskich Bizonów.',
-    date: '2025-03-25',
+    date: '2025-04-25',
     slug: 'poznaj-bizona-norbert-wietecha',
     component: () => import('@/components/posts/PostSub5.vue'),
     thumb: post6Thumb,
+  },
+  {
+    id: 7,
+    title: 'Wygrana Bizonów w debiucie ligowym!',
+    excerpt:
+      'Pierwszy mecz ligowy w historii, pierwsza wygrana ligowa i pierwsza porażka. Tak wyglądały 2. urodziny Bizonów Rzeszów, które świętowali, rozgrywając dwumecz przeciwko Wizards Opole w ramach 1. kolejki grupy C Bałtyckiej Ligi Baseballu. Siedmiogodzinne zmagania dostarczyły wielu emocji zarówno zawodnikom, jak i kilkunastu kibicom zgromadzonym na rybnickim stadionie.',
+    date: '2025-04-15',
+    slug: 'wygrana-bizonow-w-debucie-ligowym',
+    component: () => import('@/components/posts/PostSub6.vue'),
+    thumb: post7Thumb,
   },
 ]
