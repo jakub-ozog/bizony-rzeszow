@@ -260,7 +260,7 @@ const resultsTable2 = {
       <br />
       <b>Wizards:</b><br />
       T. Schreiner SS-P-1B, Symietz CF, Budzowski LF-C, Glinka 1B, Gąsior C, Foryś 3B-CF, F.
-      Schreiner 2B, Smoliński RF, Kieroński P<b>Zmiennicy:</b> Strumiński P-1B, Łukasiewicz 3B,
+      Schreiner 2B, Smoliński RF, Kieroński P <b>Zmiennicy:</b> Strumiński P-1B, Łukasiewicz 3B,
       Ćwikła LF, Smolińska RF, E.Piekarz RF, Marsollek SS
     </p>
   </section>
