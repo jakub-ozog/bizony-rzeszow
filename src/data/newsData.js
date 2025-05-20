@@ -4,6 +4,7 @@ import articleImageSub2 from '@/assets/images/galleries/gallery-4/11.webp'
 import articleImageSub3 from '@/assets/images/galleries/gallery-6/11.webp'
 import articleImageSub4 from '@/assets/images/galleries/gallery-3/_DSC0443.webp'
 import articleImageSub5 from '@/assets/images/posts/main/DSC0113.webp'
+import articleImageSub6 from '@/assets/images/posts/post-6/IMGP0081.webp'
 
 const mainNews = [
   {
@@ -82,6 +83,21 @@ const mainNews = [
     link: {
       name: 'postDetail',
       params: { slug: 'poznaj-bizona-norbert-wietecha' },
+    },
+  },
+
+  {
+    id: 7,
+    title: 'Wygrana Bizonów w debiucie ligowym!',
+    description:
+      'Pierwszy mecz ligowy w historii, pierwsza wygrana ligowa i pierwsza porażka. Tak wyglądały 2. urodziny Bizonów Rzeszów, które świętowali, rozgrywając dwumecz przeciwko Wizards Opole w ramach 1. kolejki grupy C Bałtyckiej Ligi Baseballu. Siedmiogodzinne zmagania dostarczyły wielu emocji zarówno zawodnikom, jak i kilkunastu kibicom zgromadzonym na rybnickim stadionie.',
+    date: '15.04.2025',
+    author: '18:00',
+    thumb7: articleImageSub6,
+    isFeatured: false,
+    link: {
+      name: 'postDetail',
+      params: { slug: 'wygrana-bizonow-w-debucie-ligowym' },
     },
   },
 ]
