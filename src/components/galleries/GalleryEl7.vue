@@ -38,17 +38,18 @@ const photos = Object.values(images).map((img) => img.default);
 
     <swiper :spaceBetween="10" :navigation="true" :thumbs="{ swiper: thumbsSwiper }" :modules="modules" :pagination="{
       type: 'fraction',
-    }" class="">
+    }" class="max-w-[1000px]">
       <swiper-slide class="h-unset" v-for="(photo, index) in photos" :key="index">
         <img :src="photo" class='cursor-grab select-none h-full' />
       </swiper-slide>
     </swiper>
     <swiper @swiper="setThumbsSwiper" :loop="true" :spaceBetween="5" :slidesPerView="4" :watchSlidesProgress="true"
-      :modules="modules" class="mySwiper">
-      <swiper-slide class="opacity-75 mt-8 h-unset" v-for="(photo, index) in photos" :key="index">
-        <img :src="photo" class='cursor-grab select-none h-full' />
+      :modules="modules" class="mySwiper max-w-[1000px]">
+      <swiper-slide class="opacity-75 mt-8 " v-for="(photo, index) in photos" :key="index">
+        <img :src="photo" class='cursor-grab select-none ' />
       </swiper-slide>
     </swiper>
+
 
 
   </section>
