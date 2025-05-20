@@ -45,10 +45,13 @@ const photos = Object.values(images).map((img) => img.default);
         </div>
       </swiper-slide>
     </swiper>
+
     <swiper @swiper="setThumbsSwiper" :loop="true" :spaceBetween="5" :slidesPerView="4" :watchSlidesProgress="true"
       :modules="modules" class="mySwiper max-w-[1000px]">
-      <swiper-slide class="opacity-75 mt-8 " v-for="(photo, index) in photos" :key="index">
-        <img :src="photo" class='cursor-grab select-none h-full object-cover' />
+      <swiper-slide class="opacity-75 mt-8" v-for="(photo, index) in photos" :key="index">
+        <div class="w-full h-36 relative">
+          <img :src="photo" class='absolute inset-0 w-full h-full object-cover cursor-grab select-none' />
+        </div>
       </swiper-slide>
     </swiper>
 
