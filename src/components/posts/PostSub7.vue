@@ -9,8 +9,9 @@ import postMainThumb from '@/assets/images/posts/main/article-main-thumb-4.webp'
     <h1 class="text-5xl font-bold text-primaryRed">Bizony kontra Kings. Kto przybliży się do finałów?</h1>
     <div class="flex flex-row gap-6 mt-4 mb-12">
       <div class="flex flex-row gap-2 items-center">
-        <img :src="authorIcon" class="w-11 rounded-full" alt="Ikona autora" />
-        <p class="text-sm text-gray-500">Michał Oberc</p>
+        <!-- <img :src="authorIcon" class="w-11 rounded-full" alt="Ikona autora" /> -->
+        <span class="border p-1 rounded-full w-8 border-gray-500 flex align-center justify-center font-bold">R</span>
+        <p class="text-sm text-gray-500">Redakcja</p>
       </div>
       <div class="flex flex-row gap-2 items-center">
         <img :src="calendarIcon" class="w-5" alt="Ikona kalendarza" />
