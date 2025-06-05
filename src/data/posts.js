@@ -5,6 +5,7 @@ import post4Thumb from '@/assets/images/galleries/gallery-6/11.webp'
 import post5Thumb from '@/assets/images/galleries/gallery-3/_DSC0443.webp'
 import post6Thumb from '@/assets/images/posts/main/DSC0113.webp'
 import post7Thumb from '@/assets/images/posts/post-6/IMGP0081.webp'
+import post8Thumb from '@/assets/images/posts/main/article-main-thumb-4.webp'
 
 export const blogPosts = [
   {
@@ -78,5 +79,15 @@ export const blogPosts = [
     slug: 'wygrana-bizonow-w-debucie-ligowym',
     component: () => import('@/components/posts/PostSub6.vue'),
     thumb: post7Thumb,
+  },
+   {
+    id: 8,
+    title: 'Bizony kontra Kings. Kto przybliży się do finałów?',
+    excerpt:
+      'W najbliższą sobotę Bizony rozegrają kolejne mecze w ramach BLB. Czy postawią krok w kierunku awansu do TOP8?',
+    date: '2025-06-05',
+    slug: 'bizony-kontra-kings-kto-przyblizy-sie-do-finalow',
+    component: () => import('@/components/posts/PostSub7.vue'),
+    thumb: post8Thumb,
   },
 ]

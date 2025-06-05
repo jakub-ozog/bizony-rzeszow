@@ -14,7 +14,7 @@ const matches = ref(matchesData)
     </h2>
   </div>
 
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8 z-20 relative">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8 z-20 relative">
     <UpcomingMatchSingle v-for="match in matches" :key="match.id" :match="match" />
   </div>
 </template>

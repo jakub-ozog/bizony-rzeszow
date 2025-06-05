@@ -8,45 +8,45 @@ export const groupATable = [
   {
     poz: 1,
     druzyna: {
-      nazwa: 'Piraci Władysławowo',
-      logo: PiraciLogo, // Załóżmy, że masz logo o takiej nazwie
+      nazwa: 'Centaury Warszawa',
+      logo: CentauryLogo, // Załóżmy, że masz logo o takiej nazwie
     },
-    mecze: 2,
-    runyPlus: 28,
-    runyMinus: 6,
+    mecze: 4,
+    runyPlus: 68,
+    runyMinus: 19,
     zwyciestwa: 2,
     remisy: 0,
     przegrane: 0,
-    punkty: 4,
+    punkty: 8,
   },
 
   {
     poz: 2,
     druzyna: {
-      nazwa: 'Centaury Warszawa',
-      logo: CentauryLogo, // Załóżmy, że masz logo o takiej nazwie
+      nazwa: 'Piraci Władysławowo',
+      logo: PiraciLogo, // Załóżmy, że masz logo o takiej nazwie
     },
-    mecze: 2,
-    runyPlus: 28,
-    runyMinus: 14,
+    mecze: 4,
+    runyPlus: 50,
+    runyMinus: 17,
     zwyciestwa: 2,
     remisy: 0,
     przegrane: 0,
-    punkty: 4,
+    punkty: 8,
   },
   {
     poz: 3,
     druzyna: {
-      nazwa: 'Lisy Białystok',
-      logo: LisyLogo, // Załóżmy, że masz logo o takiej nazwie
+      nazwa: 'Mariners Gdańsk',
+      logo: MarinersLogo, // Załóżmy, że masz logo o takiej nazwie
     },
-    mecze: 0,
-    runyPlus: 0,
-    runyMinus: 0,
+    mecze: 6,
+    runyPlus: 49,
+    runyMinus: 58,
     zwyciestwa: 0,
     remisy: 0,
     przegrane: 0,
-    punkty: 0,
+    punkty: 4,
   },
   {
     poz: 4,
