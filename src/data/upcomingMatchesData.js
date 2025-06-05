@@ -35,7 +35,7 @@ const upcomingMatches = [
     id: 3,
     team1: 'Bizony Rzeszów',
     team2: 'Rawa Katowice',
-    date: '15.06.2025',
+    date: '21.06.2025',
     time: '11:00',
     team1Logo: BizonyLogo,
     team2Logo: RawaLogo,
