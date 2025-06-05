@@ -11,11 +11,11 @@ export const homeTable = [
       logo: RawaLogo, // Załóżmy, że masz logo o takiej nazwie
     },
     mecze: 2,
-    runyPlus: 10,
-    runyMinus: 36,
-    zwyciestwa: 1,
+    runyPlus: 36,
+    runyMinus: 10,
+    zwyciestwa: 2,
     remisy: 0,
-    przegrane: 1,
+    przegrane: 0,
     punkty: 4,
   },
   {
@@ -27,10 +27,10 @@ export const homeTable = [
     mecze: 2,
     runyPlus: 27,
     runyMinus: 10,
-    zwyciestwa: 1,
+    zwyciestwa: 2,
     remisy: 0,
-    przegrane: 1,
-    punkty: 2,
+    przegrane: 0,
+    punkty: 4,
   },
 
   {
@@ -42,9 +42,9 @@ export const homeTable = [
     mecze: 2,
     runyPlus: 27,
     runyMinus: 33,
-    zwyciestwa: 0,
+    zwyciestwa: 1,
     remisy: 0,
-    przegrane: 0,
+    przegrane: 1,
     punkty: 2,
   },
 
@@ -57,9 +57,9 @@ export const homeTable = [
     mecze: 6,
     runyPlus: 53,
     runyMinus: 90,
-    zwyciestwa: 0,
+    zwyciestwa: 1,
     remisy: 0,
-    przegrane: 0,
+    przegrane: 5,
     punkty: 2,
   },
 ]
