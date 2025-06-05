@@ -5,6 +5,7 @@ import articleImageSub3 from '@/assets/images/galleries/gallery-6/11.webp'
 import articleImageSub4 from '@/assets/images/galleries/gallery-3/_DSC0443.webp'
 import articleImageSub5 from '@/assets/images/posts/main/DSC0113.webp'
 import articleImageSub6 from '@/assets/images/posts/post-6/IMGP0081.webp'
+import articleImageSub7 from '@/assets/images/posts/main/article-main-thumb-4.webp'
 
 const mainNews = [
   {
@@ -98,6 +99,20 @@ const mainNews = [
     link: {
       name: 'postDetail',
       params: { slug: 'wygrana-bizonow-w-debucie-ligowym' },
+    },
+  },
+  {
+    id: 8,
+    title: 'Bizony kontra Kings. Kto przybliży się do finałów?',
+    description:
+      'W najbliższą sobotę Bizony rozegrają kolejne mecze w ramach BLB. Czy postawią krok w kierunku awansu do TOP8?',
+    date: '05.06.2025',
+    author: '18:00',
+    thumb7: articleImageSub7,
+    isFeatured: false,
+    link: {
+      name: 'postDetail',
+      params: { slug: 'bizony-kontra-kings-kto-przyblizy-sie-do-finalow' },
     },
   },
 ]
