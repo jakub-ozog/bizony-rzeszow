@@ -19,10 +19,8 @@ const joinBgImg = {
   backgroundSize: 'cover',
 }
 
-// Watch for route changes to update content from Strapi
-const route = useRoute()
+//  update content from Strapi
 const heroData = ref(null)
-
 
 
 const fetchHeroData = async () => {
@@ -41,7 +39,6 @@ const subtitle = computed(() => heroData.value?.Subtitle || 'Loading...')
 const buttonText = computed(() => heroData.value?.Button || 'Loading...')
 
 onMounted(fetchHeroData)
-watch(route, fetchHeroData)
 </script>
 
 <template>
