@@ -11,21 +11,21 @@ export const timeTable = [
   },
   {
     termin: '2025.06.07',
-    miejsce: 'Rzeszów',
+    miejsce: 'Żory',
     przeciwnik: 'Kraków Kings',
   },
   {
     termin: '2025.06.07',
-    miejsce: 'Rzeszów',
+    miejsce: 'Żory',
     przeciwnik: 'Kraków Kings',
   },
   {
-    termin: '2025.06.15',
+    termin: '2025.06.21',
     miejsce: 'Katowice',
     przeciwnik: 'Rawa Katowice',
   },
   {
-    termin: '2025.06.15',
+    termin: '2025.06.21',
     miejsce: 'Katowice',
     przeciwnik: 'Rawa Katowice',
   },
